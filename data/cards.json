@@ -14,7 +14,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 9,
@@ -150,7 +158,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 10,
@@ -167,7 +176,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 11,
@@ -184,7 +194,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 12,
@@ -201,7 +212,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 13,
@@ -218,7 +230,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 14,
@@ -235,7 +248,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 15,
@@ -252,7 +266,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 16,
@@ -269,7 +284,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 17,
@@ -286,7 +302,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 18,
@@ -303,7 +320,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 19,
@@ -320,7 +338,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 20,
@@ -337,7 +356,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 21,
@@ -354,7 +374,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 22,
@@ -371,7 +392,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 23,
@@ -388,7 +410,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Aries",
-    "decan_ruler": "Mars"
+    "decan_ruler": "Mars",
+    "harmonic": "Conjunction (1st)"
   },
   {
     "id": 24,
@@ -405,7 +428,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Aries",
-    "decan_ruler": "Sun"
+    "decan_ruler": "Sun",
+    "harmonic": "Opposition (2nd)"
   },
   {
     "id": 25,
@@ -422,7 +446,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Aries",
-    "decan_ruler": "Jupiter"
+    "decan_ruler": "Jupiter",
+    "harmonic": "Trine (3rd)"
   },
   {
     "id": 26,
@@ -439,7 +464,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Leo",
-    "decan_ruler": "Sun"
+    "decan_ruler": "Sun",
+    "harmonic": "Square (4th)"
   },
   {
     "id": 27,
@@ -456,7 +482,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Leo",
-    "decan_ruler": "Jupiter"
+    "decan_ruler": "Jupiter",
+    "harmonic": "Quintile (5th)"
   },
   {
     "id": 28,
@@ -473,7 +500,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Leo",
-    "decan_ruler": "Mars"
+    "decan_ruler": "Mars",
+    "harmonic": "Sextile (6th)"
   },
   {
     "id": 29,
@@ -490,7 +518,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Sagittarius",
-    "decan_ruler": "Jupiter"
+    "decan_ruler": "Jupiter",
+    "harmonic": "Septile (7th)"
   },
   {
     "id": 30,
@@ -507,7 +536,8 @@
     "notes": "Corrected from Sagitta per Brian Clark's text.",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Sagittarius",
-    "decan_ruler": "Mars"
+    "decan_ruler": "Mars",
+    "harmonic": "Octile (8th)"
   },
   {
     "id": 31,
@@ -524,7 +554,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Sagittarius",
-    "decan_ruler": "Sun"
+    "decan_ruler": "Sun",
+    "harmonic": "Novile (9th)"
   },
   {
     "id": 32,
@@ -541,7 +572,8 @@
     "notes": "Fire trinity: Aries + Leo + Sagittarius.",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 33,
@@ -558,7 +590,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 34,
@@ -575,7 +608,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 35,
@@ -592,7 +626,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 36,
@@ -609,7 +644,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 37,
@@ -626,7 +662,8 @@
     "notes": "Corrected from Pegasus per Brian Clark's text.",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "1st decan Cancer",
-    "decan_ruler": "Moon"
+    "decan_ruler": "Moon",
+    "harmonic": "Conjunction (1st)"
   },
   {
     "id": 38,
@@ -643,7 +680,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Cancer",
-    "decan_ruler": "Pluto"
+    "decan_ruler": "Pluto",
+    "harmonic": "Opposition (2nd)"
   },
   {
     "id": 39,
@@ -660,7 +698,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Cancer",
-    "decan_ruler": "Neptune"
+    "decan_ruler": "Neptune",
+    "harmonic": "Trine (3rd)"
   },
   {
     "id": 40,
@@ -677,7 +716,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Scorpio",
-    "decan_ruler": "Pluto"
+    "decan_ruler": "Pluto",
+    "harmonic": "Square (4th)"
   },
   {
     "id": 41,
@@ -694,7 +734,8 @@
     "notes": "★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Scorpio",
-    "decan_ruler": "Neptune"
+    "decan_ruler": "Neptune",
+    "harmonic": "Quintile (5th)"
   },
   {
     "id": 42,
@@ -711,7 +752,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Scorpio",
-    "decan_ruler": "Moon"
+    "decan_ruler": "Moon",
+    "harmonic": "Sextile (6th)"
   },
   {
     "id": 43,
@@ -728,7 +770,8 @@
     "notes": "Fixed star tying the two fish (traditionally 'The Band'). Per another AI's reading of the guidebook.",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Pisces",
-    "decan_ruler": "Neptune"
+    "decan_ruler": "Neptune",
+    "harmonic": "Septile (7th)"
   },
   {
     "id": 44,
@@ -745,7 +788,8 @@
     "notes": "Per another AI's reading of the guidebook; fits the pattern.",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Pisces",
-    "decan_ruler": "Moon"
+    "decan_ruler": "Moon",
+    "harmonic": "Octile (8th)"
   },
   {
     "id": 45,
@@ -762,7 +806,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "3rd decan Pisces",
-    "decan_ruler": "Pluto"
+    "decan_ruler": "Pluto",
+    "harmonic": "Novile (9th)"
   },
   {
     "id": 46,
@@ -779,7 +824,8 @@
     "notes": "Water trinity: Cancer + Scorpio + Pisces.",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 47,
@@ -796,7 +842,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 48,
@@ -813,7 +860,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 49,
@@ -830,7 +878,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 50,
@@ -847,7 +896,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 51,
@@ -864,7 +914,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "1st decan Libra",
-    "decan_ruler": "Venus"
+    "decan_ruler": "Venus",
+    "harmonic": "Conjunction (1st)"
   },
   {
     "id": 52,
@@ -881,7 +932,8 @@
     "notes": "Corrected from Ursa Major per Brian Clark's text.",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Libra",
-    "decan_ruler": "Uranus"
+    "decan_ruler": "Uranus",
+    "harmonic": "Opposition (2nd)"
   },
   {
     "id": 53,
@@ -898,7 +950,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Libra",
-    "decan_ruler": "Mercury"
+    "decan_ruler": "Mercury",
+    "harmonic": "Trine (3rd)"
   },
   {
     "id": 54,
@@ -915,7 +968,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Aquarius",
-    "decan_ruler": "Uranus"
+    "decan_ruler": "Uranus",
+    "harmonic": "Square (4th)"
   },
   {
     "id": 55,
@@ -932,7 +986,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Aquarius",
-    "decan_ruler": "Mercury"
+    "decan_ruler": "Mercury",
+    "harmonic": "Quintile (5th)"
   },
   {
     "id": 56,
@@ -949,7 +1004,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Aquarius",
-    "decan_ruler": "Venus"
+    "decan_ruler": "Venus",
+    "harmonic": "Sextile (6th)"
   },
   {
     "id": 57,
@@ -966,7 +1022,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Gemini",
-    "decan_ruler": "Mercury"
+    "decan_ruler": "Mercury",
+    "harmonic": "Septile (7th)"
   },
   {
     "id": 58,
@@ -983,7 +1040,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Gemini",
-    "decan_ruler": "Venus"
+    "decan_ruler": "Venus",
+    "harmonic": "Octile (8th)"
   },
   {
     "id": 59,
@@ -1000,7 +1058,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Gemini",
-    "decan_ruler": "Uranus"
+    "decan_ruler": "Uranus",
+    "harmonic": "Novile (9th)"
   },
   {
     "id": 60,
@@ -1017,7 +1076,8 @@
     "notes": "Air trinity: Libra + Aquarius + Gemini.",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 61,
@@ -1034,7 +1094,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 62,
@@ -1051,7 +1112,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 63,
@@ -1068,7 +1130,8 @@
     "notes": "Fixed air. Google listed Libra (swapped); pattern says Aquarius.",
     "source_check": "Derived (decan pattern)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 64,
@@ -1085,7 +1148,8 @@
     "notes": "Cardinal air. Google listed Aquarius (swapped); pattern says Libra.",
     "source_check": "Derived (decan pattern)",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 65,
@@ -1102,7 +1166,8 @@
     "notes": "Sagitta per decan pattern, which also matches another source (Arrow of Heracles / Prometheus).",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Capricorn",
-    "decan_ruler": "Saturn"
+    "decan_ruler": "Saturn",
+    "harmonic": "Conjunction (1st)"
   },
   {
     "id": 66,
@@ -1119,7 +1184,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Capricorn",
-    "decan_ruler": "Venus"
+    "decan_ruler": "Venus",
+    "harmonic": "Opposition (2nd)"
   },
   {
     "id": 67,
@@ -1136,7 +1202,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Capricorn",
-    "decan_ruler": "Mercury"
+    "decan_ruler": "Mercury",
+    "harmonic": "Trine (3rd)"
   },
   {
     "id": 68,
@@ -1153,7 +1220,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Taurus",
-    "decan_ruler": "Venus"
+    "decan_ruler": "Venus",
+    "harmonic": "Square (4th)"
   },
   {
     "id": 69,
@@ -1170,7 +1238,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Taurus",
-    "decan_ruler": "Mercury"
+    "decan_ruler": "Mercury",
+    "harmonic": "Quintile (5th)"
   },
   {
     "id": 70,
@@ -1187,7 +1256,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Taurus",
-    "decan_ruler": "Saturn"
+    "decan_ruler": "Saturn",
+    "harmonic": "Sextile (6th)"
   },
   {
     "id": 71,
@@ -1204,7 +1274,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Virgo",
-    "decan_ruler": "Mercury"
+    "decan_ruler": "Mercury",
+    "harmonic": "Septile (7th)"
   },
   {
     "id": 72,
@@ -1221,7 +1292,8 @@
     "notes": "",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Virgo",
-    "decan_ruler": "Saturn"
+    "decan_ruler": "Saturn",
+    "harmonic": "Octile (8th)"
   },
   {
     "id": 73,
@@ -1238,7 +1310,8 @@
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Virgo",
-    "decan_ruler": "Venus"
+    "decan_ruler": "Venus",
+    "harmonic": "Novile (9th)"
   },
   {
     "id": 74,
@@ -1255,7 +1328,8 @@
     "notes": "Earth trinity: Capricorn + Taurus + Virgo.",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 75,
@@ -1272,7 +1346,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 76,
@@ -1289,7 +1364,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 77,
@@ -1306,7 +1382,8 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   },
   {
     "id": 78,
@@ -1323,6 +1400,7 @@
     "notes": "",
     "source_check": "Unverified",
     "decan": "",
-    "decan_ruler": ""
+    "decan_ruler": "",
+    "harmonic": ""
   }
 ]

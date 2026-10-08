@@ -1,79 +1,79 @@
-id,arcana,number,card,element,correspondence,type,keywords,art_direction,palette,status,notes,source_check,decan,decan_ruler
-1,Major,0,The Fool,Spirit,Uranus,Planet,"new beginnings, freedom, leap of faith",Figure stepping off a cliff into a swirl of stars; Uranus glyph glowing overhead; electric cyan on near-black,"Cyan, violet",Not started,,Confirmed (Clark PDF),,
-2,Major,I,The Magician,Spirit,Mercury,Planet,"skill, will, communication",,,Not started,,Confirmed (Clark PDF),,
-3,Major,II,The High Priestess,Spirit,The Moon,Luminary,"intuition, hidden knowledge",,,Not started,,Confirmed (Clark PDF),,
-4,Major,III,The Empress,Spirit,Venus,Planet,"abundance, nurture, beauty",,,Not started,,Confirmed (Clark PDF),,
-5,Major,IV,The Emperor,Spirit,Aries,Zodiac constellation,"authority, structure, leadership",,,Not started,,Confirmed (Clark PDF),,
-6,Major,V,The Hierophant,Spirit,Taurus,Zodiac constellation,"tradition, teaching, belief",,,Not started,,Confirmed (Clark PDF),,
-7,Major,VI,The Lovers,Spirit,Gemini,Zodiac constellation,"union, choice, values",,,Not started,,Unverified,,
-8,Major,VII,The Chariot,Spirit,Cancer,Zodiac constellation,"drive, protection, victory",,,Not started,,Unverified,,
-9,Major,VIII,Strength,Spirit,Leo,Zodiac constellation,"courage, inner power, patience",,,Not started,,Unverified,,
-10,Major,IX,The Hermit,Spirit,Virgo,Zodiac constellation,"solitude, wisdom, inner light",,,Not started,,Unverified,,
-11,Major,X,Wheel of Fortune,Spirit,Jupiter,Planet,"cycles, luck, turning points",,,Not started,,Unverified,,
-12,Major,XI,Justice,Spirit,Libra,Zodiac constellation,"balance, truth, fairness",,,Not started,,Unverified,,
-13,Major,XII,The Hanged Man,Spirit,Neptune,Planet,"surrender, new perspective",,,Not started,,Unverified,,
-14,Major,XIII,Death,Spirit,Scorpio,Zodiac constellation,"endings, transformation",,,Not started,,Unverified,,
-15,Major,XIV,Temperance,Spirit,Sagittarius,Zodiac constellation,"moderation, blending, flow",,,Not started,,Unverified,,
-16,Major,XV,The Devil,Spirit,Capricorn,Zodiac constellation,"bondage, temptation, shadow",,,Not started,,Unverified,,
-17,Major,XVI,The Tower,Spirit,Mars,Planet,"upheaval, sudden change",,,Not started,,Unverified,,
-18,Major,XVII,The Star,Spirit,Aquarius,Zodiac constellation,"hope, renewal, guidance",,,Not started,,Unverified,,
-19,Major,XVIII,The Moon,Spirit,Pisces,Zodiac constellation,"illusion, dreams, the unknown",,,Not started,,Unverified,,
-20,Major,XIX,The Sun,Spirit,The Sun,Luminary,"joy, vitality, success",,,Not started,,Unverified,,
-21,Major,XX,Judgement,Spirit,Pluto,Planet,"awakening, rebirth, calling",,,Not started,,Unverified,,
-22,Major,XXI,The World,Spirit,Saturn,Planet,"completion, wholeness",,,Not started,,Unverified,,
-23,Wands,1,Ace of Wands,Fire,Cassiopeia (The Queen),Constellation,"seed, raw potential",,,Not started,,Derived (decan pattern),1st decan Aries,Mars
-24,Wands,2,Two of Wands,Fire,Cetus (The Sea Monster),Constellation,"duality, choice, partnership",,,Not started,,Derived (decan pattern),2nd decan Aries,Sun
-25,Wands,3,Three of Wands,Fire,Perseus (The Hero),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Aries,Jupiter
-26,Wands,4,Four of Wands,Fire,Hydra (The Water Snake),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Leo,Sun
-27,Wands,5,Five of Wands,Fire,Crater (The Cup),Constellation,"conflict, loss, challenge",,,Not started,,Derived (decan pattern),2nd decan Leo,Jupiter
-28,Wands,6,Six of Wands,Fire,Corvus (The Raven),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Leo,Mars
-29,Wands,7,Seven of Wands,Fire,Lyra (The Lyre),Constellation,"assessment, persistence",,,Not started,,Derived (decan pattern),1st decan Sagittarius,Jupiter
-30,Wands,8,Eight of Wands,Fire,Ara (The Altar),Constellation,"movement, mastery, change",,,Not started,Corrected from Sagitta per Brian Clark's text.,Confirmed (Clark PDF),2nd decan Sagittarius,Mars
-31,Wands,9,Nine of Wands,Fire,Draco (The Dragon),Constellation,"culmination, near-completion",,,Not started,,Derived (decan pattern),3rd decan Sagittarius,Sun
-32,Wands,10,Ten of Wands,Fire,Elemental Fire,Element,"fullness, elemental force",,,Not started,Fire trinity: Aries + Leo + Sagittarius.,Unverified,,
-33,Wands,Princess,Princess of Wands,Fire,Summer Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified,,
-34,Wands,Prince,Prince of Wands,Fire,Sagittarius,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,
-35,Wands,Queen,Queen of Wands,Fire,Leo,Fixed sign,"mastery within, nurture",,,Not started,,Unverified,,
-36,Wands,King,King of Wands,Fire,Aries,Cardinal sign,"command, mastery without",,,Not started,,Unverified,,
-37,Cups,1,Ace of Cups,Water,Ursa Minor (The Lesser Bear),Constellation,"seed, raw potential",,,Not started,Corrected from Pegasus per Brian Clark's text.,Confirmed (Clark PDF),1st decan Cancer,Moon
-38,Cups,2,Two of Cups,Water,Ursa Major (The Great Bear),Constellation,"duality, choice, partnership",,,Not started,,Derived (decan pattern),2nd decan Cancer,Pluto
-39,Cups,3,Three of Cups,Water,Argo Navis (The Ship),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Cancer,Neptune
-40,Cups,4,Four of Cups,Water,Serpens (The Serpent),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Scorpio,Pluto
-41,Cups,5,Five of Cups,Water,Ophiuchus / Asclepius (The Serpent Bearer) ⛎,Constellation,"conflict, loss, challenge",,,Not started,"★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",Confirmed (Clark PDF),2nd decan Scorpio,Neptune
-42,Cups,6,Six of Cups,Water,Hercules (The Kneeler),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Scorpio,Moon
-43,Cups,7,Seven of Cups,Water,Al Risha (The Knot of Pisces),Constellation,"assessment, persistence",,,Not started,Fixed star tying the two fish (traditionally 'The Band'). Per another AI's reading of the guidebook.,Derived (decan pattern),1st decan Pisces,Neptune
-44,Cups,8,Eight of Cups,Water,Cepheus (The King),Constellation,"movement, mastery, change",,,Not started,Per another AI's reading of the guidebook; fits the pattern.,Derived (decan pattern),2nd decan Pisces,Moon
-45,Cups,9,Nine of Cups,Water,Andromeda (The Chained Maiden),Constellation,"culmination, near-completion",,,Not started,,Confirmed (Clark PDF),3rd decan Pisces,Pluto
-46,Cups,10,Ten of Cups,Water,Elemental Water,Element,"fullness, elemental force",,,Not started,Water trinity: Cancer + Scorpio + Pisces.,Unverified,,
-47,Cups,Princess,Princess of Cups,Water,Autumn Equinox,Season,"student, messenger, new energy",,,Not started,,Unverified,,
-48,Cups,Prince,Prince of Cups,Water,Pisces,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,
-49,Cups,Queen,Queen of Cups,Water,Scorpio,Fixed sign,"mastery within, nurture",,,Not started,,Unverified,,
-50,Cups,King,King of Cups,Water,Cancer,Cardinal sign,"command, mastery without",,,Not started,,Unverified,,
-51,Swords,1,Ace of Swords,Air,Crux (The Southern Cross),Constellation,"seed, raw potential",,,Not started,,Confirmed (Clark PDF),1st decan Libra,Venus
-52,Swords,2,Two of Swords,Air,Lupus (The Wolf),Constellation,"duality, choice, partnership",,,Not started,Corrected from Ursa Major per Brian Clark's text.,Confirmed (Clark PDF),2nd decan Libra,Uranus
-53,Swords,3,Three of Swords,Air,Corona Borealis (The Northern Crown),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Libra,Mercury
-54,Swords,4,Four of Swords,Air,Piscis Austrinus (The Southern Fish),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Aquarius,Uranus
-55,Swords,5,Five of Swords,Air,Pegasus (The Winged Horse),Constellation,"conflict, loss, challenge",,,Not started,,Derived (decan pattern),2nd decan Aquarius,Mercury
-56,Swords,6,Six of Swords,Air,Cygnus (The Swan),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Aquarius,Venus
-57,Swords,7,Seven of Swords,Air,Lepus (The Hare),Constellation,"assessment, persistence",,,Not started,,Derived (decan pattern),1st decan Gemini,Mercury
-58,Swords,8,Eight of Swords,Air,Canis Major (The Great Dog),Constellation,"movement, mastery, change",,,Not started,,Derived (decan pattern),2nd decan Gemini,Venus
-59,Swords,9,Nine of Swords,Air,Canis Minor (The Lesser Dog),Constellation,"culmination, near-completion",,,Not started,,Derived (decan pattern),3rd decan Gemini,Uranus
-60,Swords,10,Ten of Swords,Air,Elemental Air,Element,"fullness, elemental force",,,Not started,Air trinity: Libra + Aquarius + Gemini.,Unverified,,
-61,Swords,Princess,Princess of Swords,Air,Winter Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified,,
-62,Swords,Prince,Prince of Swords,Air,Gemini,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,
-63,Swords,Queen,Queen of Swords,Air,Aquarius,Fixed sign,"mastery within, nurture",,,Not started,Fixed air. Google listed Libra (swapped); pattern says Aquarius.,Derived (decan pattern),,
-64,Swords,King,King of Swords,Air,Libra,Cardinal sign,"command, mastery without",,,Not started,Cardinal air. Google listed Aquarius (swapped); pattern says Libra.,Derived (decan pattern),,
-65,Pentacles,1,Ace of Pentacles,Earth,Sagitta (The Arrow),Constellation,"seed, raw potential",,,Not started,"Sagitta per decan pattern, which also matches another source (Arrow of Heracles / Prometheus).",Derived (decan pattern),1st decan Capricorn,Saturn
-66,Pentacles,2,Two of Pentacles,Earth,Aquila (The Eagle),Constellation,"duality, choice, partnership",,,Not started,,Derived (decan pattern),2nd decan Capricorn,Venus
-67,Pentacles,3,Three of Pentacles,Earth,Delphinus (The Dolphin),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Capricorn,Mercury
-68,Pentacles,4,Four of Pentacles,Earth,Orion (The Hunter),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Taurus,Venus
-69,Pentacles,5,Five of Pentacles,Earth,Eridanus (The River),Constellation,"conflict, loss, challenge",,,Not started,,Derived (decan pattern),2nd decan Taurus,Mercury
-70,Pentacles,6,Six of Pentacles,Earth,Auriga (The Charioteer),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Taurus,Saturn
-71,Pentacles,7,Seven of Pentacles,Earth,Coma Berenices (Berenice's Hair),Constellation,"assessment, persistence",,,Not started,,Derived (decan pattern),1st decan Virgo,Mercury
-72,Pentacles,8,Eight of Pentacles,Earth,Centaurus (The Centaur / Chiron),Constellation,"movement, mastery, change",,,Not started,,Confirmed (Clark PDF),2nd decan Virgo,Saturn
-73,Pentacles,9,Nine of Pentacles,Earth,Boötes (The Herdsman),Constellation,"culmination, near-completion",,,Not started,,Derived (decan pattern),3rd decan Virgo,Venus
-74,Pentacles,10,Ten of Pentacles,Earth,Elemental Earth,Element,"fullness, elemental force",,,Not started,Earth trinity: Capricorn + Taurus + Virgo.,Unverified,,
-75,Pentacles,Princess,Princess of Pentacles,Earth,Spring Equinox,Season,"student, messenger, new energy",,,Not started,,Unverified,,
-76,Pentacles,Prince,Prince of Pentacles,Earth,Virgo,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,
-77,Pentacles,Queen,Queen of Pentacles,Earth,Taurus,Fixed sign,"mastery within, nurture",,,Not started,,Unverified,,
-78,Pentacles,King,King of Pentacles,Earth,Capricorn,Cardinal sign,"command, mastery without",,,Not started,,Unverified,,
+id,arcana,number,card,element,correspondence,type,keywords,art_direction,palette,status,notes,source_check,decan,decan_ruler,harmonic
+1,Major,0,The Fool,Spirit,Uranus,Planet,"new beginnings, freedom, leap of faith",Figure stepping off a cliff into a swirl of stars; Uranus glyph glowing overhead; electric cyan on near-black,"Cyan, violet",Not started,,Confirmed (Clark PDF),,,
+2,Major,I,The Magician,Spirit,Mercury,Planet,"skill, will, communication",,,Not started,,Confirmed (Clark PDF),,,
+3,Major,II,The High Priestess,Spirit,The Moon,Luminary,"intuition, hidden knowledge",,,Not started,,Confirmed (Clark PDF),,,
+4,Major,III,The Empress,Spirit,Venus,Planet,"abundance, nurture, beauty",,,Not started,,Confirmed (Clark PDF),,,
+5,Major,IV,The Emperor,Spirit,Aries,Zodiac constellation,"authority, structure, leadership",,,Not started,,Confirmed (Clark PDF),,,
+6,Major,V,The Hierophant,Spirit,Taurus,Zodiac constellation,"tradition, teaching, belief",,,Not started,,Confirmed (Clark PDF),,,
+7,Major,VI,The Lovers,Spirit,Gemini,Zodiac constellation,"union, choice, values",,,Not started,,Unverified,,,
+8,Major,VII,The Chariot,Spirit,Cancer,Zodiac constellation,"drive, protection, victory",,,Not started,,Unverified,,,
+9,Major,VIII,Strength,Spirit,Leo,Zodiac constellation,"courage, inner power, patience",,,Not started,,Unverified,,,
+10,Major,IX,The Hermit,Spirit,Virgo,Zodiac constellation,"solitude, wisdom, inner light",,,Not started,,Unverified,,,
+11,Major,X,Wheel of Fortune,Spirit,Jupiter,Planet,"cycles, luck, turning points",,,Not started,,Unverified,,,
+12,Major,XI,Justice,Spirit,Libra,Zodiac constellation,"balance, truth, fairness",,,Not started,,Unverified,,,
+13,Major,XII,The Hanged Man,Spirit,Neptune,Planet,"surrender, new perspective",,,Not started,,Unverified,,,
+14,Major,XIII,Death,Spirit,Scorpio,Zodiac constellation,"endings, transformation",,,Not started,,Unverified,,,
+15,Major,XIV,Temperance,Spirit,Sagittarius,Zodiac constellation,"moderation, blending, flow",,,Not started,,Unverified,,,
+16,Major,XV,The Devil,Spirit,Capricorn,Zodiac constellation,"bondage, temptation, shadow",,,Not started,,Unverified,,,
+17,Major,XVI,The Tower,Spirit,Mars,Planet,"upheaval, sudden change",,,Not started,,Unverified,,,
+18,Major,XVII,The Star,Spirit,Aquarius,Zodiac constellation,"hope, renewal, guidance",,,Not started,,Unverified,,,
+19,Major,XVIII,The Moon,Spirit,Pisces,Zodiac constellation,"illusion, dreams, the unknown",,,Not started,,Unverified,,,
+20,Major,XIX,The Sun,Spirit,The Sun,Luminary,"joy, vitality, success",,,Not started,,Unverified,,,
+21,Major,XX,Judgement,Spirit,Pluto,Planet,"awakening, rebirth, calling",,,Not started,,Unverified,,,
+22,Major,XXI,The World,Spirit,Saturn,Planet,"completion, wholeness",,,Not started,,Unverified,,,
+23,Wands,1,Ace of Wands,Fire,Cassiopeia (The Queen),Constellation,"seed, raw potential",,,Not started,,Derived (decan pattern),1st decan Aries,Mars,Conjunction (1st)
+24,Wands,2,Two of Wands,Fire,Cetus (The Sea Monster),Constellation,"duality, choice, partnership",,,Not started,,Derived (decan pattern),2nd decan Aries,Sun,Opposition (2nd)
+25,Wands,3,Three of Wands,Fire,Perseus (The Hero),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Aries,Jupiter,Trine (3rd)
+26,Wands,4,Four of Wands,Fire,Hydra (The Water Snake),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Leo,Sun,Square (4th)
+27,Wands,5,Five of Wands,Fire,Crater (The Cup),Constellation,"conflict, loss, challenge",,,Not started,,Derived (decan pattern),2nd decan Leo,Jupiter,Quintile (5th)
+28,Wands,6,Six of Wands,Fire,Corvus (The Raven),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Leo,Mars,Sextile (6th)
+29,Wands,7,Seven of Wands,Fire,Lyra (The Lyre),Constellation,"assessment, persistence",,,Not started,,Derived (decan pattern),1st decan Sagittarius,Jupiter,Septile (7th)
+30,Wands,8,Eight of Wands,Fire,Ara (The Altar),Constellation,"movement, mastery, change",,,Not started,Corrected from Sagitta per Brian Clark's text.,Confirmed (Clark PDF),2nd decan Sagittarius,Mars,Octile (8th)
+31,Wands,9,Nine of Wands,Fire,Draco (The Dragon),Constellation,"culmination, near-completion",,,Not started,,Derived (decan pattern),3rd decan Sagittarius,Sun,Novile (9th)
+32,Wands,10,Ten of Wands,Fire,Elemental Fire,Element,"fullness, elemental force",,,Not started,Fire trinity: Aries + Leo + Sagittarius.,Unverified,,,
+33,Wands,Princess,Princess of Wands,Fire,Summer Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified,,,
+34,Wands,Prince,Prince of Wands,Fire,Sagittarius,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,,
+35,Wands,Queen,Queen of Wands,Fire,Leo,Fixed sign,"mastery within, nurture",,,Not started,,Unverified,,,
+36,Wands,King,King of Wands,Fire,Aries,Cardinal sign,"command, mastery without",,,Not started,,Unverified,,,
+37,Cups,1,Ace of Cups,Water,Ursa Minor (The Lesser Bear),Constellation,"seed, raw potential",,,Not started,Corrected from Pegasus per Brian Clark's text.,Confirmed (Clark PDF),1st decan Cancer,Moon,Conjunction (1st)
+38,Cups,2,Two of Cups,Water,Ursa Major (The Great Bear),Constellation,"duality, choice, partnership",,,Not started,,Derived (decan pattern),2nd decan Cancer,Pluto,Opposition (2nd)
+39,Cups,3,Three of Cups,Water,Argo Navis (The Ship),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Cancer,Neptune,Trine (3rd)
+40,Cups,4,Four of Cups,Water,Serpens (The Serpent),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Scorpio,Pluto,Square (4th)
+41,Cups,5,Five of Cups,Water,Ophiuchus / Asclepius (The Serpent Bearer) ⛎,Constellation,"conflict, loss, challenge",,,Not started,"★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",Confirmed (Clark PDF),2nd decan Scorpio,Neptune,Quintile (5th)
+42,Cups,6,Six of Cups,Water,Hercules (The Kneeler),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Scorpio,Moon,Sextile (6th)
+43,Cups,7,Seven of Cups,Water,Al Risha (The Knot of Pisces),Constellation,"assessment, persistence",,,Not started,Fixed star tying the two fish (traditionally 'The Band'). Per another AI's reading of the guidebook.,Derived (decan pattern),1st decan Pisces,Neptune,Septile (7th)
+44,Cups,8,Eight of Cups,Water,Cepheus (The King),Constellation,"movement, mastery, change",,,Not started,Per another AI's reading of the guidebook; fits the pattern.,Derived (decan pattern),2nd decan Pisces,Moon,Octile (8th)
+45,Cups,9,Nine of Cups,Water,Andromeda (The Chained Maiden),Constellation,"culmination, near-completion",,,Not started,,Confirmed (Clark PDF),3rd decan Pisces,Pluto,Novile (9th)
+46,Cups,10,Ten of Cups,Water,Elemental Water,Element,"fullness, elemental force",,,Not started,Water trinity: Cancer + Scorpio + Pisces.,Unverified,,,
+47,Cups,Princess,Princess of Cups,Water,Autumn Equinox,Season,"student, messenger, new energy",,,Not started,,Unverified,,,
+48,Cups,Prince,Prince of Cups,Water,Pisces,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,,
+49,Cups,Queen,Queen of Cups,Water,Scorpio,Fixed sign,"mastery within, nurture",,,Not started,,Unverified,,,
+50,Cups,King,King of Cups,Water,Cancer,Cardinal sign,"command, mastery without",,,Not started,,Unverified,,,
+51,Swords,1,Ace of Swords,Air,Crux (The Southern Cross),Constellation,"seed, raw potential",,,Not started,,Confirmed (Clark PDF),1st decan Libra,Venus,Conjunction (1st)
+52,Swords,2,Two of Swords,Air,Lupus (The Wolf),Constellation,"duality, choice, partnership",,,Not started,Corrected from Ursa Major per Brian Clark's text.,Confirmed (Clark PDF),2nd decan Libra,Uranus,Opposition (2nd)
+53,Swords,3,Three of Swords,Air,Corona Borealis (The Northern Crown),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Libra,Mercury,Trine (3rd)
+54,Swords,4,Four of Swords,Air,Piscis Austrinus (The Southern Fish),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Aquarius,Uranus,Square (4th)
+55,Swords,5,Five of Swords,Air,Pegasus (The Winged Horse),Constellation,"conflict, loss, challenge",,,Not started,,Derived (decan pattern),2nd decan Aquarius,Mercury,Quintile (5th)
+56,Swords,6,Six of Swords,Air,Cygnus (The Swan),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Aquarius,Venus,Sextile (6th)
+57,Swords,7,Seven of Swords,Air,Lepus (The Hare),Constellation,"assessment, persistence",,,Not started,,Derived (decan pattern),1st decan Gemini,Mercury,Septile (7th)
+58,Swords,8,Eight of Swords,Air,Canis Major (The Great Dog),Constellation,"movement, mastery, change",,,Not started,,Derived (decan pattern),2nd decan Gemini,Venus,Octile (8th)
+59,Swords,9,Nine of Swords,Air,Canis Minor (The Lesser Dog),Constellation,"culmination, near-completion",,,Not started,,Derived (decan pattern),3rd decan Gemini,Uranus,Novile (9th)
+60,Swords,10,Ten of Swords,Air,Elemental Air,Element,"fullness, elemental force",,,Not started,Air trinity: Libra + Aquarius + Gemini.,Unverified,,,
+61,Swords,Princess,Princess of Swords,Air,Winter Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified,,,
+62,Swords,Prince,Prince of Swords,Air,Gemini,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,,
+63,Swords,Queen,Queen of Swords,Air,Aquarius,Fixed sign,"mastery within, nurture",,,Not started,Fixed air. Google listed Libra (swapped); pattern says Aquarius.,Derived (decan pattern),,,
+64,Swords,King,King of Swords,Air,Libra,Cardinal sign,"command, mastery without",,,Not started,Cardinal air. Google listed Aquarius (swapped); pattern says Libra.,Derived (decan pattern),,,
+65,Pentacles,1,Ace of Pentacles,Earth,Sagitta (The Arrow),Constellation,"seed, raw potential",,,Not started,"Sagitta per decan pattern, which also matches another source (Arrow of Heracles / Prometheus).",Derived (decan pattern),1st decan Capricorn,Saturn,Conjunction (1st)
+66,Pentacles,2,Two of Pentacles,Earth,Aquila (The Eagle),Constellation,"duality, choice, partnership",,,Not started,,Derived (decan pattern),2nd decan Capricorn,Venus,Opposition (2nd)
+67,Pentacles,3,Three of Pentacles,Earth,Delphinus (The Dolphin),Constellation,"growth, expression",,,Not started,,Derived (decan pattern),3rd decan Capricorn,Mercury,Trine (3rd)
+68,Pentacles,4,Four of Pentacles,Earth,Orion (The Hunter),Constellation,"stability, rest",,,Not started,,Derived (decan pattern),1st decan Taurus,Venus,Square (4th)
+69,Pentacles,5,Five of Pentacles,Earth,Eridanus (The River),Constellation,"conflict, loss, challenge",,,Not started,,Derived (decan pattern),2nd decan Taurus,Mercury,Quintile (5th)
+70,Pentacles,6,Six of Pentacles,Earth,Auriga (The Charioteer),Constellation,"harmony, exchange, recovery",,,Not started,,Derived (decan pattern),3rd decan Taurus,Saturn,Sextile (6th)
+71,Pentacles,7,Seven of Pentacles,Earth,Coma Berenices (Berenice's Hair),Constellation,"assessment, persistence",,,Not started,,Derived (decan pattern),1st decan Virgo,Mercury,Septile (7th)
+72,Pentacles,8,Eight of Pentacles,Earth,Centaurus (The Centaur / Chiron),Constellation,"movement, mastery, change",,,Not started,,Confirmed (Clark PDF),2nd decan Virgo,Saturn,Octile (8th)
+73,Pentacles,9,Nine of Pentacles,Earth,Boötes (The Herdsman),Constellation,"culmination, near-completion",,,Not started,,Derived (decan pattern),3rd decan Virgo,Venus,Novile (9th)
+74,Pentacles,10,Ten of Pentacles,Earth,Elemental Earth,Element,"fullness, elemental force",,,Not started,Earth trinity: Capricorn + Taurus + Virgo.,Unverified,,,
+75,Pentacles,Princess,Princess of Pentacles,Earth,Spring Equinox,Season,"student, messenger, new energy",,,Not started,,Unverified,,,
+76,Pentacles,Prince,Prince of Pentacles,Earth,Virgo,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified,,,
+77,Pentacles,Queen,Queen of Pentacles,Earth,Taurus,Fixed sign,"mastery within, nurture",,,Not started,,Unverified,,,
+78,Pentacles,King,King of Pentacles,Earth,Capricorn,Cardinal sign,"command, mastery without",,,Not started,,Unverified,,,

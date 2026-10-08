@@ -34,7 +34,7 @@ The full card-by-card list is in [`data/cards.csv`](data/cards.csv), [`data/card
 
 ## ⛎ Featured card: Five of Cups, Ophiuchus
 
-The heart of Tarot 13. Ophiuchus, the Serpent Bearer and often called the "13th sign," appears as the **Five of Cups**. It depicts Asclepius, the Greek god of healing.
+The heart of Tarot 13. Ophiuchus, the Serpent Bearer and often called the "13th sign," appears as the **Five of Cups**. In the Celestial Tarot framework it is an extra-zodiacal constellation sitting in the 2nd decan of Scorpio, not a zodiac sign. Tarot 13 honors it as the 13th: the deck's featured card, the 13-pile deal, and the Ophiuchus seat in the 13-card wheel spread. It depicts Asclepius, the Greek god of healing.
 
 | | |
 |---|---|
@@ -95,7 +95,7 @@ Every pip (Ace–9) sits on one **decan**, a 10° slice of the zodiac. Each suit
 | Swords | Libra | Aquarius | Gemini |
 | Pentacles | Capricorn | Taurus | Virgo |
 
-Decan rulers follow the modern triplicity system. Example: Five of Cups = 2nd decan Scorpio, ruled by Neptune.
+Each pip's harmonic follows its number (Ace = conjunction, 5 = quintile, 9 = novile). Decan rulers follow the modern triplicity system. Example: Five of Cups = 2nd decan Scorpio, ruled by Neptune.
 
 ## Source check
 The **Source check** column in the data marks each card:
