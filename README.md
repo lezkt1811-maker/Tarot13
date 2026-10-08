@@ -1,3 +1,5 @@
+<img src="icons/icon-rounded-512.png" width="120" align="right" alt="Tarot 13 app icon">
+
 # ✦ Tarot 13 ✦
 ## The 13-Sign Celestial Tarot
 

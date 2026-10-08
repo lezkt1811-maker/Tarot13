@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#1A2252"/><stop offset=".45" stop-color="#0B1030"/><stop offset="1" stop-color="#04060C"/></radialGradient>
+  <radialGradient id="neb" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#A855F7" stop-opacity=".45"/><stop offset=".6" stop-color="#2563FF" stop-opacity=".12"/><stop offset="1" stop-color="#2563FF" stop-opacity="0"/></radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1B8"/><stop offset=".45" stop-color="#FFE08A"/><stop offset="1" stop-color="#C8902A"/></linearGradient>
+  <radialGradient id="core" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#E9FDFF"/><stop offset=".4" stop-color="#22D3EE"/><stop offset="1" stop-color="#4338CA"/></radialGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="bigglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  <clipPath id="clip"><rect width="1024" height="1024" rx="224"/></clipPath>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<g >
+  <circle cx="512" cy="512" r="430" fill="url(#neb)"/>
+  <circle cx="150" cy="190" r="2.2" fill="#F4F6FF" opacity=".55"/><circle cx="260" cy="120" r="1.6" fill="#F4F6FF" opacity=".55"/><circle cx="820" cy="170" r="2.4" fill="#F4F6FF" opacity=".55"/><circle cx="900" cy="300" r="1.5" fill="#F4F6FF" opacity=".55"/><circle cx="120" cy="420" r="1.4" fill="#F4F6FF" opacity=".55"/><circle cx="905" cy="610" r="2" fill="#F4F6FF" opacity=".55"/><circle cx="170" cy="820" r="2.2" fill="#F4F6FF" opacity=".55"/><circle cx="300" cy="905" r="1.5" fill="#F4F6FF" opacity=".55"/><circle cx="760" cy="880" r="1.8" fill="#F4F6FF" opacity=".55"/><circle cx="860" cy="800" r="1.4" fill="#F4F6FF" opacity=".55"/><circle cx="470" cy="95" r="1.3" fill="#F4F6FF" opacity=".55"/><circle cx="560" cy="930" r="1.6" fill="#F4F6FF" opacity=".55"/><circle cx="95" cy="640" r="1.8" fill="#F4F6FF" opacity=".55"/><circle cx="700" cy="110" r="1.5" fill="#F4F6FF" opacity=".55"/>
+  <circle cx="512" cy="512" r="352" fill="none" stroke="#22D3EE" stroke-width="5" opacity=".9" filter="url(#bigglow)"/>
+  <circle cx="512" cy="512" r="318" fill="none" stroke="#E8B84A" stroke-width="2.5" opacity=".75"/>
+  <circle cx="512" cy="512" r="386" fill="none" stroke="#E8B84A" stroke-width="2.5" opacity=".55"/>
+  <circle cx="512.0" cy="160.0" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="675.6" cy="200.3" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="801.7" cy="312.0" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="861.4" cy="469.6" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="841.1" cy="636.8" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="745.4" cy="775.5" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="596.2" cy="853.8" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="427.8" cy="853.8" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="278.6" cy="775.5" r="34" fill="#FF2ED1" opacity=".35" filter="url(#soft)"/><circle cx="278.6" cy="775.5" r="17" fill="#FF2ED1" filter="url(#glow)"/><circle cx="278.6" cy="775.5" r="7" fill="#FFE3F8"/><circle cx="182.9" cy="636.8" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="162.6" cy="469.6" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="222.3" cy="312.0" r="11" fill="#FFE08A" filter="url(#glow)"/><circle cx="348.4" cy="200.3" r="11" fill="#FFE08A" filter="url(#glow)"/>
+  <polygon points="512.0,242.0 545.9,478.1 782.0,512.0 545.9,545.9 512.0,782.0 478.1,545.9 242.0,512.0 478.1,478.1" fill="url(#gold)" filter="url(#bigglow)"/>
+  <polygon points="632.2,391.8 552.0,512.0 632.2,632.2 512.0,552.0 391.8,632.2 472.0,512.0 391.8,391.8 512.0,472.0" fill="#E8B84A" opacity=".9" filter="url(#glow)"/>
+  <polygon points="557.9,401.1 533.2,490.8 622.9,466.1 542.0,512.0 622.9,557.9 533.2,533.2 557.9,622.9 512.0,542.0 466.1,622.9 490.8,533.2 401.1,557.9 482.0,512.0 401.1,466.1 490.8,490.8 466.1,401.1 512.0,482.0" fill="#A855F7" opacity=".55"/>
+  <circle cx="512" cy="512" r="62" fill="url(#core)" stroke="#FFE08A" stroke-width="7" filter="url(#glow)"/>
+  <circle cx="512" cy="512" r="18" fill="#FFFFFF"/>
+</g>
+</svg>
