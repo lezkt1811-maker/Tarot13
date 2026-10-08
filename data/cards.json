@@ -7,7 +7,7 @@
     "element": "Spirit",
     "correspondence": "Uranus",
     "type": "Planet",
-    "keywords": "new beginnings, freedom, leap of faith",
+    "keywords": "freedom, beginning, leap",
     "art_direction": "Figure stepping off a cliff into a swirl of stars; Uranus glyph glowing overhead; electric cyan on near-black",
     "palette": "Cyan, violet",
     "status": "Not started",
@@ -15,7 +15,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 2,
@@ -25,7 +27,7 @@
     "element": "Spirit",
     "correspondence": "Mercury",
     "type": "Planet",
-    "keywords": "skill, will, communication",
+    "keywords": "will, skill, manifestation",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -33,7 +35,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 3,
@@ -43,7 +47,7 @@
     "element": "Spirit",
     "correspondence": "The Moon",
     "type": "Luminary",
-    "keywords": "intuition, hidden knowledge",
+    "keywords": "mystery, intuition, hidden knowledge",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -51,7 +55,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 4,
@@ -61,7 +67,7 @@
     "element": "Spirit",
     "correspondence": "Venus",
     "type": "Planet",
-    "keywords": "abundance, nurture, beauty",
+    "keywords": "creation, fertility, abundance",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -69,7 +75,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 5,
@@ -79,7 +87,7 @@
     "element": "Spirit",
     "correspondence": "Aries",
     "type": "Zodiac constellation",
-    "keywords": "authority, structure, leadership",
+    "keywords": "authority, initiation, sovereignty",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -87,7 +95,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 6,
@@ -97,7 +107,7 @@
     "element": "Spirit",
     "correspondence": "Taurus",
     "type": "Zodiac constellation",
-    "keywords": "tradition, teaching, belief",
+    "keywords": "tradition, values, embodied wisdom",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -105,7 +115,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 7,
@@ -115,7 +127,7 @@
     "element": "Spirit",
     "correspondence": "Gemini",
     "type": "Zodiac constellation",
-    "keywords": "union, choice, values",
+    "keywords": "choice, union, polarity",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -123,7 +135,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 8,
@@ -133,7 +147,7 @@
     "element": "Spirit",
     "correspondence": "Cancer",
     "type": "Zodiac constellation",
-    "keywords": "drive, protection, victory",
+    "keywords": "direction, protection, emotional will",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -141,7 +155,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 9,
@@ -151,7 +167,7 @@
     "element": "Spirit",
     "correspondence": "Leo",
     "type": "Zodiac constellation",
-    "keywords": "courage, inner power, patience",
+    "keywords": "courage, vitality, heart",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -159,7 +175,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 10,
@@ -169,7 +187,7 @@
     "element": "Spirit",
     "correspondence": "Virgo",
     "type": "Zodiac constellation",
-    "keywords": "solitude, wisdom, inner light",
+    "keywords": "discernment, solitude, inner knowledge",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -177,7 +195,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 11,
@@ -187,7 +207,7 @@
     "element": "Spirit",
     "correspondence": "Jupiter",
     "type": "Planet",
-    "keywords": "cycles, luck, turning points",
+    "keywords": "cycles, expansion, fate",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -195,7 +215,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 12,
@@ -205,7 +227,7 @@
     "element": "Spirit",
     "correspondence": "Libra",
     "type": "Zodiac constellation",
-    "keywords": "balance, truth, fairness",
+    "keywords": "balance, truth, consequence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -213,17 +235,19 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 13,
     "arcana": "Major",
     "number": "XII",
-    "card": "The Hanged Man",
+    "card": "The Hanged One",
     "element": "Spirit",
     "correspondence": "Neptune",
     "type": "Planet",
-    "keywords": "surrender, new perspective",
+    "keywords": "surrender, altered perception",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -231,7 +255,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 14,
@@ -241,7 +267,7 @@
     "element": "Spirit",
     "correspondence": "Scorpio",
     "type": "Zodiac constellation",
-    "keywords": "endings, transformation",
+    "keywords": "transformation, endings, rebirth",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -249,7 +275,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 15,
@@ -259,7 +287,7 @@
     "element": "Spirit",
     "correspondence": "Sagittarius",
     "type": "Zodiac constellation",
-    "keywords": "moderation, blending, flow",
+    "keywords": "integration, synthesis, exploration",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -267,7 +295,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 16,
@@ -277,7 +307,7 @@
     "element": "Spirit",
     "correspondence": "Capricorn",
     "type": "Zodiac constellation",
-    "keywords": "bondage, temptation, shadow",
+    "keywords": "attachment, power, material bondage",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -285,7 +315,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 17,
@@ -295,7 +327,7 @@
     "element": "Spirit",
     "correspondence": "Mars",
     "type": "Planet",
-    "keywords": "upheaval, sudden change",
+    "keywords": "shock, rupture, liberation",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -303,7 +335,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 18,
@@ -313,7 +347,7 @@
     "element": "Spirit",
     "correspondence": "Aquarius",
     "type": "Zodiac constellation",
-    "keywords": "hope, renewal, guidance",
+    "keywords": "hope, vision, collective future",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -321,7 +355,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 19,
@@ -331,7 +367,7 @@
     "element": "Spirit",
     "correspondence": "Pisces",
     "type": "Zodiac constellation",
-    "keywords": "illusion, dreams, the unknown",
+    "keywords": "dream, uncertainty, subconscious",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -339,7 +375,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 20,
@@ -349,7 +387,7 @@
     "element": "Spirit",
     "correspondence": "The Sun",
     "type": "Luminary",
-    "keywords": "joy, vitality, success",
+    "keywords": "life, illumination, vitality",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -357,17 +395,19 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 21,
     "arcana": "Major",
     "number": "XX",
-    "card": "Judgement",
+    "card": "Judgment",
     "element": "Spirit",
     "correspondence": "Pluto",
     "type": "Planet",
-    "keywords": "awakening, rebirth, calling",
+    "keywords": "awakening, resurrection, reckoning",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -375,7 +415,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 22,
@@ -385,7 +427,7 @@
     "element": "Spirit",
     "correspondence": "Saturn",
     "type": "Planet",
-    "keywords": "completion, wholeness",
+    "keywords": "completion, structure, wholeness",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -393,7 +435,9 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "",
+    "core_line": ""
   },
   {
     "id": 23,
@@ -403,15 +447,17 @@
     "element": "Fire",
     "correspondence": "Cassiopeia (The Queen)",
     "type": "Constellation",
-    "keywords": "seed, raw potential",
-    "art_direction": "",
+    "keywords": "beginning, desire, inspiration, initiation",
+    "art_direction": "Cassiopeia forming a brilliant celestial W above a newly ignited flame.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Aries",
     "decan_ruler": "Mars",
-    "harmonic": "Conjunction (1st)"
+    "harmonic": "Conjunction (1st)",
+    "theme": "Ignition",
+    "core_line": "A spark becomes an intention."
   },
   {
     "id": 24,
@@ -421,15 +467,17 @@
     "element": "Fire",
     "correspondence": "Cetus (The Sea Monster)",
     "type": "Constellation",
-    "keywords": "duality, choice, partnership",
-    "art_direction": "",
+    "keywords": "planning, expansion, possibility, choice",
+    "art_direction": "A figure standing between two paths beneath Cetus.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Aries",
     "decan_ruler": "Sun",
-    "harmonic": "Opposition (2nd)"
+    "harmonic": "Opposition (2nd)",
+    "theme": "Facing the unknown",
+    "core_line": "The world is larger than the territory already conquered."
   },
   {
     "id": 25,
@@ -439,15 +487,17 @@
     "element": "Fire",
     "correspondence": "Perseus (The Hero)",
     "type": "Constellation",
-    "keywords": "growth, expression",
-    "art_direction": "",
+    "keywords": "progress, courage, expectation, movement",
+    "art_direction": "Perseus moving through a star field with sword raised.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Aries",
     "decan_ruler": "Jupiter",
-    "harmonic": "Trine (3rd)"
+    "harmonic": "Trine (3rd)",
+    "theme": "Pursuit",
+    "core_line": "Action becomes momentum."
   },
   {
     "id": 26,
@@ -457,15 +507,17 @@
     "element": "Fire",
     "correspondence": "Hydra (The Water Snake)",
     "type": "Constellation",
-    "keywords": "stability, rest",
-    "art_direction": "",
+    "keywords": "celebration, home, stability, arrival",
+    "art_direction": "Hydra coiling around four blazing celestial pillars.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Leo",
     "decan_ruler": "Sun",
-    "harmonic": "Square (4th)"
+    "harmonic": "Square (4th)",
+    "theme": "Foundation",
+    "core_line": "A temporary victory becomes a place to stand."
   },
   {
     "id": 27,
@@ -475,15 +527,17 @@
     "element": "Fire",
     "correspondence": "Crater (The Cup)",
     "type": "Constellation",
-    "keywords": "conflict, loss, challenge",
-    "art_direction": "",
+    "keywords": "competition, tension, challenge, creative conflict",
+    "art_direction": "The celestial cup surrounded by competing flames.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Leo",
     "decan_ruler": "Jupiter",
-    "harmonic": "Quintile (5th)"
+    "harmonic": "Quintile (5th)",
+    "theme": "Friction",
+    "core_line": "Different forces collide."
   },
   {
     "id": 28,
@@ -493,15 +547,17 @@
     "element": "Fire",
     "correspondence": "Corvus (The Raven)",
     "type": "Constellation",
-    "keywords": "harmony, exchange, recovery",
-    "art_direction": "",
+    "keywords": "victory, recognition, confidence, achievement",
+    "art_direction": "The raven flying above a victorious procession.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Leo",
     "decan_ruler": "Mars",
-    "harmonic": "Sextile (6th)"
+    "harmonic": "Sextile (6th)",
+    "theme": "Recognition",
+    "core_line": "The struggle produces visible results."
   },
   {
     "id": 29,
@@ -511,15 +567,17 @@
     "element": "Fire",
     "correspondence": "Lyra (The Lyre)",
     "type": "Constellation",
-    "keywords": "assessment, persistence",
-    "art_direction": "",
+    "keywords": "courage, defense, conviction, perseverance",
+    "art_direction": "Lyra glowing like a celestial instrument while arrows rise toward it.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Sagittarius",
     "decan_ruler": "Jupiter",
-    "harmonic": "Septile (7th)"
+    "harmonic": "Septile (7th)",
+    "theme": "Defending the vision",
+    "core_line": "Hold your position."
   },
   {
     "id": 30,
@@ -529,15 +587,17 @@
     "element": "Fire",
     "correspondence": "Ara (The Altar)",
     "type": "Constellation",
-    "keywords": "movement, mastery, change",
-    "art_direction": "",
+    "keywords": "speed, messages, momentum, rapid change",
+    "art_direction": "Eight streaks of fire converging on the celestial altar.",
     "palette": "",
     "status": "Not started",
     "notes": "Corrected from Sagitta per Brian Clark's text.",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Sagittarius",
     "decan_ruler": "Mars",
-    "harmonic": "Octile (8th)"
+    "harmonic": "Octile (8th)",
+    "theme": "Acceleration",
+    "core_line": "Everything starts moving."
   },
   {
     "id": 31,
@@ -547,15 +607,17 @@
     "element": "Fire",
     "correspondence": "Draco (The Dragon)",
     "type": "Constellation",
-    "keywords": "culmination, near-completion",
-    "art_direction": "",
+    "keywords": "resilience, boundaries, persistence, final effort",
+    "art_direction": "Draco guarding a ring of nine flames.",
     "palette": "",
     "status": "Not started",
     "notes": "",
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Sagittarius",
     "decan_ruler": "Sun",
-    "harmonic": "Novile (9th)"
+    "harmonic": "Novile (9th)",
+    "theme": "Endurance",
+    "core_line": "You have survived enough to know what matters."
   },
   {
     "id": 32,
@@ -565,51 +627,57 @@
     "element": "Fire",
     "correspondence": "Elemental Fire",
     "type": "Element",
-    "keywords": "fullness, elemental force",
-    "art_direction": "",
+    "keywords": "responsibility, overload, completion, release",
+    "art_direction": "Ten flames forming a heavy celestial burden.",
     "palette": "",
     "status": "Not started",
     "notes": "Fire trinity: Aries + Leo + Sagittarius.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Culmination",
+    "core_line": "The fire has become too much to carry."
   },
   {
     "id": 33,
     "arcana": "Wands",
-    "number": "Princess",
-    "card": "Princess of Wands",
+    "number": "Page",
+    "card": "Page of Wands",
     "element": "Fire",
-    "correspondence": "Summer Solstice",
-    "type": "Season",
-    "keywords": "student, messenger, new energy",
+    "correspondence": "Fire",
+    "type": "Element",
+    "keywords": "curiosity, adventure, experimentation",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Princess, Summer Solstice.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Discovery",
+    "core_line": "A new spark wants to explore the world."
   },
   {
     "id": 34,
     "arcana": "Wands",
-    "number": "Prince",
-    "card": "Prince of Wands",
+    "number": "Knight",
+    "card": "Knight of Wands",
     "element": "Fire",
-    "correspondence": "Sagittarius",
-    "type": "Mutable sign",
-    "keywords": "action, pursuit, movement",
+    "correspondence": "Fire",
+    "type": "Element",
+    "keywords": "passion, action, risk, momentum",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Prince, Sagittarius.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Pursuit",
+    "core_line": "Fire in motion."
   },
   {
     "id": 35,
@@ -617,17 +685,19 @@
     "number": "Queen",
     "card": "Queen of Wands",
     "element": "Fire",
-    "correspondence": "Leo",
-    "type": "Fixed sign",
-    "keywords": "mastery within, nurture",
+    "correspondence": "Fire",
+    "type": "Element",
+    "keywords": "confidence, magnetism, creativity, independence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Leo (fixed sign).",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Creative sovereignty",
+    "core_line": "She knows what she wants and does not need permission to create it."
   },
   {
     "id": 36,
@@ -635,17 +705,19 @@
     "number": "King",
     "card": "King of Wands",
     "element": "Fire",
-    "correspondence": "Aries",
-    "type": "Cardinal sign",
-    "keywords": "command, mastery without",
+    "correspondence": "Fire",
+    "type": "Element",
+    "keywords": "authority, vision, courage, direction",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Aries (cardinal sign).",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Visionary command",
+    "core_line": "Fire becomes leadership."
   },
   {
     "id": 37,
@@ -655,7 +727,7 @@
     "element": "Water",
     "correspondence": "Ursa Minor (The Lesser Bear)",
     "type": "Constellation",
-    "keywords": "seed, raw potential",
+    "keywords": "opening, love, intuition, emotional birth",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -663,7 +735,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "1st decan Cancer",
     "decan_ruler": "Moon",
-    "harmonic": "Conjunction (1st)"
+    "harmonic": "Conjunction (1st)",
+    "theme": "Emotional beginning",
+    "core_line": "The cup fills for the first time."
   },
   {
     "id": 38,
@@ -673,7 +747,7 @@
     "element": "Water",
     "correspondence": "Ursa Major (The Great Bear)",
     "type": "Constellation",
-    "keywords": "duality, choice, partnership",
+    "keywords": "connection, partnership, attraction, reciprocity",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -681,7 +755,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Cancer",
     "decan_ruler": "Pluto",
-    "harmonic": "Opposition (2nd)"
+    "harmonic": "Opposition (2nd)",
+    "theme": "Mutual recognition",
+    "core_line": "Two beings see one another clearly."
   },
   {
     "id": 39,
@@ -691,7 +767,7 @@
     "element": "Water",
     "correspondence": "Argo Navis (The Ship)",
     "type": "Constellation",
-    "keywords": "growth, expression",
+    "keywords": "friendship, celebration, belonging, support",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -699,7 +775,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Cancer",
     "decan_ruler": "Neptune",
-    "harmonic": "Trine (3rd)"
+    "harmonic": "Trine (3rd)",
+    "theme": "Community",
+    "core_line": "Emotion becomes collective."
   },
   {
     "id": 40,
@@ -709,7 +787,7 @@
     "element": "Water",
     "correspondence": "Serpens (The Serpent)",
     "type": "Constellation",
-    "keywords": "stability, rest",
+    "keywords": "contemplation, dissatisfaction, emotional retreat",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -717,7 +795,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Scorpio",
     "decan_ruler": "Pluto",
-    "harmonic": "Square (4th)"
+    "harmonic": "Square (4th)",
+    "theme": "Withdrawal",
+    "core_line": "Something is being felt beneath the surface."
   },
   {
     "id": 41,
@@ -727,15 +807,17 @@
     "element": "Water",
     "correspondence": "Ophiuchus / Asclepius (The Serpent Bearer) ⛎",
     "type": "Constellation",
-    "keywords": "conflict, loss, challenge",
-    "art_direction": "",
+    "keywords": "healing, grief, regeneration, medicine, recovery, resurrection, transformation",
+    "art_direction": "A central healer holds the serpent; behind: a wounded vessel and a restored vessel, medicinal plants, a celestial staff, the Ophiuchus constellation, Scorpio descending and Sagittarius rising.",
     "palette": "",
     "status": "Not started",
-    "notes": "★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",
+    "notes": "★ SIGNATURE CARD. Scorpio ends. Ophiuchus heals. Sagittarius rises. Upright: something damaged can be healed. Shadow: resurrecting what has completed its purpose.",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Scorpio",
     "decan_ruler": "Neptune",
-    "harmonic": "Quintile (5th)"
+    "harmonic": "Quintile (5th)",
+    "theme": "Healing what was lost — THE HEALER",
+    "core_line": "What was broken is not necessarily lost."
   },
   {
     "id": 42,
@@ -745,7 +827,7 @@
     "element": "Water",
     "correspondence": "Hercules (The Kneeler)",
     "type": "Constellation",
-    "keywords": "harmony, exchange, recovery",
+    "keywords": "memory, childhood, nostalgia, restoration",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -753,7 +835,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Scorpio",
     "decan_ruler": "Moon",
-    "harmonic": "Sextile (6th)"
+    "harmonic": "Sextile (6th)",
+    "theme": "Restoration",
+    "core_line": "The past returns carrying information."
   },
   {
     "id": 43,
@@ -763,7 +847,7 @@
     "element": "Water",
     "correspondence": "Al Risha (The Knot of Pisces)",
     "type": "Constellation",
-    "keywords": "assessment, persistence",
+    "keywords": "imagination, fantasy, options, dreams",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -771,7 +855,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Pisces",
     "decan_ruler": "Neptune",
-    "harmonic": "Septile (7th)"
+    "harmonic": "Septile (7th)",
+    "theme": "Possibility",
+    "core_line": "Many realities appear at once."
   },
   {
     "id": 44,
@@ -781,7 +867,7 @@
     "element": "Water",
     "correspondence": "Cepheus (The King)",
     "type": "Constellation",
-    "keywords": "movement, mastery, change",
+    "keywords": "walking away, searching, transition, spiritual journey",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -789,7 +875,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Pisces",
     "decan_ruler": "Moon",
-    "harmonic": "Octile (8th)"
+    "harmonic": "Octile (8th)",
+    "theme": "Departure",
+    "core_line": "Knowing when to leave."
   },
   {
     "id": 45,
@@ -799,7 +887,7 @@
     "element": "Water",
     "correspondence": "Andromeda (The Chained Maiden)",
     "type": "Constellation",
-    "keywords": "culmination, near-completion",
+    "keywords": "satisfaction, pleasure, wish fulfillment, emotional reward",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -807,7 +895,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "3rd decan Pisces",
     "decan_ruler": "Pluto",
-    "harmonic": "Novile (9th)"
+    "harmonic": "Novile (9th)",
+    "theme": "Fulfillment",
+    "core_line": "Desire becomes visible."
   },
   {
     "id": 46,
@@ -817,7 +907,7 @@
     "element": "Water",
     "correspondence": "Elemental Water",
     "type": "Element",
-    "keywords": "fullness, elemental force",
+    "keywords": "family, belonging, harmony, fulfillment",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -825,43 +915,49 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Emotional wholeness",
+    "core_line": "The individual becomes part of a greater emotional ecosystem."
   },
   {
     "id": 47,
     "arcana": "Cups",
-    "number": "Princess",
-    "card": "Princess of Cups",
+    "number": "Page",
+    "card": "Page of Cups",
     "element": "Water",
-    "correspondence": "Autumn Equinox",
-    "type": "Season",
-    "keywords": "student, messenger, new energy",
+    "correspondence": "Water",
+    "type": "Element",
+    "keywords": "sensitivity, imagination, intuition",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Princess, Autumn Equinox.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Emotional discovery",
+    "core_line": "A new feeling arrives."
   },
   {
     "id": 48,
     "arcana": "Cups",
-    "number": "Prince",
-    "card": "Prince of Cups",
+    "number": "Knight",
+    "card": "Knight of Cups",
     "element": "Water",
-    "correspondence": "Pisces",
-    "type": "Mutable sign",
-    "keywords": "action, pursuit, movement",
+    "correspondence": "Water",
+    "type": "Element",
+    "keywords": "romance, devotion, invitation, idealism",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Prince, Pisces.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Emotional quest",
+    "core_line": "The heart moves toward what it desires."
   },
   {
     "id": 49,
@@ -869,17 +965,19 @@
     "number": "Queen",
     "card": "Queen of Cups",
     "element": "Water",
-    "correspondence": "Scorpio",
-    "type": "Fixed sign",
-    "keywords": "mastery within, nurture",
+    "correspondence": "Water",
+    "type": "Element",
+    "keywords": "intuition, compassion, emotional intelligence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Scorpio (fixed sign).",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Emotional sovereignty",
+    "core_line": "Deep feeling without drowning in it."
   },
   {
     "id": 50,
@@ -887,17 +985,19 @@
     "number": "King",
     "card": "King of Cups",
     "element": "Water",
-    "correspondence": "Cancer",
-    "type": "Cardinal sign",
-    "keywords": "command, mastery without",
+    "correspondence": "Water",
+    "type": "Element",
+    "keywords": "wisdom, composure, maturity, compassion",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Cancer (cardinal sign).",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Emotional mastery",
+    "core_line": "Feeling deeply while remaining centered."
   },
   {
     "id": 51,
@@ -907,7 +1007,7 @@
     "element": "Air",
     "correspondence": "Crux (The Southern Cross)",
     "type": "Constellation",
-    "keywords": "seed, raw potential",
+    "keywords": "truth, revelation, decision, clarity",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -915,7 +1015,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "1st decan Libra",
     "decan_ruler": "Venus",
-    "harmonic": "Conjunction (1st)"
+    "harmonic": "Conjunction (1st)",
+    "theme": "Clarity",
+    "core_line": "The first clean cut through confusion."
   },
   {
     "id": 52,
@@ -925,7 +1027,7 @@
     "element": "Air",
     "correspondence": "Lupus (The Wolf)",
     "type": "Constellation",
-    "keywords": "duality, choice, partnership",
+    "keywords": "indecision, conflict, neutrality, choice",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -933,7 +1035,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Libra",
     "decan_ruler": "Uranus",
-    "harmonic": "Opposition (2nd)"
+    "harmonic": "Opposition (2nd)",
+    "theme": "Difficult choice",
+    "core_line": "Two forces pull against one another."
   },
   {
     "id": 53,
@@ -943,7 +1047,7 @@
     "element": "Air",
     "correspondence": "Corona Borealis (The Northern Crown)",
     "type": "Constellation",
-    "keywords": "growth, expression",
+    "keywords": "grief, heartbreak, revelation, separation",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -951,7 +1055,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Libra",
     "decan_ruler": "Mercury",
-    "harmonic": "Trine (3rd)"
+    "harmonic": "Trine (3rd)",
+    "theme": "Painful truth",
+    "core_line": "The truth hurts because it changes the story."
   },
   {
     "id": 54,
@@ -961,7 +1067,7 @@
     "element": "Air",
     "correspondence": "Piscis Austrinus (The Southern Fish)",
     "type": "Constellation",
-    "keywords": "stability, rest",
+    "keywords": "recovery, pause, retreat, integration",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -969,7 +1075,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Aquarius",
     "decan_ruler": "Uranus",
-    "harmonic": "Square (4th)"
+    "harmonic": "Square (4th)",
+    "theme": "Rest",
+    "core_line": "The mind needs silence."
   },
   {
     "id": 55,
@@ -979,7 +1087,7 @@
     "element": "Air",
     "correspondence": "Pegasus (The Winged Horse)",
     "type": "Constellation",
-    "keywords": "conflict, loss, challenge",
+    "keywords": "rivalry, ego, strategy, consequences",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -987,7 +1095,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Aquarius",
     "decan_ruler": "Mercury",
-    "harmonic": "Quintile (5th)"
+    "harmonic": "Quintile (5th)",
+    "theme": "Conflict",
+    "core_line": "Winning may not mean victory."
   },
   {
     "id": 56,
@@ -997,7 +1107,7 @@
     "element": "Air",
     "correspondence": "Cygnus (The Swan)",
     "type": "Constellation",
-    "keywords": "harmony, exchange, recovery",
+    "keywords": "movement, passage, recovery, transition",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1005,7 +1115,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Aquarius",
     "decan_ruler": "Venus",
-    "harmonic": "Sextile (6th)"
+    "harmonic": "Sextile (6th)",
+    "theme": "Transition",
+    "core_line": "Leaving turbulence behind."
   },
   {
     "id": 57,
@@ -1015,7 +1127,7 @@
     "element": "Air",
     "correspondence": "Lepus (The Hare)",
     "type": "Constellation",
-    "keywords": "assessment, persistence",
+    "keywords": "strategy, secrecy, independence, cleverness",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1023,7 +1135,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Gemini",
     "decan_ruler": "Mercury",
-    "harmonic": "Septile (7th)"
+    "harmonic": "Septile (7th)",
+    "theme": "Strategy",
+    "core_line": "Not every move needs to be announced."
   },
   {
     "id": 58,
@@ -1033,7 +1147,7 @@
     "element": "Air",
     "correspondence": "Canis Major (The Great Dog)",
     "type": "Constellation",
-    "keywords": "movement, mastery, change",
+    "keywords": "limitation, fear, mental loops, release",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1041,7 +1155,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Gemini",
     "decan_ruler": "Venus",
-    "harmonic": "Octile (8th)"
+    "harmonic": "Octile (8th)",
+    "theme": "Restriction",
+    "core_line": "The cage may be partly constructed by perception."
   },
   {
     "id": 59,
@@ -1051,7 +1167,7 @@
     "element": "Air",
     "correspondence": "Canis Minor (The Lesser Dog)",
     "type": "Constellation",
-    "keywords": "culmination, near-completion",
+    "keywords": "worry, insomnia, fear, mental pressure",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1059,7 +1175,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Gemini",
     "decan_ruler": "Uranus",
-    "harmonic": "Novile (9th)"
+    "harmonic": "Novile (9th)",
+    "theme": "Anxiety",
+    "core_line": "Thought becomes its own night sky."
   },
   {
     "id": 60,
@@ -1069,7 +1187,7 @@
     "element": "Air",
     "correspondence": "Elemental Air",
     "type": "Element",
-    "keywords": "fullness, elemental force",
+    "keywords": "ending, collapse, release, finality",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1077,43 +1195,49 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Mental ending",
+    "core_line": "The old thought-pattern has reached its limit."
   },
   {
     "id": 61,
     "arcana": "Swords",
-    "number": "Princess",
-    "card": "Princess of Swords",
+    "number": "Page",
+    "card": "Page of Swords",
     "element": "Air",
-    "correspondence": "Winter Solstice",
-    "type": "Season",
-    "keywords": "student, messenger, new energy",
+    "correspondence": "Air",
+    "type": "Element",
+    "keywords": "curiosity, information, investigation",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Princess, Winter Solstice.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Observation",
+    "core_line": "Question everything."
   },
   {
     "id": 62,
     "arcana": "Swords",
-    "number": "Prince",
-    "card": "Prince of Swords",
+    "number": "Knight",
+    "card": "Knight of Swords",
     "element": "Air",
-    "correspondence": "Gemini",
-    "type": "Mutable sign",
-    "keywords": "action, pursuit, movement",
+    "correspondence": "Air",
+    "type": "Element",
+    "keywords": "speed, action, argument, determination",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Prince, Gemini.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Decisive thought",
+    "core_line": "The mind becomes an arrow."
   },
   {
     "id": 63,
@@ -1121,17 +1245,19 @@
     "number": "Queen",
     "card": "Queen of Swords",
     "element": "Air",
-    "correspondence": "Aquarius",
-    "type": "Fixed sign",
-    "keywords": "mastery within, nurture",
+    "correspondence": "Air",
+    "type": "Element",
+    "keywords": "independence, truth, boundaries, intelligence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Fixed air. Google listed Libra (swapped); pattern says Aquarius.",
+    "notes": "Celestial Tarot original: Aquarius (fixed sign).",
     "source_check": "Derived (decan pattern)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Discernment",
+    "core_line": "She sees through the fog."
   },
   {
     "id": 64,
@@ -1139,17 +1265,19 @@
     "number": "King",
     "card": "King of Swords",
     "element": "Air",
-    "correspondence": "Libra",
-    "type": "Cardinal sign",
-    "keywords": "command, mastery without",
+    "correspondence": "Air",
+    "type": "Element",
+    "keywords": "strategy, law, reason, command",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Cardinal air. Google listed Aquarius (swapped); pattern says Libra.",
+    "notes": "Celestial Tarot original: Libra (cardinal sign).",
     "source_check": "Derived (decan pattern)",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Intellectual authority",
+    "core_line": "Thought becomes judgment."
   },
   {
     "id": 65,
@@ -1159,7 +1287,7 @@
     "element": "Earth",
     "correspondence": "Sagitta (The Arrow)",
     "type": "Constellation",
-    "keywords": "seed, raw potential",
+    "keywords": "opportunity, money, beginning, resources",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1167,7 +1295,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Capricorn",
     "decan_ruler": "Saturn",
-    "harmonic": "Conjunction (1st)"
+    "harmonic": "Conjunction (1st)",
+    "theme": "Tangible opportunity",
+    "core_line": "An idea becomes something real."
   },
   {
     "id": 66,
@@ -1177,7 +1307,7 @@
     "element": "Earth",
     "correspondence": "Aquila (The Eagle)",
     "type": "Constellation",
-    "keywords": "duality, choice, partnership",
+    "keywords": "adaptability, priorities, juggling, balance",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1185,7 +1315,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Capricorn",
     "decan_ruler": "Venus",
-    "harmonic": "Opposition (2nd)"
+    "harmonic": "Opposition (2nd)",
+    "theme": "Balance",
+    "core_line": "Keep everything moving without dropping yourself."
   },
   {
     "id": 67,
@@ -1195,7 +1327,7 @@
     "element": "Earth",
     "correspondence": "Delphinus (The Dolphin)",
     "type": "Constellation",
-    "keywords": "growth, expression",
+    "keywords": "teamwork, craftsmanship, collaboration",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1203,7 +1335,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Capricorn",
     "decan_ruler": "Mercury",
-    "harmonic": "Trine (3rd)"
+    "harmonic": "Trine (3rd)",
+    "theme": "Cooperation",
+    "core_line": "Skill becomes valuable when shared."
   },
   {
     "id": 68,
@@ -1213,7 +1347,7 @@
     "element": "Earth",
     "correspondence": "Orion (The Hunter)",
     "type": "Constellation",
-    "keywords": "stability, rest",
+    "keywords": "possession, stability, control, security",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1221,7 +1355,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Taurus",
     "decan_ruler": "Venus",
-    "harmonic": "Square (4th)"
+    "harmonic": "Square (4th)",
+    "theme": "Security",
+    "core_line": "What do you hold onto, and why?"
   },
   {
     "id": 69,
@@ -1231,7 +1367,7 @@
     "element": "Earth",
     "correspondence": "Eridanus (The River)",
     "type": "Constellation",
-    "keywords": "conflict, loss, challenge",
+    "keywords": "scarcity, exclusion, survival, endurance",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1239,7 +1375,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "2nd decan Taurus",
     "decan_ruler": "Mercury",
-    "harmonic": "Quintile (5th)"
+    "harmonic": "Quintile (5th)",
+    "theme": "Hardship",
+    "core_line": "Material difficulty tests resilience."
   },
   {
     "id": 70,
@@ -1249,7 +1387,7 @@
     "element": "Earth",
     "correspondence": "Auriga (The Charioteer)",
     "type": "Constellation",
-    "keywords": "harmony, exchange, recovery",
+    "keywords": "generosity, reciprocity, support, fairness",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1257,7 +1395,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Taurus",
     "decan_ruler": "Saturn",
-    "harmonic": "Sextile (6th)"
+    "harmonic": "Sextile (6th)",
+    "theme": "Exchange",
+    "core_line": "Resources move between people."
   },
   {
     "id": 71,
@@ -1267,7 +1407,7 @@
     "element": "Earth",
     "correspondence": "Coma Berenices (Berenice's Hair)",
     "type": "Constellation",
-    "keywords": "assessment, persistence",
+    "keywords": "patience, assessment, investment, waiting",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1275,7 +1415,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "1st decan Virgo",
     "decan_ruler": "Mercury",
-    "harmonic": "Septile (7th)"
+    "harmonic": "Septile (7th)",
+    "theme": "Cultivation",
+    "core_line": "Not everything grows on your preferred schedule."
   },
   {
     "id": 72,
@@ -1285,7 +1427,7 @@
     "element": "Earth",
     "correspondence": "Centaurus (The Centaur / Chiron)",
     "type": "Constellation",
-    "keywords": "movement, mastery, change",
+    "keywords": "work, skill, apprenticeship, mastery",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1293,7 +1435,9 @@
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Virgo",
     "decan_ruler": "Saturn",
-    "harmonic": "Octile (8th)"
+    "harmonic": "Octile (8th)",
+    "theme": "Mastery",
+    "core_line": "Practice turns effort into craft."
   },
   {
     "id": 73,
@@ -1303,7 +1447,7 @@
     "element": "Earth",
     "correspondence": "Boötes (The Herdsman)",
     "type": "Constellation",
-    "keywords": "culmination, near-completion",
+    "keywords": "independence, harvest, self-sufficiency, accomplishment",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1311,7 +1455,9 @@
     "source_check": "Derived (decan pattern)",
     "decan": "3rd decan Virgo",
     "decan_ruler": "Venus",
-    "harmonic": "Novile (9th)"
+    "harmonic": "Novile (9th)",
+    "theme": "Independence",
+    "core_line": "You built something capable of sustaining you."
   },
   {
     "id": 74,
@@ -1321,7 +1467,7 @@
     "element": "Earth",
     "correspondence": "Elemental Earth",
     "type": "Element",
-    "keywords": "fullness, elemental force",
+    "keywords": "family, inheritance, continuity, long-term security",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
@@ -1329,43 +1475,49 @@
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Legacy",
+    "core_line": "What survives you?"
   },
   {
     "id": 75,
     "arcana": "Pentacles",
-    "number": "Princess",
-    "card": "Princess of Pentacles",
+    "number": "Page",
+    "card": "Page of Pentacles",
     "element": "Earth",
-    "correspondence": "Spring Equinox",
-    "type": "Season",
-    "keywords": "student, messenger, new energy",
+    "correspondence": "Earth",
+    "type": "Element",
+    "keywords": "learning, opportunity, study, potential",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Princess, Spring Equinox.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Practical beginning",
+    "core_line": "A student discovers something worth building."
   },
   {
     "id": 76,
     "arcana": "Pentacles",
-    "number": "Prince",
-    "card": "Prince of Pentacles",
+    "number": "Knight",
+    "card": "Knight of Pentacles",
     "element": "Earth",
-    "correspondence": "Virgo",
-    "type": "Mutable sign",
-    "keywords": "action, pursuit, movement",
+    "correspondence": "Earth",
+    "type": "Element",
+    "keywords": "reliability, patience, work, consistency",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Prince, Virgo.",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Persistence",
+    "core_line": "Slow is not the same as stagnant."
   },
   {
     "id": 77,
@@ -1373,17 +1525,19 @@
     "number": "Queen",
     "card": "Queen of Pentacles",
     "element": "Earth",
-    "correspondence": "Taurus",
-    "type": "Fixed sign",
-    "keywords": "mastery within, nurture",
+    "correspondence": "Earth",
+    "type": "Element",
+    "keywords": "nourishment, abundance, practicality, care",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Taurus (fixed sign).",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Grounded abundance",
+    "core_line": "She creates environments in which life can flourish."
   },
   {
     "id": 78,
@@ -1391,16 +1545,18 @@
     "number": "King",
     "card": "King of Pentacles",
     "element": "Earth",
-    "correspondence": "Capricorn",
-    "type": "Cardinal sign",
-    "keywords": "command, mastery without",
+    "correspondence": "Earth",
+    "type": "Element",
+    "keywords": "stability, leadership, prosperity, mastery",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "Celestial Tarot original: Capricorn (cardinal sign).",
     "source_check": "Unverified",
     "decan": "",
     "decan_ruler": "",
-    "harmonic": ""
+    "harmonic": "",
+    "theme": "Stewardship",
+    "core_line": "Resources become responsibility."
   }
 ]

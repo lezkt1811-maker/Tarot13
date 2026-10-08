@@ -1,6 +1,11 @@
 # ✦ Tarot 13 ✦
+## The 13-Sign Celestial Tarot
 
-**A neon + gold celestial tarot deck.** 78 cards mapped to the night sky (planets, zodiac signs, and constellations), drawn as glowing star maps on deep black with gold filigree.
+**78 cards. 13 signs. The constellations tell the story.**
+
+A 78-card tarot of the actual constellations. The familiar tarot skeleton (22 Majors, 56 Minors) stays intact; underneath runs a 13-sign celestial system with ⛎ Ophiuchus as the 9th sign. Drawn as glowing neon star maps on deep black with gold filigree.
+
+📖 **The full design spec is the [Deck Bible](docs/deck-bible.md).**
 
 ![Tarot 13 card back](art/backs/card-back-v2.png)
 
@@ -17,7 +22,7 @@
 | **Major Arcana** | 22 | The 10 planets/luminaries and the 12 zodiac constellations |
 | **Pips (Ace–9)** | 36 | Extra-zodiacal constellations (e.g. Five of Cups = **Ophiuchus**, the 13th sign) |
 | **Tens** | 4 | Raw elemental force: Fire, Water, Air, Earth |
-| **Court cards** | 16 | Princess = season · Prince = mutable sign · Queen = fixed sign · King = cardinal sign |
+| **Court cards** | 16 | Page · Knight · Queen · King (no extra Ophiuchus court) |
 
 ### Suits
 | Suit | Element | Neon glow |
@@ -32,7 +37,17 @@ The full card-by-card list is in [`data/cards.csv`](data/cards.csv), [`data/card
 
 ---
 
-## ⛎ Featured card: Five of Cups, Ophiuchus
+## The 13-sign spine
+
+♈ Aries *birth of action* → ♉ Taurus *embodiment* → ♊ Gemini *mind* → ♋ Cancer *feeling* → ♌ Leo *self-expression* → ♍ Virgo *discernment* → ♎ Libra *relationship* → ♏ Scorpio *death / transformation* → **⛎ Ophiuchus** ***healing / regeneration*** → ♐ Sagittarius *meaning / expansion* → ♑ Capricorn *structure* → ♒ Aquarius *liberation* → ♓ Pisces *dissolution / transcendence*
+
+**Scorpio ends. Ophiuchus heals. Sagittarius rises.**
+
+Every numbered card encodes: number → suit / element → 13-sign position → decan → constellation → myth → meaning.
+
+---
+
+## ⛎ Signature card: Five of Cups, The Healer
 
 The heart of Tarot 13. Ophiuchus, the Serpent Bearer and often called the "13th sign," appears as the **Five of Cups**. In the Celestial Tarot framework it is an extra-zodiacal constellation sitting in the 2nd decan of Scorpio, not a zodiac sign. Tarot 13 honors it as the 13th: the deck's featured card, the 13-pile deal, and the Ophiuchus seat in the 13-card wheel spread. It depicts Asclepius, the Greek god of healing.
 
@@ -43,9 +58,13 @@ The heart of Tarot 13. Ophiuchus, the Serpent Bearer and often called the "13th 
 | Decan ruler | Neptune |
 | Harmonic | Quintile |
 
-**Meaning in this deck:** grief and loss as the doorway to healing. The wound is where the healer begins.
+**Theme:** healing what was lost. *"What was broken is not necessarily lost."*
 
-**Design note:** give this card a special touch, such as an extra gold serpent winding through the frame or a ⛎ glyph in the corner, so it stands out as the deck's 13th-sign card.
+**Upright:** something damaged can be healed. **Shadow:** trying to resurrect something that has already completed its purpose.
+
+Ophiuchus does not replace any Major Arcana card and has no extra court card. Its power enters the deck through the Five of Cups.
+
+**Ophiuchus visual language:** serpent, staff, healing hands, herbs, wounded → restored imagery, Scorpio descending and Sagittarius rising. Electric cyan, violet, hot magenta and luminous white on black, with restrained gold. The serpent is celestial and intelligent, never horror.
 
 ---
 
