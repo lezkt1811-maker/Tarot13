@@ -1,79 +1,79 @@
-id,arcana,number,card,element,correspondence,type,keywords,art_direction,palette,status,notes
-1,Major,0,The Fool,Spirit,Uranus,Planet,"new beginnings, freedom, leap of faith",Figure stepping off a cliff into a swirl of stars; Uranus glyph glowing overhead; electric cyan on near-black,"Cyan, violet",Not started,
-2,Major,I,The Magician,Spirit,Mercury,Planet,"skill, will, communication",,,Not started,
-3,Major,II,The High Priestess,Spirit,The Moon,Luminary,"intuition, hidden knowledge",,,Not started,
-4,Major,III,The Empress,Spirit,Venus,Planet,"abundance, nurture, beauty",,,Not started,
-5,Major,IV,The Emperor,Spirit,Aries,Zodiac constellation,"authority, structure, leadership",,,Not started,
-6,Major,V,The Hierophant,Spirit,Taurus,Zodiac constellation,"tradition, teaching, belief",,,Not started,
-7,Major,VI,The Lovers,Spirit,Gemini,Zodiac constellation,"union, choice, values",,,Not started,
-8,Major,VII,The Chariot,Spirit,Cancer,Zodiac constellation,"drive, protection, victory",,,Not started,
-9,Major,VIII,Strength,Spirit,Leo,Zodiac constellation,"courage, inner power, patience",,,Not started,
-10,Major,IX,The Hermit,Spirit,Virgo,Zodiac constellation,"solitude, wisdom, inner light",,,Not started,
-11,Major,X,Wheel of Fortune,Spirit,Jupiter,Planet,"cycles, luck, turning points",,,Not started,
-12,Major,XI,Justice,Spirit,Libra,Zodiac constellation,"balance, truth, fairness",,,Not started,
-13,Major,XII,The Hanged Man,Spirit,Neptune,Planet,"surrender, new perspective",,,Not started,
-14,Major,XIII,Death,Spirit,Scorpio,Zodiac constellation,"endings, transformation",,,Not started,
-15,Major,XIV,Temperance,Spirit,Sagittarius,Zodiac constellation,"moderation, blending, flow",,,Not started,
-16,Major,XV,The Devil,Spirit,Capricorn,Zodiac constellation,"bondage, temptation, shadow",,,Not started,
-17,Major,XVI,The Tower,Spirit,Mars,Planet,"upheaval, sudden change",,,Not started,
-18,Major,XVII,The Star,Spirit,Aquarius,Zodiac constellation,"hope, renewal, guidance",,,Not started,
-19,Major,XVIII,The Moon,Spirit,Pisces,Zodiac constellation,"illusion, dreams, the unknown",,,Not started,
-20,Major,XIX,The Sun,Spirit,The Sun,Luminary,"joy, vitality, success",,,Not started,
-21,Major,XX,Judgement,Spirit,Pluto,Planet,"awakening, rebirth, calling",,,Not started,
-22,Major,XXI,The World,Spirit,Saturn,Planet,"completion, wholeness",,,Not started,
-23,Wands,1,Ace of Wands,Fire,Cassiopeia (The Queen),Constellation,"seed, raw potential",,,Not started,
-24,Wands,2,Two of Wands,Fire,Cetus (The Sea Monster),Constellation,"duality, choice, partnership",,,Not started,
-25,Wands,3,Three of Wands,Fire,Perseus (The Hero),Constellation,"growth, expression",,,Not started,
-26,Wands,4,Four of Wands,Fire,Hydra (The Water Snake),Constellation,"stability, rest",,,Not started,
-27,Wands,5,Five of Wands,Fire,Leo Minor (The Lesser Lion),Constellation,"conflict, loss, challenge",,,Not started,
-28,Wands,6,Six of Wands,Fire,Auriga (The Charioteer),Constellation,"harmony, exchange, recovery",,,Not started,
-29,Wands,7,Seven of Wands,Fire,Corona Borealis (The Northern Crown),Constellation,"assessment, persistence",,,Not started,
-30,Wands,8,Eight of Wands,Fire,Sagitta (The Arrow),Constellation,"movement, mastery, change",,,Not started,
-31,Wands,9,Nine of Wands,Fire,Canis Major (The Greater Dog),Constellation,"culmination, near-completion",,,Not started,
-32,Wands,10,Ten of Wands,Fire,Elemental Fire,Element,"fullness, elemental force",,,Not started,
-33,Wands,Princess,Princess of Wands,Fire,Summer Solstice,Season,"student, messenger, new energy",,,Not started,
-34,Wands,Prince,Prince of Wands,Fire,Sagittarius,Mutable sign,"action, pursuit, movement",,,Not started,
-35,Wands,Queen,Queen of Wands,Fire,Leo,Fixed sign,"mastery within, nurture",,,Not started,
-36,Wands,King,King of Wands,Fire,Aries,Cardinal sign,"command, mastery without",,,Not started,
-37,Cups,1,Ace of Cups,Water,Pegasus (The Winged Horse),Constellation,"seed, raw potential",,,Not started,
-38,Cups,2,Two of Cups,Water,Crater (The Cup),Constellation,"duality, choice, partnership",,,Not started,
-39,Cups,3,Three of Cups,Water,Delphinus (The Dolphin),Constellation,"growth, expression",,,Not started,
-40,Cups,4,Four of Cups,Water,Eridanus (The Celestial River),Constellation,"stability, rest",,,Not started,
-41,Cups,5,Five of Cups,Water,Ophiuchus (The Serpent Bearer / Asclepius),Constellation,"conflict, loss, challenge",,,Not started,
-42,Cups,6,Six of Cups,Water,Piscis Austrinus (The Southern Fish),Constellation,"harmony, exchange, recovery",,,Not started,
-43,Cups,7,Seven of Cups,Water,Canis Minor (The Lesser Dog),Constellation,"assessment, persistence",,,Not started,
-44,Cups,8,Eight of Cups,Water,Orion (The Hunter),Constellation,"movement, mastery, change",,,Not started,
-45,Cups,9,Nine of Cups,Water,Andromeda (The Chained Maiden),Constellation,"culmination, near-completion",,,Not started,
-46,Cups,10,Ten of Cups,Water,Elemental Water,Element,"fullness, elemental force",,,Not started,
-47,Cups,Princess,Princess of Cups,Water,Autumn Equinox,Season,"student, messenger, new energy",,,Not started,
-48,Cups,Prince,Prince of Cups,Water,Pisces,Mutable sign,"action, pursuit, movement",,,Not started,
-49,Cups,Queen,Queen of Cups,Water,Scorpio,Fixed sign,"mastery within, nurture",,,Not started,
-50,Cups,King,King of Cups,Water,Cancer,Cardinal sign,"command, mastery without",,,Not started,
-51,Swords,1,Ace of Swords,Air,Crux (The Southern Cross),Constellation,"seed, raw potential",,,Not started,
-52,Swords,2,Two of Swords,Air,Ursa Major (The Great Bear),Constellation,"duality, choice, partnership",,,Not started,
-53,Swords,3,Three of Swords,Air,Boötes (The Herdsman),Constellation,"growth, expression",,,Not started,
-54,Swords,4,Four of Swords,Air,Cygnus (The Swan),Constellation,"stability, rest",,,Not started,
-55,Swords,5,Five of Swords,Air,Aquila (The Eagle),Constellation,"conflict, loss, challenge",,,Not started,
-56,Swords,6,Six of Swords,Air,Ursa Minor (The Little Bear),Constellation,"harmony, exchange, recovery",,,Not started,
-57,Swords,7,Seven of Swords,Air,Draco (The Dragon),Constellation,"assessment, persistence",,,Not started,
-58,Swords,8,Eight of Swords,Air,Cepheus (The King),Constellation,"movement, mastery, change",,,Not started,
-59,Swords,9,Nine of Swords,Air,Lupus (The Wolf),Constellation,"culmination, near-completion",,,Not started,
-60,Swords,10,Ten of Swords,Air,Elemental Air,Element,"fullness, elemental force",,,Not started,
-61,Swords,Princess,Princess of Swords,Air,Winter Solstice,Season,"student, messenger, new energy",,,Not started,
-62,Swords,Prince,Prince of Swords,Air,Gemini,Mutable sign,"action, pursuit, movement",,,Not started,
-63,Swords,Queen,Queen of Swords,Air,Libra,Fixed sign,"mastery within, nurture",,,Not started,"Check: Libra is cardinal, not fixed. Other suits suggest Queen = Aquarius."
-64,Swords,King,King of Swords,Air,Aquarius,Cardinal sign,"command, mastery without",,,Not started,"Check: Aquarius is fixed, not cardinal. Other suits suggest King = Libra."
-65,Pentacles,1,Ace of Pentacles,Earth,Taurus (The Bull),Zodiac constellation,"seed, raw potential",,,Not started,Check: Taurus is a zodiac sign; other pips use extra-zodiacal constellations.
-66,Pentacles,2,Two of Pentacles,Earth,Lyra (The Lyre),Constellation,"duality, choice, partnership",,,Not started,
-67,Pentacles,3,Three of Pentacles,Earth,Argo Navis (Ship of the Argonauts),Constellation,"growth, expression",,,Not started,
-68,Pentacles,4,Four of Pentacles,Earth,Corvus (The Raven),Constellation,"stability, rest",,,Not started,
-69,Pentacles,5,Five of Pentacles,Earth,Triangulum (The Triangle),Constellation,"conflict, loss, challenge",,,Not started,
-70,Pentacles,6,Six of Pentacles,Earth,Coma Berenices (Berenice's Hair),Constellation,"harmony, exchange, recovery",,,Not started,
-71,Pentacles,7,Seven of Pentacles,Earth,Hercules (The Kneeler),Constellation,"assessment, persistence",,,Not started,
-72,Pentacles,8,Eight of Pentacles,Earth,Centaurus (The Centaur / Chiron),Constellation,"movement, mastery, change",,,Not started,
-73,Pentacles,9,Nine of Pentacles,Earth,Pegasus / Equuleus (The Little Horse),Constellation,"culmination, near-completion",,,Not started,Check: Pegasus is also the Ace of Cups in this list.
-74,Pentacles,10,Ten of Pentacles,Earth,Elemental Earth,Element,"fullness, elemental force",,,Not started,
-75,Pentacles,Princess,Princess of Pentacles,Earth,Spring Equinox,Season,"student, messenger, new energy",,,Not started,
-76,Pentacles,Prince,Prince of Pentacles,Earth,Virgo,Mutable sign,"action, pursuit, movement",,,Not started,
-77,Pentacles,Queen,Queen of Pentacles,Earth,Taurus,Fixed sign,"mastery within, nurture",,,Not started,
-78,Pentacles,King,King of Pentacles,Earth,Capricorn,Cardinal sign,"command, mastery without",,,Not started,
+id,arcana,number,card,element,correspondence,type,keywords,art_direction,palette,status,notes,source_check
+1,Major,0,The Fool,Spirit,Uranus,Planet,"new beginnings, freedom, leap of faith",Figure stepping off a cliff into a swirl of stars; Uranus glyph glowing overhead; electric cyan on near-black,"Cyan, violet",Not started,,Confirmed (Clark PDF)
+2,Major,I,The Magician,Spirit,Mercury,Planet,"skill, will, communication",,,Not started,,Confirmed (Clark PDF)
+3,Major,II,The High Priestess,Spirit,The Moon,Luminary,"intuition, hidden knowledge",,,Not started,,Confirmed (Clark PDF)
+4,Major,III,The Empress,Spirit,Venus,Planet,"abundance, nurture, beauty",,,Not started,,Confirmed (Clark PDF)
+5,Major,IV,The Emperor,Spirit,Aries,Zodiac constellation,"authority, structure, leadership",,,Not started,,Confirmed (Clark PDF)
+6,Major,V,The Hierophant,Spirit,Taurus,Zodiac constellation,"tradition, teaching, belief",,,Not started,,Confirmed (Clark PDF)
+7,Major,VI,The Lovers,Spirit,Gemini,Zodiac constellation,"union, choice, values",,,Not started,,Unverified
+8,Major,VII,The Chariot,Spirit,Cancer,Zodiac constellation,"drive, protection, victory",,,Not started,,Unverified
+9,Major,VIII,Strength,Spirit,Leo,Zodiac constellation,"courage, inner power, patience",,,Not started,,Unverified
+10,Major,IX,The Hermit,Spirit,Virgo,Zodiac constellation,"solitude, wisdom, inner light",,,Not started,,Unverified
+11,Major,X,Wheel of Fortune,Spirit,Jupiter,Planet,"cycles, luck, turning points",,,Not started,,Unverified
+12,Major,XI,Justice,Spirit,Libra,Zodiac constellation,"balance, truth, fairness",,,Not started,,Unverified
+13,Major,XII,The Hanged Man,Spirit,Neptune,Planet,"surrender, new perspective",,,Not started,,Unverified
+14,Major,XIII,Death,Spirit,Scorpio,Zodiac constellation,"endings, transformation",,,Not started,,Unverified
+15,Major,XIV,Temperance,Spirit,Sagittarius,Zodiac constellation,"moderation, blending, flow",,,Not started,,Unverified
+16,Major,XV,The Devil,Spirit,Capricorn,Zodiac constellation,"bondage, temptation, shadow",,,Not started,,Unverified
+17,Major,XVI,The Tower,Spirit,Mars,Planet,"upheaval, sudden change",,,Not started,,Unverified
+18,Major,XVII,The Star,Spirit,Aquarius,Zodiac constellation,"hope, renewal, guidance",,,Not started,,Unverified
+19,Major,XVIII,The Moon,Spirit,Pisces,Zodiac constellation,"illusion, dreams, the unknown",,,Not started,,Unverified
+20,Major,XIX,The Sun,Spirit,The Sun,Luminary,"joy, vitality, success",,,Not started,,Unverified
+21,Major,XX,Judgement,Spirit,Pluto,Planet,"awakening, rebirth, calling",,,Not started,,Unverified
+22,Major,XXI,The World,Spirit,Saturn,Planet,"completion, wholeness",,,Not started,,Unverified
+23,Wands,1,Ace of Wands,Fire,Cassiopeia (The Queen),Constellation,"seed, raw potential",,,Not started,,Unverified
+24,Wands,2,Two of Wands,Fire,Cetus (The Sea Monster),Constellation,"duality, choice, partnership",,,Not started,,Unverified
+25,Wands,3,Three of Wands,Fire,Perseus (The Hero),Constellation,"growth, expression",,,Not started,,Unverified
+26,Wands,4,Four of Wands,Fire,Hydra (The Water Snake),Constellation,"stability, rest",,,Not started,,Unverified
+27,Wands,5,Five of Wands,Fire,Leo Minor (The Lesser Lion),Constellation,"conflict, loss, challenge",,,Not started,,Unverified
+28,Wands,6,Six of Wands,Fire,Auriga (The Charioteer),Constellation,"harmony, exchange, recovery",,,Not started,,Unverified
+29,Wands,7,Seven of Wands,Fire,Corona Borealis (The Northern Crown),Constellation,"assessment, persistence",,,Not started,,Unverified
+30,Wands,8,Eight of Wands,Fire,Ara (The Altar),Constellation,"movement, mastery, change",,,Not started,Corrected from Sagitta per Brian Clark's text. Another source adds: 2nd decan Sagittarius / Mars (unverified).,Confirmed (Clark PDF)
+31,Wands,9,Nine of Wands,Fire,Canis Major (The Greater Dog),Constellation,"culmination, near-completion",,,Not started,,Unverified
+32,Wands,10,Ten of Wands,Fire,Elemental Fire,Element,"fullness, elemental force",,,Not started,,Unverified
+33,Wands,Princess,Princess of Wands,Fire,Summer Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified
+34,Wands,Prince,Prince of Wands,Fire,Sagittarius,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified
+35,Wands,Queen,Queen of Wands,Fire,Leo,Fixed sign,"mastery within, nurture",,,Not started,,Unverified
+36,Wands,King,King of Wands,Fire,Aries,Cardinal sign,"command, mastery without",,,Not started,,Unverified
+37,Cups,1,Ace of Cups,Water,Ursa Minor (The Lesser Bear),Constellation,"seed, raw potential",,,Not started,Corrected from Pegasus per Brian Clark's text.,Confirmed (Clark PDF)
+38,Cups,2,Two of Cups,Water,Crater (The Cup),Constellation,"duality, choice, partnership",,,Not started,,Unverified
+39,Cups,3,Three of Cups,Water,Delphinus (The Dolphin),Constellation,"growth, expression",,,Not started,,Unverified
+40,Cups,4,Four of Cups,Water,Eridanus (The Celestial River),Constellation,"stability, rest",,,Not started,,Unverified
+41,Cups,5,Five of Cups,Water,Ophiuchus (The Serpent Bearer / Asclepius),Constellation,"conflict, loss, challenge",,,Not started,,Confirmed (Clark PDF)
+42,Cups,6,Six of Cups,Water,Piscis Austrinus (The Southern Fish),Constellation,"harmony, exchange, recovery",,,Not started,,Unverified
+43,Cups,7,Seven of Cups,Water,Canis Minor (The Lesser Dog),Constellation,"assessment, persistence",,,Not started,,Unverified
+44,Cups,8,Eight of Cups,Water,Orion (The Hunter),Constellation,"movement, mastery, change",,,Not started,,Unverified
+45,Cups,9,Nine of Cups,Water,Andromeda (The Chained Maiden),Constellation,"culmination, near-completion",,,Not started,,Confirmed (Clark PDF)
+46,Cups,10,Ten of Cups,Water,Elemental Water,Element,"fullness, elemental force",,,Not started,,Unverified
+47,Cups,Princess,Princess of Cups,Water,Autumn Equinox,Season,"student, messenger, new energy",,,Not started,,Unverified
+48,Cups,Prince,Prince of Cups,Water,Pisces,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified
+49,Cups,Queen,Queen of Cups,Water,Scorpio,Fixed sign,"mastery within, nurture",,,Not started,,Unverified
+50,Cups,King,King of Cups,Water,Cancer,Cardinal sign,"command, mastery without",,,Not started,,Unverified
+51,Swords,1,Ace of Swords,Air,Crux (The Southern Cross),Constellation,"seed, raw potential",,,Not started,,Confirmed (Clark PDF)
+52,Swords,2,Two of Swords,Air,Lupus (The Wolf),Constellation,"duality, choice, partnership",,,Not started,Corrected from Ursa Major per Brian Clark's text.,Confirmed (Clark PDF)
+53,Swords,3,Three of Swords,Air,Boötes (The Herdsman),Constellation,"growth, expression",,,Not started,,Unverified
+54,Swords,4,Four of Swords,Air,Cygnus (The Swan),Constellation,"stability, rest",,,Not started,,Unverified
+55,Swords,5,Five of Swords,Air,Aquila (The Eagle),Constellation,"conflict, loss, challenge",,,Not started,,Unverified
+56,Swords,6,Six of Swords,Air,Ursa Minor (The Little Bear),Constellation,"harmony, exchange, recovery",,,Not started,CONFLICT: Ursa Minor is now confirmed on the Ace of Cups. Check guidebook.,"Conflict, check"
+57,Swords,7,Seven of Swords,Air,Draco (The Dragon),Constellation,"assessment, persistence",,,Not started,,Unverified
+58,Swords,8,Eight of Swords,Air,Cepheus (The King),Constellation,"movement, mastery, change",,,Not started,,Unverified
+59,Swords,9,Nine of Swords,Air,Lupus (The Wolf),Constellation,"culmination, near-completion",,,Not started,CONFLICT: Lupus is now confirmed on the Two of Swords. Check guidebook.,"Conflict, check"
+60,Swords,10,Ten of Swords,Air,Elemental Air,Element,"fullness, elemental force",,,Not started,,Unverified
+61,Swords,Princess,Princess of Swords,Air,Winter Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified
+62,Swords,Prince,Prince of Swords,Air,Gemini,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified
+63,Swords,Queen,Queen of Swords,Air,Libra,Fixed sign,"mastery within, nurture",,,Not started,"Check: Libra is cardinal, not fixed. Other suits suggest Queen = Aquarius.",Unverified
+64,Swords,King,King of Swords,Air,Aquarius,Cardinal sign,"command, mastery without",,,Not started,"Check: Aquarius is fixed, not cardinal. Other suits suggest King = Libra.",Unverified
+65,Pentacles,1,Ace of Pentacles,Earth,Sagitta (The Arrow),Constellation,"seed, raw potential",,,Not started,Unverified: another source says Sagitta (Arrow of Heracles / Prometheus). Google list said Taurus.,Unverified
+66,Pentacles,2,Two of Pentacles,Earth,Lyra (The Lyre),Constellation,"duality, choice, partnership",,,Not started,,Unverified
+67,Pentacles,3,Three of Pentacles,Earth,Argo Navis (Ship of the Argonauts),Constellation,"growth, expression",,,Not started,,Unverified
+68,Pentacles,4,Four of Pentacles,Earth,Corvus (The Raven),Constellation,"stability, rest",,,Not started,,Unverified
+69,Pentacles,5,Five of Pentacles,Earth,Triangulum (The Triangle),Constellation,"conflict, loss, challenge",,,Not started,,Unverified
+70,Pentacles,6,Six of Pentacles,Earth,Coma Berenices (Berenice's Hair),Constellation,"harmony, exchange, recovery",,,Not started,,Unverified
+71,Pentacles,7,Seven of Pentacles,Earth,Hercules (The Kneeler),Constellation,"assessment, persistence",,,Not started,,Unverified
+72,Pentacles,8,Eight of Pentacles,Earth,Centaurus (The Centaur / Chiron),Constellation,"movement, mastery, change",,,Not started,,Confirmed (Clark PDF)
+73,Pentacles,9,Nine of Pentacles,Earth,Pegasus / Equuleus (The Little Horse),Constellation,"culmination, near-completion",,,Not started,Unverified: Pegasus/Equuleus. Pegasus no longer conflicts with the Ace of Cups.,Unverified
+74,Pentacles,10,Ten of Pentacles,Earth,Elemental Earth,Element,"fullness, elemental force",,,Not started,,Unverified
+75,Pentacles,Princess,Princess of Pentacles,Earth,Spring Equinox,Season,"student, messenger, new energy",,,Not started,,Unverified
+76,Pentacles,Prince,Prince of Pentacles,Earth,Virgo,Mutable sign,"action, pursuit, movement",,,Not started,,Unverified
+77,Pentacles,Queen,Queen of Pentacles,Earth,Taurus,Fixed sign,"mastery within, nurture",,,Not started,,Unverified
+78,Pentacles,King,King of Pentacles,Earth,Capricorn,Cardinal sign,"command, mastery without",,,Not started,,Unverified

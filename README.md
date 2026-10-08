@@ -67,8 +67,12 @@ Use lowercase with dashes, zero-padded so files sort in deck order:
 - [ ] Print-ready files (300 DPI + bleed)
 
 ## Open questions
-- **Swords courts:** sources list Queen = Libra and King = Aquarius, which breaks the fixed/cardinal pattern of the other suits. These may be swapped. Verify against the guidebook.
-- **Nine of Pentacles:** lists Pegasus/Equuleus, but Pegasus is also the Ace of Cups.
+The card list started from a Google AI summary, which turned out to be wrong in places. The **Source check** column in the data marks each card:
+
+- **Confirmed (13):** Majors 0–V, Ace of Cups (Ursa Minor), Two of Swords (Lupus), Eight of Wands (Ara), Ace of Swords (Crux), Five of Cups (Ophiuchus), Eight of Pentacles (Centaurus), Nine of Cups (Andromeda). Source: [Brian Clark, *The Celestial Tarot*](https://www.astrosynthesis.com.au/wp-content/uploads/2017/11/The-Celestial-Tarot-Brian-Clark.pdf).
+- **Conflicts (2):** Six of Swords and Nine of Swords were listed as Ursa Minor and Lupus, which are now confirmed elsewhere. Their real constellations are unknown.
+- **Unverified (63):** everything else, including Ace of Pentacles = Sagitta and the Swords Queen/King (Libra/Aquarius, possibly swapped).
+- **To do:** check the rest against the Celestial Tarot guidebook.
 - **Card back v2:** the ringed planets appear only in the top half, so the back isn't identical upside down. Make the lower planets ringed too if reversals must stay hidden.
 
 ---
