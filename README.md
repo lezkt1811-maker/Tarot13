@@ -5,7 +5,7 @@
 
 A 78-card tarot of the actual constellations. The familiar tarot skeleton (22 Majors, 56 Minors) stays intact; underneath runs a 13-sign celestial system with ⛎ Ophiuchus as the 9th sign. Drawn as glowing neon star maps on deep black with gold filigree.
 
-📖 **The full design spec is the [Deck Bible](docs/deck-bible.md).**
+📖 **The full design spec is the [Deck Bible](docs/deck-bible.md).** Spreads are in the [Spreads guide](docs/spreads.md).
 
 ![Tarot 13 card back](art/backs/card-back-v2.png)
 

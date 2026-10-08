@@ -62,6 +62,7 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
 
 .spread{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;width:100%}
 .slot{display:flex;flex-direction:column;align-items:center;gap:10px;width:170px}
+.slot.heal .pos{color:var(--cyan)}
 .pos{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
 .face{position:relative;width:170px;height:255px;border-radius:12px;background:radial-gradient(110% 70% at 70% 15%,#121c3e 0%,var(--sky) 65%);
   box-shadow:0 0 0 1.5px var(--sc),0 0 18px -2px var(--sc),inset 0 0 22px -8px var(--sc);display:flex;flex-direction:column;align-items:center;
@@ -136,11 +137,20 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
       <label class="toggle" for="rev"><input type="checkbox" id="rev" checked> Allow reversals</label>
       <label class="sel" for="spreadSel">Spread
         <select id="spreadSel">
-          <option value="1">One card</option>
-          <option value="3" selected>Past · Present · Future</option>
-          <option value="s">Serpent Path ♏→⛎→♐</option>
-          <option value="5">Five-star cross</option>
-          <option value="13">Thirteen-card wheel</option>
+          <optgroup label="Tarot 13">
+            <option value="sky">1 · What does the sky want me to see?</option>
+            <option value="becoming" selected>3 · Past · Present · Becoming</option>
+            <option value="serpent">5 · Serpent Path ♏ → ⛎ → ♐</option>
+            <option value="wheel">13 · The 13-Sign Wheel</option>
+          </optgroup>
+          <optgroup label="Classic">
+            <option value="c2">2 · Situation · Advice</option>
+            <option value="c3">3 · Situation · Challenge · Advice</option>
+            <option value="c4">4 · Situation → Outcome</option>
+            <option value="c5">5 · Decision</option>
+            <option value="c6">6 · Path forward</option>
+            <option value="c7">7 · Horseshoe</option>
+          </optgroup>
         </select>
       </label>
       <button class="btn" id="draw">Draw</button>
@@ -159,11 +169,16 @@ const CARDS = [{"arcana": "Major", "number": "0", "card": "The Fool", "correspon
 document.documentElement.style.setProperty('--back-img', `url(${BACK})`);
 
 const SPREADS = {
-  1:["Your card"],
-  3:["Past","Present","Future"],
-  s:["♏ What is ending","⛎ What needs healing","♐ What becomes possible"],
-  5:["Heart of it","What crosses","Root","Crown","Outcome"],
-  13:["Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Ophiuchus","Sagittarius","Capricorn","Aquarius","Pisces"]
+  sky:["What does the sky want me to see?"],
+  becoming:["Past","Present","Becoming"],
+  serpent:["♏ What is ending","⛎ What needs healing","♐ What is emerging","What supports the healing","What resists the healing"],
+  wheel:["♈ Aries","♉ Taurus","♊ Gemini","♋ Cancer","♌ Leo","♍ Virgo","♎ Libra","♏ Scorpio","⛎ Ophiuchus","♐ Sagittarius","♑ Capricorn","♒ Aquarius","♓ Pisces"],
+  c2:["Situation","Advice"],
+  c3:["Situation","Challenge","Advice"],
+  c4:["Situation","Challenge","Action","Outcome"],
+  c5:["Situation","Option A","Option B","What you need to know","Likely direction"],
+  c6:["Where you are","What brought you here","What is blocking you","What is helping you","What you should do","Where it leads"],
+  c7:["Past","Present","Hidden influence","Obstacle","External influence","Advice","Outcome"]
 };
 const OPH_ICON='<path d="M50 6 V94" stroke="#FFE08A" stroke-width="2.5"/><path d="M50 20 C70 26, 70 40, 50 44 C30 48, 30 62, 50 66 C70 70, 70 82, 52 88" fill="none" stroke="#22D3EE" stroke-width="3.5" stroke-linecap="round"/><circle cx="50" cy="18" r="4" fill="#FF2ED1"/>';
 const SUIT_COLOR = {Major:"var(--gold)",Wands:"var(--magenta)",Cups:"var(--cyan)",Swords:"var(--blue)",Pentacles:"var(--violet)"};
@@ -290,7 +305,7 @@ $('draw').addEventListener('click',()=>{
   const hand=deck.slice(0,n);
   $('spread').innerHTML=hand.map((c,k)=>{
     const d=CARDS[c.i], rev=allowRev && c.rev;
-    return `<div class="slot"><div class="pos">${pos[k]}</div>${faceHTML(c,rev)}
+    return `<div class="slot${pos[k].startsWith('⛎')?' heal':''}"><div class="pos">${pos[k]}</div>${faceHTML(c,rev)}
       <div class="meaning"><b>${d.card}${rev?' · reversed':''}</b>${d.theme?`<br><span class="th">${d.theme}</span>`:''}${d.core_line?`<br><i>${d.core_line}</i>`:''}<br>${d.keywords}</div></div>`;
   }).join('');
   [...document.querySelectorAll('.face')].forEach((f,k)=>f.style.animationDelay=`${k*120}ms`);
