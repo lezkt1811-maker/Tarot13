@@ -39,9 +39,10 @@ Glowing neon star maps on deep near-black, framed in fine gold filigree. Part pl
 - Small labels: Jost or another clean geometric sans.
 
 ## Card back
-- v1: `art/backs/card-back-v1.webp`. Central star in a gold zodiac wheel, crescents top and bottom, filigree corners.
-- **Fixes needed:** remove the stray ♀ in the ring; check all 12 signs appear exactly once.
-- **Reversals:** for a back that hides reversals, the design must look identical when rotated 180°. Flip the bottom crescent to open downward and replace glyphs with stars or dots.
+- **Official: v2**, `art/backs/card-back-v2.png`. All gold on pure black: central compass star in a gold ring, crescents top and bottom opening outward, ringed and plain planets, moon phases, thin gold border with star corners.
+- The all-gold back intentionally contrasts with the neon fronts: a quiet, sacred back and electric faces.
+- **Reversal check:** the design is almost rotation-symmetric. Only the ringed planets (top half only) give away orientation. Ring the lower planets too to hide reversals fully.
+- v1, `art/backs/card-back-v1.webp` (neon zodiac wheel), is kept as an alternate.
 
 ## Print specs (typical)
 - Tarot size is about 2.75 × 4.75 in (70 × 120 mm). Confirm with your printer.

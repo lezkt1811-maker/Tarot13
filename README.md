@@ -2,6 +2,8 @@
 
 **A neon + gold celestial tarot deck.** 78 cards mapped to the night sky (planets, zodiac signs, and constellations), drawn as glowing star maps on deep black with gold filigree.
 
+![Tarot 13 card back](art/backs/card-back-v2.png)
+
 > Mockup preview: open [`mockups/index.html`](mockups/index.html), or turn on GitHub Pages to view it online.
 
 ---
@@ -32,7 +34,7 @@ The full card-by-card list is in [`data/cards.csv`](data/cards.csv), [`data/card
 
 ```
 art/
-  backs/       card-back designs (card-back-v1.webp)
+  backs/       card-back designs (v2 = current official back)
   major/       22 Major Arcana finals
   wands/  cups/  swords/  pentacles/   pip cards Ace–10
   courts/      16 court cards
@@ -54,7 +56,8 @@ Use lowercase with dashes, zero-padded so files sort in deck order:
 
 - [x] Framework and 78-card correspondence list
 - [x] Style direction (BlueNeon palette + gold)
-- [x] Card back v1
+- [x] Card back v1 (neon + gold zodiac wheel)
+- [x] Card back v2, **official** (all-gold celestial)
 - [x] The Fool mockup
 - [ ] Final card frame template
 - [ ] 22 Major Arcana
@@ -66,7 +69,7 @@ Use lowercase with dashes, zero-padded so files sort in deck order:
 ## Open questions
 - **Swords courts:** sources list Queen = Libra and King = Aquarius, which breaks the fixed/cardinal pattern of the other suits. These may be swapped. Verify against the guidebook.
 - **Nine of Pentacles:** lists Pegasus/Equuleus, but Pegasus is also the Ace of Cups.
-- **Card back v1:** fix the stray ♀ and duplicated Sagittarius glyph in the zodiac ring.
+- **Card back v2:** the ringed planets appear only in the top half, so the back isn't identical upside down. Make the lower planets ringed too if reversals must stay hidden.
 
 ---
 
