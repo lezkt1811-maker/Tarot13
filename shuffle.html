@@ -91,6 +91,16 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
 .face.oph{box-shadow:0 0 0 2px var(--gold-hi),0 0 34px 4px rgba(255,224,138,.7),inset 0 0 34px -6px var(--cyan)}
 .face.oph .co{color:var(--cyan)}
 .empty{color:var(--muted);font-size:14px;text-align:center;max-width:44ch}
+.reading{max-width:720px;margin:34px auto 0;padding:26px 28px 24px;border-radius:16px;position:relative;
+  background:radial-gradient(120% 90% at 50% 0%,#1E1607 0%,#050402 70%);
+  box-shadow:0 0 0 1px rgba(232,184,74,.55),0 0 34px -10px rgba(232,184,74,.55)}
+.reading h2{margin:0 0 12px;text-align:center;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-hi)}
+.reading h2::before,.reading h2::after{content:"\2726";color:var(--gold);margin:0 .7em;font-size:11px;vertical-align:2px}
+.reading p{margin:0;font-size:16.5px;line-height:1.7;color:var(--text);text-wrap:pretty;white-space:pre-line}
+.reading p.thinking{color:var(--muted);font-style:italic;text-align:center;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+.reading .src{margin-top:12px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){.reading p.thinking{animation:none}}
 .flip-in{animation:flip .55s ease-out both}
 @keyframes flip{from{opacity:0;transform:translateY(-30px) rotateY(80deg)}to{opacity:1;transform:none}}
 .face.rev.flip-in{animation:flipR .55s ease-out both}
@@ -172,6 +182,11 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
 
   <section aria-label="Your spread">
     <div class="spread" id="spread"><p class="empty">Your cards will appear here, laid out in the spread you choose.</p></div>
+    <article class="reading" id="reading" aria-live="polite" hidden>
+      <h2>The Reading</h2>
+      <p id="readingText"></p>
+      <div class="src" id="readingSrc"></div>
+    </article>
   </section>
 </div>
 
@@ -345,6 +360,63 @@ function faceHTML(c, rev){
     <div class="co">${oph?'⛎︎ Ophiuchus · The Healer':d.correspondence.replace(/\s*\(.*$/,'').replace(/\?.*$/,'').replace(/\s*⛎︎/,'')}</div>
   </div>`;
 }
+/* ---- reading: Claude when the viewer allows it, a composed reading otherwise ---- */
+let samplePromise = (window.claude && typeof window.claude.use==='function') ? window.claude.use('sample').catch(()=>null) : Promise.resolve(null);
+let sampleOff=false, readCtl=null;
+const plain = s => s.replace(/[♈-♓⛎]︎?/g,'').trim();
+const ELEMENT_NOTE = {Wands:'drive, desire and action',Cups:'feeling, relationship and healing',Swords:'thought, truth and hard decisions',Pentacles:'work, money, the body and practical life'};
+function lc(s){ return s ? s.charAt(0).toLowerCase()+s.slice(1) : s; }
+function composeReading(items, spreadName){
+  const n=items.length, out=[];
+  const describe = it => { const th=(it.d.theme||'').split(' — ')[0] || it.d.keywords.split(',')[0]; return `${it.d.card}${it.rev?' reversed':''}${th?` (${lc(th.trim())})`:''}`; };
+  if(n===1){
+    const it=items[0];
+    out.push(`The sky shows you ${describe(it)}.`);
+    if(it.d.core_line) out.push(it.d.core_line);
+    out.push(`Sit with ${it.d.keywords.split(',').slice(0,3).join(',').trim()} today.`);
+  } else {
+    const pick = n<=5 ? items : [items[0], items[Math.floor(n/2)], items[n-1]];
+    out.push(pick.map((it,k)=>`${k===0?'In':'in'} ${lc(plain(it.pos))} you drew ${describe(it)}`).join('; ')+'.');
+    const last=items[n-1]; if(last.d.core_line) out.push(`The closing card's message: ${last.d.core_line}`);
+  }
+  const majors=items.filter(i=>i.d.arcana==='Major').length;
+  if(n>1 && majors/n>=0.5) out.push(`With ${majors} of ${n} cards from the Major Arcana, larger life forces are at work here.`);
+  const counts={}; items.forEach(i=>{ if(ELEMENT_NOTE[i.d.arcana]) counts[i.d.arcana]=(counts[i.d.arcana]||0)+1; });
+  const top=Object.entries(counts).sort((a,b)=>b[1]-a[1])[0];
+  if(n>2 && top && top[1]>=2) out.push(`${top[0]} lead the spread, so the story centers on ${ELEMENT_NOTE[top[0]]}.`);
+  const revs=items.filter(i=>i.rev).length;
+  if(revs) out.push(revs===1?'One reversed card shows energy that is blocked or turned inward.':`${revs} reversed cards show energy that is blocked or turned inward.`);
+  if(items.some(i=>i.d.card==='Five of Cups')) out.push('Ophiuchus appears: what was broken is not necessarily lost, and healing is part of this path.');
+  return out.join(' ');
+}
+async function interpret(items, spreadName){
+  const box=$('reading'), txt=$('readingText'), src=$('readingSrc');
+  box.hidden=false;
+  if(readCtl) readCtl.abort();
+  const fallback=()=>{ txt.className=''; txt.textContent=composeReading(items, spreadName); src.textContent='Reading composed from the card meanings'; };
+  const sample = sampleOff ? null : await samplePromise;
+  if(!sample){ fallback(); return; }
+  txt.className='thinking'; txt.textContent='Reading the cards…'; src.textContent='';
+  const lines = items.map(it=>`- ${plain(it.pos)}: ${it.d.card}${it.rev?' (REVERSED)':''}. Correspondence: ${plain(it.d.correspondence)}.${it.d.theme?` Theme: ${it.d.theme}.`:''}${it.d.core_line?` Core line: "${it.d.core_line}"`:''} Keywords: ${it.d.keywords}.`).join('\n');
+  const prompt = `You are the reader for Tarot 13, "The 13-Sign Celestial Tarot": a 78-card tarot of the actual constellations, with a 13-sign zodiac where Ophiuchus (the Healer, Five of Cups) sits between Scorpio and Sagittarius. Its motto: Scorpio ends. Ophiuchus heals. Sagittarius rises.
+
+Spread: ${spreadName}
+Cards, in position order:
+${lines}
+
+Write ONE short paragraph (70-110 words) that interprets this spread as a whole for the person who drew it. Speak to them as "you". Weave the positions together into a single story rather than listing cards one by one; name the key cards naturally. Treat a reversed card as energy that is blocked, delayed or turned inward. If the Five of Cups appears, bring in Ophiuchus's healing. Warm, grounded and specific. Plain text only: no headings, no lists, no markdown, no disclaimers, no preamble.`;
+  readCtl=new AbortController();
+  try{
+    const r=await sample(prompt,{modelTier:'quick',signal:readCtl.signal,onText:({text})=>{ txt.className=''; txt.textContent=text; }});
+    txt.className=''; txt.textContent=r.text.trim(); src.textContent='Interpreted by Claude';
+  }catch(e){
+    if(e && e.code==='cancelled') return;
+    if(e && ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(e.code)) sampleOff=true;
+    fallback();
+    if(e && e.code==='rate_limited') src.textContent='Claude is busy right now, so this reading was composed from the card meanings';
+  }
+}
+
 $('draw').addEventListener('click',()=>{
   const sv=$('spreadSel').value, pos=SPREADS[sv], n=pos.length, allowRev=$('rev').checked;
   const hand=deck.slice(0,n);
@@ -355,8 +427,10 @@ $('draw').addEventListener('click',()=>{
   }).join('');
   [...document.querySelectorAll('.face')].forEach((f,k)=>f.style.animationDelay=`${k*120}ms`);
   $('log').innerHTML=`Drew <b>${n}</b> from the top. Shuffle again or start a new deck.`;
+  const sel=$('spreadSel'), spreadName=sel.options[sel.selectedIndex].textContent.replace(/^\d+\s*·\s*/,'');
+  interpret(hand.map((c,k)=>({pos:pos[k], d:CARDS[c.i], rev:allowRev && c.rev})), spreadName);
 });
-$('reset').addEventListener('click',()=>{ fresh(); status(); $('log').textContent='New deck in natural order. Pick a shuffle.'; $('spread').innerHTML='<p class="empty">Your cards will appear here, laid out in the spread you choose.</p>'; });
+$('reset').addEventListener('click',()=>{ fresh(); status(); $('log').textContent='New deck in natural order. Pick a shuffle.'; $('spread').innerHTML='<p class="empty">Your cards will appear here, laid out in the spread you choose.</p>'; if(readCtl) readCtl.abort(); $('reading').hidden=true; });
 $('rev').addEventListener('change',status);
 </script>
 
