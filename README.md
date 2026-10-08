@@ -11,7 +11,7 @@ A 78-card tarot of the actual constellations. The familiar tarot skeleton (22 Ma
 
 ![Tarot 13 card back](art/backs/card-back-v2.png)
 
-> **Shuffle & draw:** open [`shuffle.html`](shuffle.html) to shuffle the deck five ways and draw a spread.
+> **Shuffle & draw:** the live app is at **https://lezkt1811-maker.github.io/Tarot13/** (source: [`index.html`](index.html)).
 >
 > Mockup preview: open [`mockups/index.html`](mockups/index.html), or turn on GitHub Pages to view it online.
 
