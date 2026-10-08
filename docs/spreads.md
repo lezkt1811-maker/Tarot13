@@ -10,6 +10,9 @@ All of these are built into the [Tarot 13 app](../index.html).
 
 These are the deck's beginner defaults, plus its two signature spreads.
 
+### 1 card · Card of the Day
+One card for today, from a fresh shuffle of all 78 cards. Use the **Card of the Day** button for a one-tap draw.
+
 ### 1 card · What does the sky want me to see?
 One card for a daily reading.
 

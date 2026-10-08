@@ -1,0 +1,509 @@
+<title>Tarot 13 Shuffler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: a black velvet table under gold glitter. Deck in the middle, five shuffle controls beneath, spread laid out below. */
+:root{
+  --sky:#000000; --sky-2:#100B03; --line:#4A3612;
+  --text:#FFF8E6; --muted:#CDB98A;
+  --gold:#E8B84A; --gold-hi:#FFE08A; --gold-deep:#8A5A12; --gold-pale:#FFF3C4;
+  --cyan:#22D3EE; --blue:#2563FF; --violet:#A855F7; --magenta:#FF2ED1;
+  --display:'Cinzel', 'Trajan Pro', Georgia, serif;
+  --body:'Jost', 'Futura', 'Century Gothic', system-ui, sans-serif;
+  color-scheme: dark;
+}
+html,body{background:var(--sky);color:var(--text)}
+body{font-family:var(--body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:28px 64px;
+  background:radial-gradient(70% 40% at 50% 0%, #2A1D06 0%, var(--sky) 72%) fixed, var(--sky)}
+#glitter{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.wrap{position:relative;z-index:1}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,7vw,52px);letter-spacing:.2em;margin:0;text-wrap:balance;background:linear-gradient(100deg,var(--gold-deep) 0%,var(--gold) 22%,var(--gold-pale) 38%,#fff 44%,var(--gold-pale) 50%,var(--gold) 66%,var(--gold-deep) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 14px rgba(232,184,74,.45));animation:shimmer 6s linear infinite}
+@keyframes shimmer{from{background-position:150% 0}to{background-position:-100% 0}}
+.logo{width:56px;height:56px;border-radius:13px;box-shadow:0 0 0 1px rgba(232,184,74,.5),0 0 24px rgba(232,184,74,.35)}
+.sub{color:var(--muted);letter-spacing:.32em;text-transform:uppercase;font-size:12px}
+
+.table{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;justify-items:center}
+.deck-zone{position:relative;width:100%;max-width:640px;height:300px;display:flex;align-items:center;justify-content:center}
+.deck{position:relative;width:150px;height:225px}
+.back{position:absolute;inset:0;border-radius:10px;background:#000 center/cover no-repeat;background-image:var(--back-img);
+  box-shadow:0 0 0 1px rgba(232,184,74,.55),0 10px 24px rgba(0,0,0,.6)}
+.deck .back:nth-child(1){transform:translate(-3px,3px)}
+.deck .back:nth-child(2){transform:translate(-1.5px,1.5px)}
+.deck .back:nth-child(3){box-shadow:0 0 0 1px rgba(232,184,74,.7),0 0 26px rgba(232,184,74,.25),0 14px 30px rgba(0,0,0,.7)}
+.ghost{position:absolute;left:50%;top:50%;width:150px;height:225px;margin:-112.5px 0 0 -75px;pointer-events:none}
+.count{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;letter-spacing:.08em}
+.count b{color:var(--text);font-weight:600}
+
+.methods{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;width:100%}
+.m{appearance:none;border:1px solid var(--line);background:linear-gradient(180deg,#171005,#000);position:relative;overflow:hidden;color:var(--text);
+  border-radius:12px;padding:14px 10px 12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;
+  font:inherit;min-height:44px;transition:border-color .2s, box-shadow .2s, transform .15s}
+.m svg{width:30px;height:30px;stroke:var(--mc);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px var(--mc))}
+.m .n{font-family:var(--display);font-weight:700;letter-spacing:.12em;font-size:13px;text-transform:uppercase}
+.m .d{font-size:12px;color:var(--muted);line-height:1.35}
+.m::after,.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,243,196,.28) 48%,transparent 66%);transform:translateX(-120%);pointer-events:none}
+.m:hover:not(:disabled)::after,.btn:hover:not(:disabled)::after{transition:transform .9s;transform:translateX(120%)}
+.m:hover:not(:disabled){border-color:var(--mc);box-shadow:0 0 18px -4px var(--mc);transform:translateY(-1px)}
+.m:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.m:disabled{opacity:.45;cursor:default}
+
+.controls{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:center}
+.btn{appearance:none;position:relative;overflow:hidden;font:inherit;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:13px;min-height:44px;padding:0 20px;border-radius:999px;cursor:pointer;
+  border:1px solid var(--gold);color:var(--sky);background:linear-gradient(180deg,var(--gold-pale),var(--gold-hi) 35%,var(--gold) 75%,#B07E22);box-shadow:0 0 18px -4px rgba(232,184,74,.7)}
+.btn.ghosty{background:transparent;color:var(--gold-hi)}
+.btn:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.btn:disabled{opacity:.5;cursor:default}
+select{font:inherit;font-size:14px;min-height:44px;padding:0 12px;border-radius:10px;border:1px solid var(--gold-deep);background:#0B0803;color:var(--text)}
+label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+
+.log{width:100%;max-width:640px;font-size:13px;color:var(--muted);text-align:center;min-height:1.5em}
+.log b{color:var(--gold-hi);font-weight:500}
+
+.spread{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;width:100%}
+.slot{display:flex;flex-direction:column;align-items:center;gap:10px;width:170px}
+.slot.heal .pos{color:var(--gold-pale)}
+.pos{min-height:2.7em;display:flex;align-items:flex-end;justify-content:center;text-align:center;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.face{position:relative;width:170px;height:255px;border-radius:12px;background:radial-gradient(110% 70% at 70% 15%,#22180A 0%,#000 65%);
+  box-shadow:0 0 0 1.5px var(--gold),0 0 20px -2px rgba(232,184,74,.55),inset 0 0 26px -10px var(--sc);display:flex;flex-direction:column;align-items:center;
+  padding:16px 12px 14px;gap:8px}
+.face::before{content:"";position:absolute;inset:7px;border:1px solid rgba(232,184,74,.75);border-radius:7px;pointer-events:none}
+.face .num{width:30px;height:30px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:13px;color:var(--gold-hi)}
+.face .sym{flex:1;display:grid;place-items:center;width:100%}
+.face .sym svg{width:84px;height:84px}
+.face .nm{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.1em;text-align:center;color:var(--gold-hi);line-height:1.2;text-wrap:balance;text-transform:uppercase}
+.face .co{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--sc);text-align:center;line-height:1.3}
+.meaning{font-size:13px;color:var(--muted);text-align:center;line-height:1.4}
+.meaning b{color:var(--text);font-weight:500}
+.meaning .th{color:var(--gold-hi);letter-spacing:.06em}
+.meaning i{color:var(--text)}
+.face.oph{box-shadow:0 0 0 2px var(--gold-hi),0 0 34px 4px rgba(255,224,138,.7),inset 0 0 34px -6px var(--cyan)}
+.face.oph .co{color:var(--cyan)}
+.empty{color:var(--muted);font-size:14px;text-align:center;max-width:44ch}
+.ask{width:100%;max-width:640px;display:flex;flex-direction:column;gap:6px}
+.ask label{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);text-align:center}
+.ask input{font:inherit;font-size:15px;min-height:46px;padding:0 16px;border-radius:999px;border:1px solid var(--gold-deep);background:#0B0803;color:var(--text);text-align:center}
+.ask input::placeholder{color:#8F7E58}
+.ask input:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.audit{max-width:620px;margin:0 auto;width:100%;font-size:13px;line-height:1.55;color:var(--muted);border:1px solid var(--line);border-radius:12px;padding:10px 16px;background:rgba(16,11,3,.7)}
+.audit summary{cursor:pointer;color:var(--gold-hi);letter-spacing:.14em;text-transform:uppercase;font-size:12px;text-align:center;min-height:28px;display:flex;align-items:center;justify-content:center}
+.audit summary:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.audit p{margin:.7em 0 0}.audit b{color:var(--text);font-weight:500}.audit .rng{font-size:12px;color:var(--gold)}
+.upright-note{max-width:620px;margin:0 auto;font-size:13px;line-height:1.55;color:var(--muted);text-align:center;font-style:italic}
+.upright-note::before{content:"\2726  ";color:var(--gold);font-style:normal}
+.aspect{display:inline-block;margin-top:2px;padding:3px 10px;border-radius:999px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  border:1px solid var(--gold-deep);color:var(--gold-hi);background:rgba(232,184,74,.08)}
+.aspect small{display:block;letter-spacing:.04em;text-transform:none;font-size:11px;color:var(--muted)}
+.aspect.constructive{border-color:var(--gold);background:rgba(232,184,74,.16)}
+.aspect.challenging,.aspect.warning{border-color:#B07E22;color:var(--gold-pale)}
+.aspect.blocked,.aspect.internal,.aspect.excessive{border-style:dashed}
+.reading{max-width:720px;margin:34px auto 0;padding:26px 28px 24px;border-radius:16px;position:relative;
+  background:radial-gradient(120% 90% at 50% 0%,#1E1607 0%,#050402 70%);
+  box-shadow:0 0 0 1px rgba(232,184,74,.55),0 0 34px -10px rgba(232,184,74,.55)}
+.reading h2{margin:0 0 12px;text-align:center;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-hi)}
+.reading h2::before,.reading h2::after{content:"\2726";color:var(--gold);margin:0 .7em;font-size:11px;vertical-align:2px}
+.reading p{margin:0;font-size:16.5px;line-height:1.7;color:var(--text);text-wrap:pretty;white-space:pre-line}
+.reading p.thinking{color:var(--muted);font-style:italic;text-align:center;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+.reading .src{margin-top:12px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){.reading p.thinking{animation:none}}
+.flip-in{animation:flip .55s ease-out both}
+@keyframes flip{from{opacity:0;transform:translateY(-30px) rotateY(80deg)}to{opacity:1;transform:none}}
+
+@media (max-width:720px){
+  .methods{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .methods .m:last-child{grid-column:1 / -1}
+  .deck-zone{height:260px}
+  .slot{width:140px}.face{width:140px;height:210px}.face .sym svg{width:64px;height:64px}
+}
+@media (prefers-reduced-motion:reduce){h1{animation:none}.m::after,.btn::after{display:none}.flip-in{animation:none}.m{transition:none}}
+</style>
+
+<canvas id="glitter" aria-hidden="true"></canvas>
+<div class="wrap">
+  <header>
+    <img class="logo" src="data:image/png;base64,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" alt="" width="56" height="56">
+    <h1>TAROT 13</h1>
+    <div class="sub">78 cards · 13 signs · the constellations tell the story</div>
+  </header>
+
+  <section class="table" aria-label="Deck">
+    <div class="deck-zone" id="zone">
+      <div class="deck" id="deck" aria-hidden="true"><div class="back"></div><div class="back"></div><div class="back"></div></div>
+    </div>
+    <div class="count" id="count" aria-live="polite"><b>78</b> cards · fresh deck</div>
+
+    <div class="methods" role="group" aria-label="Shuffle methods">
+      <button class="m" id="m-riffle" data-m="riffle" style="--mc:var(--gold-hi)">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 C10 12, 14 12, 16 16 C18 12, 22 12, 26 22"/><path d="M5 26h9M18 26h9"/></svg>
+        <span class="n">Riffle</span><span class="d">Riffle animation</span>
+      </button>
+      <button class="m" id="m-overhand" data-m="overhand" style="--mc:var(--gold-hi)">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="5" width="14" height="6" rx="1.5"/><rect x="9" y="21" width="14" height="6" rx="1.5"/><path d="M16 12v7M13 16l3 3 3-3"/></svg>
+        <span class="n">Overhand</span><span class="d">Overhand animation</span>
+      </button>
+      <button class="m" id="m-wash" data-m="wash" style="--mc:var(--gold-hi)">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5a11 11 0 1 1-10.4 7.4"/><path d="M5 7v6h6"/><circle cx="16" cy="16" r="2.4"/></svg>
+        <span class="n">Wash</span><span class="d">Table-wash animation</span>
+      </button>
+      <button class="m" id="m-cut" data-m="cut" style="--mc:var(--gold-hi)">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="10" width="7" height="12" rx="1.2"/><rect x="12.5" y="10" width="7" height="12" rx="1.2"/><rect x="22" y="10" width="7" height="12" rx="1.2"/></svg>
+        <span class="n">Three-Pile Cut</span><span class="d">Cut animation</span>
+      </button>
+      <button class="m" id="m-pile" data-m="pile" style="--mc:var(--gold-hi)">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="2.5"/><g><rect x="14" y="2" width="4" height="6" rx=".8"/><rect x="24" y="9" width="4" height="6" rx=".8"/><rect x="21" y="22" width="4" height="6" rx=".8"/><rect x="7" y="22" width="4" height="6" rx=".8"/><rect x="4" y="9" width="4" height="6" rx=".8"/></g></svg>
+        <span class="n">13-Pile Deal</span><span class="d">13-pile animation</span>
+      </button>
+    </div>
+
+    <div class="log" id="log" aria-live="polite">Pick a shuffle style, then draw. Every style is the same true random shuffle of all 78 cards.</div>
+
+    <div class="ask">
+      <label for="question">Your question</label>
+      <input id="question" type="text" maxlength="300" autocomplete="off" placeholder="What do I need to know? (optional)">
+    </div>
+
+    <div class="controls">
+      <label class="sel" for="spreadSel">Spread
+        <select id="spreadSel">
+          <optgroup label="Tarot 13">
+            <option value="day">1 · Card of the Day</option>
+            <option value="sky">1 · What does the sky want me to see?</option>
+            <option value="becoming" selected>3 · Past · Present · Becoming</option>
+            <option value="serpent">5 · Serpent Path ♏︎ → ⛎︎ → ♐︎</option>
+            <option value="wheel">13 · The 13-Sign Wheel</option>
+          </optgroup>
+          <optgroup label="Classic">
+            <option value="c2">2 · Situation · Advice</option>
+            <option value="c3">3 · Situation · Challenge · Advice</option>
+            <option value="c4">4 · Situation → Outcome</option>
+            <option value="c5">5 · Decision</option>
+            <option value="c6">6 · Path forward</option>
+            <option value="c7">7 · Horseshoe</option>
+          </optgroup>
+        </select>
+      </label>
+      <button class="btn" id="draw">Draw</button>
+      <button class="btn ghosty" id="dayBtn">Card of the Day</button>
+      <button class="btn ghosty" id="reset">New deck</button>
+    </div>
+    <details class="audit">
+      <summary>How the shuffle works</summary>
+      <p>Every shuffle style runs the same algorithm: an unbiased <b>Fisher–Yates shuffle of all 78 cards</b>, using your browser's cryptographic random number generator. The five styles are animations only.</p>
+      <p>Each card has an equal chance of landing in every position. Your question, the spread, astrology, Ophiuchus and past readings never influence which cards appear, and there is no seed, weighting or re-rolling.</p>
+      <p>Cards are dealt from the top of the shuffled deck, so a spread never repeats a card. If you draw without shuffling, the full deck is shuffled once automatically first, and every new reading needs a fresh shuffle. The reading is written only after the cards are dealt.</p>
+      <p class="rng">Random source: <span id="rngSource"></span></p>
+    </details>
+    <p class="upright-note">This deck uses upright-only readings. Reversals are not required. Every card contains both constructive and challenging expressions, and the spread determines which aspect comes forward.</p>
+  </section>
+
+  <section aria-label="Your spread">
+    <div class="spread" id="spread"><p class="empty">Your cards will appear here, laid out in the spread you choose.</p></div>
+    <article class="reading" id="reading" aria-live="polite" hidden>
+      <h2>The Reading</h2>
+      <p id="readingText"></p>
+      <div class="src" id="readingSrc"></div>
+    </article>
+  </section>
+</div>
+
+<script>
+/* gold glitter: twinkling dust with occasional four-point glints.
+   VISUAL ONLY: this Math.random() moves background sparkles and never touches the cards. */
+(function(){
+  const cv=document.getElementById('glitter'), ctx=cv.getContext('2d');
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cols=['255,224,138','232,184,74','255,243,196','255,211,107'];
+  let W,H,dpr,parts=[];
+  function size(){
+    dpr=Math.min(devicePixelRatio||1,2); W=innerWidth; H=innerHeight;
+    cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n=Math.round(W*H/5200);
+    parts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()<.92?.5+Math.random()*1.3:1.8+Math.random()*1.8,
+      c:cols[Math.floor(Math.random()*cols.length)],ph:Math.random()*6.283,sp:.6+Math.random()*1.8,dy:.02+Math.random()*.08}));
+    if(still) draw(0);
+  }
+  function glint(x,y,s,a){
+    ctx.globalAlpha=a; ctx.fillStyle='rgba(255,248,220,1)';
+    ctx.beginPath(); ctx.moveTo(x,y-s*4); ctx.quadraticCurveTo(x,y,x+s*4,y); ctx.quadraticCurveTo(x,y,x,y+s*4); ctx.quadraticCurveTo(x,y,x-s*4,y); ctx.quadraticCurveTo(x,y,x,y-s*4); ctx.fill();
+  }
+  function draw(time){
+    const t=time/1000; ctx.clearRect(0,0,W,H);
+    for(const p of parts){
+      const tw=still?.6:(.5+.5*Math.sin(p.ph+t*p.sp)); const a=.15+.85*tw*tw;
+      if(!still){ p.y-=p.dy; if(p.y<-4){p.y=H+4;p.x=Math.random()*W;} }
+      ctx.globalAlpha=a; ctx.fillStyle=`rgba(${p.c},1)`;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,6.283); ctx.fill();
+      if(p.r>1.8 && tw>.82) glint(p.x,p.y,p.r,(tw-.82)*4.5);
+    }
+    ctx.globalAlpha=1;
+  }
+  function loop(time){ if(!document.hidden) draw(time); requestAnimationFrame(loop); }
+  addEventListener('resize',size); size(); if(!still) requestAnimationFrame(loop);
+})();
+
+const BACK = "__BACK__";
+const CARDS = __CARDS__;
+document.documentElement.style.setProperty('--back-img', `url(${BACK})`);
+
+const SPREADS = {
+  day:["Card of the Day"],
+  sky:["What does the sky want me to see?"],
+  becoming:["Past","Present","Becoming"],
+  serpent:["♏︎ What is ending","⛎︎ What needs healing","♐︎ What is emerging","What supports the healing","What resists the healing"],
+  wheel:["♈︎ Aries","♉︎ Taurus","♊︎ Gemini","♋︎ Cancer","♌︎ Leo","♍︎ Virgo","♎︎ Libra","♏︎ Scorpio","⛎︎ Ophiuchus","♐︎ Sagittarius","♑︎ Capricorn","♒︎ Aquarius","♓︎ Pisces"],
+  c2:["Situation","Advice"],
+  c3:["Situation","Challenge","Advice"],
+  c4:["Situation","Challenge","Action","Outcome"],
+  c5:["Situation","Option A","Option B","What you need to know","Likely direction"],
+  c6:["Where you are","What brought you here","What is blocking you","What is helping you","What you should do","Where it leads"],
+  c7:["Past","Present","Hidden influence","Obstacle","External influence","Advice","Outcome"]
+};
+const OPH_ICON='<path d="M50 6 V94" stroke="#FFE08A" stroke-width="2.5"/><path d="M50 20 C70 26, 70 40, 50 44 C30 48, 30 62, 50 66 C70 70, 70 82, 52 88" fill="none" stroke="#22D3EE" stroke-width="3.5" stroke-linecap="round"/><circle cx="50" cy="18" r="4" fill="#FF2ED1"/>';
+const SUIT_COLOR = {Major:"var(--gold)",Wands:"var(--magenta)",Cups:"var(--cyan)",Swords:"var(--blue)",Pentacles:"var(--violet)"};
+const ICON = {
+  Major:'<path d="M50 8 L58 42 L92 50 L58 58 L50 92 L42 58 L8 50 L42 42 Z" fill="none" stroke="#FFE08A" stroke-width="2.5"/><circle cx="50" cy="50" r="9" fill="#E8B84A"/>',
+  Wands:'<path d="M50 90 V22" stroke="#FF2ED1" stroke-width="3"/><path d="M50 22 C40 12, 48 6, 50 2 C52 6, 60 12, 50 22Z" fill="#FFE08A"/><circle cx="50" cy="60" r="3" fill="#FF2ED1"/>',
+  Cups:'<path d="M28 18 H72 C72 48, 60 60, 50 60 C40 60, 28 48, 28 18Z M50 60 V82 M36 86 H64" fill="none" stroke="#22D3EE" stroke-width="3"/><path d="M34 26 H66" stroke="#FFE08A" stroke-width="2"/>',
+  Swords:'<path d="M50 6 L56 20 V66 H44 V20Z" fill="none" stroke="#2563FF" stroke-width="3"/><path d="M34 66 H66 M50 66 V88" stroke="#FFE08A" stroke-width="3"/><circle cx="50" cy="92" r="3" fill="#FFE08A"/>',
+  Pentacles:'<circle cx="50" cy="50" r="36" fill="none" stroke="#E8B84A" stroke-width="3"/><path d="M50 20 L58 44 L84 44 L63 59 L71 84 L50 69 L29 84 L37 59 L16 44 L42 44Z" fill="none" stroke="#A855F7" stroke-width="2.5"/>'
+};
+
+/* ================================================================
+   RANDOMIZATION — the only code that decides card order.
+   Source: src/secure-shuffle.js (inlined below at build time).
+   ================================================================ */
+/*__SECURE_SHUFFLE__*/
+
+/* ---- deck state ----
+   deck        : the 78 cards in their current order (indexes into CARDS)
+   needsShuffle: true until the deck has been shuffled since the last
+                 reading, so every reading is dealt from a fresh shuffle */
+let deck, shuffles, needsShuffle;
+const $ = id => document.getElementById(id);
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function fresh(){ deck = CARDS.map((c,i)=>({i})); shuffles=[]; needsShuffle=true; }
+fresh();
+if (CARDS.length !== 78) throw new Error('Deck must contain exactly 78 cards');
+
+/* Every shuffle style runs the SAME full secure shuffle of all 78 cards.
+   The style names only choose which animation plays. */
+function shuffleWholeDeck(){
+  deck = secureShuffle(deck);
+  if (deck.length !== 78 || new Set(deck.map(c=>c.i)).size !== 78) throw new Error('Shuffle integrity check failed');
+  needsShuffle = false;
+}
+
+/* ---- animations ---- */
+const zone=$('zone');
+function ghosts(n){ return Array.from({length:n},()=>{const g=document.createElement('div');g.className='back ghost';zone.appendChild(g);return g;}); }
+function anim(el, frames, ms, delay=0){ return el.animate(frames,{duration:ms,delay,easing:'cubic-bezier(.4,.1,.2,1)',fill:'forwards'}).finished; }
+async function play(method){
+  if(reduced) return;
+  const W=Math.min(zone.clientWidth,640), s=W/640;
+  $('deck').style.visibility='hidden';
+  let gs, jobs=[];
+  if(method==='riffle'){
+    gs=ghosts(14);
+    gs.forEach((g,i)=>{const L=i%2===0, x=(L?-95:95)*s, y=-(i>>1)*2;
+      jobs.push(anim(g,[{transform:'none'},{transform:`translate(${x}px,${y}px) rotate(${L?-8:8}deg)`,offset:.45},{transform:`translate(${x*.4}px,${y}px) rotate(${L?-4:4}deg)`,offset:.65},{transform:`translate(0,${-i*1.2}px)`}],900,i*25));});
+  } else if(method==='overhand'){
+    gs=ghosts(8);
+    gs.forEach((g,i)=>{jobs.push(anim(g,[{transform:'none'},{transform:`translate(${70*s}px,-60px) rotate(6deg)`,offset:.5},{transform:`translate(0,${-i}px)`}],520,i*110));});
+  } else if(method==='wash'){
+    gs=ghosts(12);
+    gs.forEach((g,i)=>{const a=(i/12)*Math.PI*2, r=(150+(i*23)%60)*s;
+      jobs.push(anim(g,[{transform:'none'},{transform:`translate(${Math.cos(a)*r}px,${Math.sin(a)*r*.35}px) rotate(${(i*47)%180-90}deg)`,offset:.4},{transform:`translate(${Math.cos(a+2)*r*.6}px,${Math.sin(a+2)*r*.25}px) rotate(${(i*83)%360}deg)`,offset:.7},{transform:'none'}],1300,i*20));});
+  } else if(method==='cut'){
+    gs=ghosts(3);
+    gs.forEach((g,i)=>{const x=(i-1)*175*s;
+      jobs.push(anim(g,[{transform:'none'},{transform:`translate(${x}px,0)`,offset:.4},{transform:`translate(${x}px,0)`,offset:.6},{transform:`translate(0,${-i*2}px)`}],1000,i*60));});
+  } else if(method==='pile'){
+    gs=ghosts(13);
+    gs.forEach((g,i)=>{const a=-Math.PI/2+(i/13)*Math.PI*2, rx=230*s, ry=95;
+      jobs.push(anim(g,[{transform:'none'},{transform:`translate(${Math.cos(a)*rx}px,${Math.sin(a)*ry}px) scale(.55)`,offset:.5},{transform:`translate(${Math.cos(a)*rx}px,${Math.sin(a)*ry}px) scale(.55)`,offset:.65},{transform:'none'}],1250,i*45));});
+  }
+  await Promise.all(jobs);
+  gs.forEach(g=>g.remove());
+  $('deck').style.visibility='';
+}
+
+/* ---- UI ---- */
+const NAMES={riffle:'Riffle',overhand:'Overhand',wash:'Wash',cut:'Three-pile cut',pile:'13-pile deal'};
+function lock(b){ document.querySelectorAll('.m,#draw,#dayBtn,#reset').forEach(x=>x.disabled=b); }
+function status(){
+  $('count').innerHTML=`<b>78</b> cards · ${needsShuffle ? (shuffles.length ? 'reshuffle for a new reading' : 'not yet shuffled') : `shuffled ${shuffles.length}×`}`;
+}
+async function doShuffle(m){
+  lock(true);
+  shuffleWholeDeck();   // same secure Fisher–Yates for every style
+  shuffles.push(m);
+  await play(m);
+  const recent=shuffles.slice(-6).map(x=>NAMES[x]).join(' → ');
+  $('log').innerHTML=`<b>${NAMES[m]}</b>. ${shuffles.length>6?'… ':''}${recent}`;
+  status(); lock(false);
+}
+document.querySelectorAll('.m').forEach(b=>b.addEventListener('click',()=>doShuffle(b.dataset.m)));
+
+function faceHTML(c){
+  const d=CARDS[c.i], sc=SUIT_COLOR[d.arcana];
+  const num = d.arcana==='Major' ? d.number : (/^\d+$/.test(d.number) ? (d.number==='1'?'A':d.number) : d.number[0]);
+  const oph=d.card==='Five of Cups';
+  return `<div class="face${oph?' oph':''} flip-in" style="--sc:${sc}">
+    <div class="num">${num}</div>
+    <div class="sym"><svg viewBox="0 0 100 100" aria-hidden="true">${oph?OPH_ICON:ICON[d.arcana]}</svg></div>
+    <div class="nm">${d.card}</div>
+    <div class="co">${oph?'⛎︎ Ophiuchus · The Healer':d.correspondence.replace(/\s*\(.*$/,'').replace(/\?.*$/,'').replace(/\s*⛎︎/,'')}</div>
+  </div>`;
+}
+/* ---- reading: upright-only. Each card has ONE core meaning; the question, the
+   position and the surrounding cards decide which aspect of it comes forward. ---- */
+let samplePromise = (window.claude && typeof window.claude.use==='function') ? window.claude.use('sample').catch(()=>null) : Promise.resolve(null);
+let sampleOff=false, readCtl=null;
+const plain = s => s.replace(/[♈-♓⛎]︎?/g,'').trim();
+const ELEMENT_NOTE = {Wands:'drive, desire and action',Cups:'feeling, relationship and healing',Swords:'thought, truth and hard decisions',Pentacles:'work, money, the body and practical life'};
+const ASPECTS = {
+  constructive:{label:'Constructive', note:'working in your favor'},
+  challenging:{label:'Challenging', note:'asking for effort'},
+  blocked:{label:'Blocked', note:'held back, not yet flowing'},
+  excessive:{label:'Excessive', note:'too much of this energy'},
+  internal:{label:'Internal', note:'unfolding inside you'},
+  warning:{label:'Warning', note:'a caution to heed'}
+};
+/* each card's natural weight (its core meaning leans heavy or light; most are balanced) */
+const HEAVY = new Set(['The Tower','The Devil','Death','The Moon','Five of Wands','Nine of Wands','Ten of Wands','Four of Cups','Eight of Cups','Two of Swords','Three of Swords','Five of Swords','Seven of Swords','Eight of Swords','Nine of Swords','Ten of Swords','Five of Pentacles','Four of Pentacles']);
+const LIGHT = new Set(['The Sun','The Star','The World','The Empress','Strength','Temperance','Ace of Wands','Ace of Cups','Ace of Swords','Ace of Pentacles','Four of Wands','Six of Wands','Two of Cups','Three of Cups','Nine of Cups','Ten of Cups','Three of Pentacles','Six of Pentacles','Nine of Pentacles','Ten of Pentacles']);
+const weight = d => HEAVY.has(d.card) ? -1 : LIGHT.has(d.card) ? 1 : 0;
+/* what a spread position asks of its card */
+function posRole(pos){
+  const p=plain(pos).toLowerCase();
+  if(/blocking/.test(p)) return 'block';
+  if(/challenge|obstacle|resists|ending/.test(p)) return 'tension';
+  if(/hidden|needs healing|need to know/.test(p)) return 'inner';
+  if(/advice|should do|helping|supports|emerging|becoming|action/.test(p)) return 'help';
+  if(/outcome|likely|leads|future|option/.test(p)) return 'outcome';
+  return 'open';
+}
+function questionTone(q){
+  q=(q||'').toLowerCase();
+  return { stuck:/stuck|block|can'?t|cannot|won'?t|unable|trapped|why (is|isn'?t)/.test(q),
+           inner:/\bfeel|myself|\binner|inside|heal|\bwhy do i|my heart|anxious|grief/.test(q),
+           risk:/should i|risk|safe|worried|worry|danger|avoid|mistake|trust/.test(q) };
+}
+function resolveAspects(items, question){
+  const n=items.length, qt=questionTone(question);
+  const suitCount={}; items.forEach(it=>{ if(ELEMENT_NOTE[it.d.arcana]) suitCount[it.d.arcana]=(suitCount[it.d.arcana]||0)+1; });
+  const flooded=s=> n>=3 && (suitCount[s]||0)>=3 && (suitCount[s]||0)>=n/2;
+  const balance=items.reduce((a,it)=>a+weight(it.d),0);
+  return items.map((it,k)=>{
+    const w=weight(it.d), role=posRole(it.pos);
+    const nb=(k>0?weight(items[k-1].d):0)+(k<n-1?weight(items[k+1].d):0);
+    if(role==='help') return w<0 ? 'challenging' : 'constructive';
+    if(role==='block') return w>0 ? 'blocked' : (w<0 ? 'challenging' : 'blocked');
+    if(role==='tension') return w>0 ? 'excessive' : 'challenging';
+    if(role==='inner') return 'internal';
+    if(role==='outcome'){ const s=w+balance/Math.max(n,1); if(s<0 || (qt.risk && w<=0 && nb<0)) return 'warning'; return w<0 ? 'challenging' : 'constructive'; }
+    /* open positions: the card's own weight, then its neighbors, then the question */
+    if(flooded(it.d.arcana)) return 'excessive';
+    if(w<0) return qt.stuck ? 'blocked' : 'challenging';
+    if(w>0) return nb<0 ? 'blocked' : 'constructive';
+    if(qt.inner) return 'internal';
+    if(qt.stuck && nb<0) return 'blocked';
+    return nb<0 ? 'challenging' : 'constructive';
+  });
+}
+function lc(s){ return s ? s.charAt(0).toLowerCase()+s.slice(1) : s; }
+function composeReading(items, aspects, question){
+  const n=items.length, out=[];
+  const theme = it => lc(((it.d.theme||'').split(' — ')[0] || it.d.keywords.split(',')[0]).trim());
+  const phrase = (it,k) => `${it.d.card} (${theme(it)}), ${ASPECTS[aspects[k]].note}`;
+  if(question) out.push(`On your question, “${question}”:`);
+  if(n===1){
+    out.push(`${/Card of the Day/.test(items[0].pos)?'Your card for today is':'The sky shows you'} ${phrase(items[0],0)}.`);
+    out.push(items[0].d.core_meaning);
+  } else {
+    const idx = n<=5 ? items.map((_,k)=>k) : [0, Math.floor(n/2), n-1];
+    out.push(idx.map((k,x)=>`${x===0?'In':'in'} ${lc(plain(items[k].pos))} you drew ${phrase(items[k],k)}`).join('; ')+'.');
+    out.push(`The closing card's core meaning: ${items[n-1].d.core_meaning}`);
+  }
+  const majors=items.filter(i=>i.d.arcana==='Major').length;
+  if(n>1 && majors/n>=0.5) out.push(`With ${majors} of ${n} cards from the Major Arcana, larger life forces are at work here.`);
+  const counts={}; items.forEach(i=>{ if(ELEMENT_NOTE[i.d.arcana]) counts[i.d.arcana]=(counts[i.d.arcana]||0)+1; });
+  const top=Object.entries(counts).sort((a,b)=>b[1]-a[1])[0];
+  if(n>2 && top && top[1]>=2) out.push(`${top[0]} lead the spread, so the story centers on ${ELEMENT_NOTE[top[0]]}.`);
+  if(items.some(i=>i.d.card==='Five of Cups')) out.push('Ophiuchus appears: what was broken is not necessarily lost, and healing is part of this path.');
+  return out.join(' ');
+}
+function showAspects(aspects){
+  document.querySelectorAll('.slot').forEach((s,k)=>{
+    const a=ASPECTS[aspects[k]], el=s.querySelector('.aspect'); if(!a||!el) return;
+    el.className='aspect '+aspects[k]; el.innerHTML=`${a.label}<small>${a.note}</small>`;
+  });
+}
+async function interpret(items, spreadName, question){
+  const box=$('reading'), txt=$('readingText'), src=$('readingSrc');
+  box.hidden=false;
+  if(readCtl) readCtl.abort();
+  const local=resolveAspects(items, question);
+  showAspects(local);
+  const fallback=(note)=>{ txt.className=''; txt.textContent=composeReading(items, local, question); src.textContent=note||'Reading composed from the card meanings'; };
+  const sample = sampleOff ? null : await samplePromise;
+  if(!sample){ fallback(); return; }
+  txt.className='thinking'; txt.textContent='Reading the cards…'; src.textContent='';
+  const lines = items.map((it,k)=>`${k+1}. ${plain(it.pos)}: ${it.d.card}. Correspondence: ${plain(it.d.correspondence)}.${it.d.theme?` Theme: ${it.d.theme}.`:''} Core meaning: ${it.d.core_meaning} Keywords: ${it.d.keywords}.`).join('\n');
+  const prompt = `You are the reader for Tarot 13, "The 13-Sign Celestial Tarot": a 78-card tarot of the actual constellations, with a 13-sign zodiac where Ophiuchus (the Healer, Five of Cups) sits between Scorpio and Sagittarius. Its motto: Scorpio ends. Ophiuchus heals. Sagittarius rises.
+
+This deck uses upright-only readings. There are no reversed cards and no reversed meanings: never mention reversals, card orientation or upside-down cards. Every card has ONE core meaning that contains both constructive and challenging expressions. For each card, decide which aspect comes forward from (a) the person's question, (b) the card's position in the spread, and (c) the cards around it. The aspect must be exactly one of: constructive, challenging, blocked, excessive, internal, warning.
+
+Question: ${question ? question : '(none asked; read for general guidance)'}
+Spread: ${spreadName}
+Cards, in position order:
+${lines}
+
+Reply with only a JSON object, no other text:
+{"aspects": [one aspect string per card, in the same order], "reading": "ONE short paragraph, 70-110 words, speaking to the person as you, that answers the question if there is one and weaves the positions into a single story. Name key cards naturally and let each card's chosen aspect shape what you say about it. If the Five of Cups appears, bring in Ophiuchus's healing. Warm, grounded and specific. Plain text: no headings, lists or markdown."}`;
+  readCtl=new AbortController();
+  try{
+    const r=await sample.json(prompt,{modelTier:'quick',signal:readCtl.signal});
+    const ok=r && typeof r.reading==='string' && r.reading.trim();
+    if(!ok) throw {code:'invalid_json'};
+    if(Array.isArray(r.aspects) && r.aspects.length===items.length && r.aspects.every(a=>ASPECTS[String(a).toLowerCase()]))
+      showAspects(r.aspects.map(a=>String(a).toLowerCase()));
+    txt.className=''; txt.textContent=r.reading.trim(); src.textContent='Interpreted by Claude';
+  }catch(e){
+    if(e && e.code==='cancelled') return;
+    if(e && ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(e.code)) sampleOff=true;
+    fallback(e && e.code==='rate_limited' ? 'Claude is busy right now, so this reading was composed from the card meanings' : '');
+  }
+}
+
+function drawSpread(sv){
+  const pos=SPREADS[sv], n=pos.length;
+  const question=$('question').value.trim().slice(0,300);
+  /* 1. RANDOMIZE: one full secure shuffle if the deck hasn't been shuffled since the last reading */
+  const autoShuffled = needsShuffle;
+  if (needsShuffle) { shuffleWholeDeck(); shuffles.push('auto'); }
+  /* 2. DEAL: the top n cards, without replacement */
+  const hand=dealFromTop(deck, n);
+  needsShuffle = true;   // the next reading starts from a new shuffle
+  /* 3. INTERPRET: happens below, only after the cards are fixed */
+  status();
+  $('spread').innerHTML=hand.map((c,k)=>{
+    const d=CARDS[c.i];
+    return `<div class="slot${pos[k].startsWith('⛎')?' heal':''}"><div class="pos">${pos[k]}</div>${faceHTML(c)}
+      <div class="meaning"><b>${d.card}</b>${d.theme?`<br><span class="th">${d.theme}</span>`:''}<br><i>${d.core_meaning}</i><br>${d.keywords}<br><span class="aspect"></span></div></div>`;
+  }).join('');
+  [...document.querySelectorAll('.face')].forEach((f,k)=>f.style.animationDelay=`${k*120}ms`);
+  $('log').innerHTML=`${autoShuffled?'Shuffled all 78 cards, then drew':'Drew'} <b>${n}</b> from the top of the shuffled deck.`;
+  const opt=[...$('spreadSel').options].find(o=>o.value===sv);
+  const today=new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});
+  const spreadName = sv==='day' ? `Card of the Day for ${today}` : opt.textContent.replace(/^\d+\s*·\s*/,'');
+  interpret(hand.map((c,k)=>({pos:pos[k], d:CARDS[c.i]})), spreadName, question);
+}
+$('draw').addEventListener('click',()=>drawSpread($('spreadSel').value));
+$('dayBtn').addEventListener('click',()=>{ $('spreadSel').value='day'; drawSpread('day'); });
+$('rngSource').textContent = RNG_SOURCE;
+status();
+$('reset').addEventListener('click',()=>{ fresh(); status(); $('log').textContent='New deck. It will be shuffled before your next reading.'; $('spread').innerHTML='<p class="empty">Your cards will appear here, laid out in the spread you choose.</p>'; if(readCtl) readCtl.abort(); $('reading').hidden=true; });
+</script>

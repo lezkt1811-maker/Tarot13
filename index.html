@@ -93,6 +93,10 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
 .ask input{font:inherit;font-size:15px;min-height:46px;padding:0 16px;border-radius:999px;border:1px solid var(--gold-deep);background:#0B0803;color:var(--text);text-align:center}
 .ask input::placeholder{color:#8F7E58}
 .ask input:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.audit{max-width:620px;margin:0 auto;width:100%;font-size:13px;line-height:1.55;color:var(--muted);border:1px solid var(--line);border-radius:12px;padding:10px 16px;background:rgba(16,11,3,.7)}
+.audit summary{cursor:pointer;color:var(--gold-hi);letter-spacing:.14em;text-transform:uppercase;font-size:12px;text-align:center;min-height:28px;display:flex;align-items:center;justify-content:center}
+.audit summary:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.audit p{margin:.7em 0 0}.audit b{color:var(--text);font-weight:500}.audit .rng{font-size:12px;color:var(--gold)}
 .upright-note{max-width:620px;margin:0 auto;font-size:13px;line-height:1.55;color:var(--muted);text-align:center;font-style:italic}
 .upright-note::before{content:"\2726  ";color:var(--gold);font-style:normal}
 .aspect{display:inline-block;margin-top:2px;padding:3px 10px;border-radius:999px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
@@ -141,27 +145,27 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
     <div class="methods" role="group" aria-label="Shuffle methods">
       <button class="m" id="m-riffle" data-m="riffle" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 C10 12, 14 12, 16 16 C18 12, 22 12, 26 22"/><path d="M5 26h9M18 26h9"/></svg>
-        <span class="n">Riffle</span><span class="d">Split in half, interleave the edges</span>
+        <span class="n">Riffle</span><span class="d">Riffle animation</span>
       </button>
       <button class="m" id="m-overhand" data-m="overhand" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="5" width="14" height="6" rx="1.5"/><rect x="9" y="21" width="14" height="6" rx="1.5"/><path d="M16 12v7M13 16l3 3 3-3"/></svg>
-        <span class="n">Overhand</span><span class="d">Drop small packets hand to hand</span>
+        <span class="n">Overhand</span><span class="d">Overhand animation</span>
       </button>
       <button class="m" id="m-wash" data-m="wash" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5a11 11 0 1 1-10.4 7.4"/><path d="M5 7v6h6"/><circle cx="16" cy="16" r="2.4"/></svg>
-        <span class="n">Wash</span><span class="d">Swirl the cards face-down across the table</span>
+        <span class="n">Wash</span><span class="d">Table-wash animation</span>
       </button>
       <button class="m" id="m-cut" data-m="cut" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="10" width="7" height="12" rx="1.2"/><rect x="12.5" y="10" width="7" height="12" rx="1.2"/><rect x="22" y="10" width="7" height="12" rx="1.2"/></svg>
-        <span class="n">Three-Pile Cut</span><span class="d">Cut into three piles and restack</span>
+        <span class="n">Three-Pile Cut</span><span class="d">Cut animation</span>
       </button>
       <button class="m" id="m-pile" data-m="pile" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="2.5"/><g><rect x="14" y="2" width="4" height="6" rx=".8"/><rect x="24" y="9" width="4" height="6" rx=".8"/><rect x="21" y="22" width="4" height="6" rx=".8"/><rect x="7" y="22" width="4" height="6" rx=".8"/><rect x="4" y="9" width="4" height="6" rx=".8"/></g></svg>
-        <span class="n">13-Pile Deal</span><span class="d">Deal into 13 piles, gather in random order</span>
+        <span class="n">13-Pile Deal</span><span class="d">13-pile animation</span>
       </button>
     </div>
 
-    <div class="log" id="log" aria-live="polite">Pick a shuffle, or combine several, then draw.</div>
+    <div class="log" id="log" aria-live="polite">Pick a shuffle style, then draw. Every style is the same true random shuffle of all 78 cards.</div>
 
     <div class="ask">
       <label for="question">Your question</label>
@@ -172,6 +176,7 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
       <label class="sel" for="spreadSel">Spread
         <select id="spreadSel">
           <optgroup label="Tarot 13">
+            <option value="day">1 · Card of the Day</option>
             <option value="sky">1 · What does the sky want me to see?</option>
             <option value="becoming" selected>3 · Past · Present · Becoming</option>
             <option value="serpent">5 · Serpent Path ♏︎ → ⛎︎ → ♐︎</option>
@@ -188,8 +193,16 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
         </select>
       </label>
       <button class="btn" id="draw">Draw</button>
+      <button class="btn ghosty" id="dayBtn">Card of the Day</button>
       <button class="btn ghosty" id="reset">New deck</button>
     </div>
+    <details class="audit">
+      <summary>How the shuffle works</summary>
+      <p>Every shuffle style runs the same algorithm: an unbiased <b>Fisher–Yates shuffle of all 78 cards</b>, using your browser's cryptographic random number generator. The five styles are animations only.</p>
+      <p>Each card has an equal chance of landing in every position. Your question, the spread, astrology, Ophiuchus and past readings never influence which cards appear, and there is no seed, weighting or re-rolling.</p>
+      <p>Cards are dealt from the top of the shuffled deck, so a spread never repeats a card. If you draw without shuffling, the full deck is shuffled once automatically first, and every new reading needs a fresh shuffle. The reading is written only after the cards are dealt.</p>
+      <p class="rng">Random source: <span id="rngSource"></span></p>
+    </details>
     <p class="upright-note">This deck uses upright-only readings. Reversals are not required. Every card contains both constructive and challenging expressions, and the spread determines which aspect comes forward.</p>
   </section>
 
@@ -204,7 +217,8 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
 </div>
 
 <script>
-/* gold glitter: twinkling dust with occasional four-point glints */
+/* gold glitter: twinkling dust with occasional four-point glints.
+   VISUAL ONLY: this Math.random() moves background sparkles and never touches the cards. */
 (function(){
   const cv=document.getElementById('glitter'), ctx=cv.getContext('2d');
   const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -242,6 +256,7 @@ const CARDS = [{"arcana": "Major", "number": "0", "card": "The Fool", "correspon
 document.documentElement.style.setProperty('--back-img', `url(${BACK})`);
 
 const SPREADS = {
+  day:["Card of the Day"],
   sky:["What does the sky want me to see?"],
   becoming:["Past","Present","Becoming"],
   serpent:["♏︎ What is ending","⛎︎ What needs healing","♐︎ What is emerging","What supports the healing","What resists the healing"],
@@ -263,45 +278,93 @@ const ICON = {
   Pentacles:'<circle cx="50" cy="50" r="36" fill="none" stroke="#E8B84A" stroke-width="3"/><path d="M50 20 L58 44 L84 44 L63 59 L71 84 L50 69 L29 84 L37 59 L16 44 L42 44Z" fill="none" stroke="#A855F7" stroke-width="2.5"/>'
 };
 
-let deck, shuffles;
+/* ================================================================
+   RANDOMIZATION — the only code that decides card order.
+   Source: src/secure-shuffle.js (inlined below at build time).
+   ================================================================ */
+/*
+ * Tarot 13 — secure-shuffle.js
+ * ------------------------------------------------------------------
+ * THIS FILE IS THE ONLY CODE THAT DECIDES WHICH CARDS APPEAR.
+ *
+ * It is copied verbatim into index.html at build time (see
+ * tools/build.py) and is the same file the test in tests/ runs.
+ *
+ * What it does:
+ *   1. secureRandomInt(n)  -> an unbiased integer 0..n-1 from the
+ *      platform's cryptographic random number generator
+ *      (crypto.getRandomValues), using rejection sampling so no
+ *      value is more likely than another (no modulo bias).
+ *   2. secureShuffle(deck) -> a standard Fisher–Yates shuffle of the
+ *      WHOLE deck. Every one of the 78! orderings is equally likely,
+ *      so every card has an equal 1/78 chance of every position.
+ *   3. dealFromTop(deck, n) -> the first n cards of the shuffled deck.
+ *      Positions are distinct, so a spread never repeats a card
+ *      (dealing without replacement).
+ *
+ * What it does NOT do: there are no weights, no seeds, no memory of
+ * past readings, no knowledge of the question, the spread, astrology,
+ * Ophiuchus or card meanings, and no re-shuffling until a "desired"
+ * result appears. Cards are chosen first; interpretation happens
+ * afterwards and cannot change which cards were dealt.
+ */
+
+const SECURE_RNG = (typeof globalThis !== 'undefined' && globalThis.crypto &&
+                    typeof globalThis.crypto.getRandomValues === 'function')
+  ? globalThis.crypto : null;
+
+const RNG_SOURCE = SECURE_RNG ? 'crypto.getRandomValues (cryptographically secure)'
+                              : 'UNAVAILABLE: this browser has no secure random generator';
+
+/* Unbiased integer in [0, n) using rejection sampling on 32-bit values. */
+function secureRandomInt(n) {
+  if (!SECURE_RNG) throw new Error('No cryptographically secure random generator available');
+  if (!Number.isInteger(n) || n < 1 || n > 0x100000000) throw new RangeError('n out of range');
+  const limit = Math.floor(0x100000000 / n) * n;   // largest multiple of n that fits in 2^32
+  const buf = new Uint32Array(1);
+  let x;
+  do { SECURE_RNG.getRandomValues(buf); x = buf[0]; } while (x >= limit);  // reject the biased tail
+  return x % n;
+}
+
+/* Standard Fisher–Yates (Durstenfeld) shuffle. Returns a new array; the input is not modified. */
+function secureShuffle(deck) {
+  const a = deck.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = secureRandomInt(i + 1);              // 0 <= j <= i, uniform
+    const tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+  }
+  return a;
+}
+
+/* Deal n cards from the top of an already-shuffled deck (no replacement). */
+function dealFromTop(deck, n) {
+  if (n > deck.length) throw new RangeError('Not enough cards to deal');
+  return deck.slice(0, n);
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { secureRandomInt, secureShuffle, dealFromTop, RNG_SOURCE };
+}
+
+
+/* ---- deck state ----
+   deck        : the 78 cards in their current order (indexes into CARDS)
+   needsShuffle: true until the deck has been shuffled since the last
+                 reading, so every reading is dealt from a fresh shuffle */
+let deck, shuffles, needsShuffle;
 const $ = id => document.getElementById(id);
-const rnd = n => Math.floor(Math.random()*n);
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-function fresh(){ deck = CARDS.map((c,i)=>({i})); shuffles=[]; }
+function fresh(){ deck = CARDS.map((c,i)=>({i})); shuffles=[]; needsShuffle=true; }
 fresh();
+if (CARDS.length !== 78) throw new Error('Deck must contain exactly 78 cards');
 
-/* ---- five shuffle methods (all operate on the real deck order) ---- */
-function riffle(d){
-  // Gilbert–Shannon–Reeds riffle: binomial cut, then drop cards proportionally to pile size
-  let k=0; for(let i=0;i<d.length;i++) if(Math.random()<.5) k++;
-  let a=d.slice(0,k), b=d.slice(k), out=[];
-  while(a.length||b.length){ (Math.random()*(a.length+b.length) < a.length ? out.push(a.shift()) : out.push(b.shift())); }
-  return out;
-}
-function overhand(d){
-  let src=d.slice(), out=[];
-  while(src.length){ const n=Math.min(src.length,1+rnd(8)); out=src.splice(0,n).concat(out); }
-  return out;
-}
-function wash(d){
-  // a full random mix (Fisher–Yates); every card stays upright
-  const out=d.slice();
-  for(let i=out.length-1;i>0;i--){const j=rnd(i+1);[out[i],out[j]]=[out[j],out[i]];}
-  return out;
-}
-function cut(d){
-  const a=8+rnd(Math.floor(d.length/3)), b=a+8+rnd(Math.floor(d.length/3));
-  const piles=[d.slice(0,a), d.slice(a,b), d.slice(b)];
-  const order=[0,1,2].sort(()=>Math.random()-.5);
-  return order.flatMap(p=>piles[p]);
-}
-function pileDeal(d, n=13){
-  const piles=Array.from({length:n},()=>[]);
-  d.forEach((c,i)=>piles[i%n].unshift(c));
-  const order=[...Array(n).keys()];
-  for(let i=n-1;i>0;i--){const j=rnd(i+1);[order[i],order[j]]=[order[j],order[i]];}
-  return order.flatMap(p=>piles[p]);
+/* Every shuffle style runs the SAME full secure shuffle of all 78 cards.
+   The style names only choose which animation plays. */
+function shuffleWholeDeck(){
+  deck = secureShuffle(deck);
+  if (deck.length !== 78 || new Set(deck.map(c=>c.i)).size !== 78) throw new Error('Shuffle integrity check failed');
+  needsShuffle = false;
 }
 
 /* ---- animations ---- */
@@ -322,8 +385,8 @@ async function play(method){
     gs.forEach((g,i)=>{jobs.push(anim(g,[{transform:'none'},{transform:`translate(${70*s}px,-60px) rotate(6deg)`,offset:.5},{transform:`translate(0,${-i}px)`}],520,i*110));});
   } else if(method==='wash'){
     gs=ghosts(12);
-    gs.forEach((g,i)=>{const a=(i/12)*Math.PI*2, r=(150+rnd(60))*s;
-      jobs.push(anim(g,[{transform:'none'},{transform:`translate(${Math.cos(a)*r}px,${Math.sin(a)*r*.35}px) rotate(${rnd(180)-90}deg)`,offset:.4},{transform:`translate(${Math.cos(a+2)*r*.6}px,${Math.sin(a+2)*r*.25}px) rotate(${rnd(360)}deg)`,offset:.7},{transform:'none'}],1300,i*20));});
+    gs.forEach((g,i)=>{const a=(i/12)*Math.PI*2, r=(150+(i*23)%60)*s;
+      jobs.push(anim(g,[{transform:'none'},{transform:`translate(${Math.cos(a)*r}px,${Math.sin(a)*r*.35}px) rotate(${(i*47)%180-90}deg)`,offset:.4},{transform:`translate(${Math.cos(a+2)*r*.6}px,${Math.sin(a+2)*r*.25}px) rotate(${(i*83)%360}deg)`,offset:.7},{transform:'none'}],1300,i*20));});
   } else if(method==='cut'){
     gs=ghosts(3);
     gs.forEach((g,i)=>{const x=(i-1)*175*s;
@@ -340,17 +403,13 @@ async function play(method){
 
 /* ---- UI ---- */
 const NAMES={riffle:'Riffle',overhand:'Overhand',wash:'Wash',cut:'Three-pile cut',pile:'13-pile deal'};
-function lock(b){ document.querySelectorAll('.m,#draw,#reset').forEach(x=>x.disabled=b); }
+function lock(b){ document.querySelectorAll('.m,#draw,#dayBtn,#reset').forEach(x=>x.disabled=b); }
 function status(){
-  $('count').innerHTML=`<b>78</b> cards · ${shuffles.length? `${shuffles.length} shuffle${shuffles.length>1?'s':''}`:'fresh deck'}`;
+  $('count').innerHTML=`<b>78</b> cards · ${needsShuffle ? (shuffles.length ? 'reshuffle for a new reading' : 'not yet shuffled') : `shuffled ${shuffles.length}×`}`;
 }
 async function doShuffle(m){
   lock(true);
-  if(m==='riffle') deck=riffle(deck);
-  else if(m==='overhand') deck=overhand(deck);
-  else if(m==='wash') deck=wash(deck);
-  else if(m==='cut') deck=cut(deck);
-  else if(m==='pile') deck=pileDeal(deck);
+  shuffleWholeDeck();   // same secure Fisher–Yates for every style
   shuffles.push(m);
   await play(m);
   const recent=shuffles.slice(-6).map(x=>NAMES[x]).join(' → ');
@@ -433,7 +492,7 @@ function composeReading(items, aspects, question){
   const phrase = (it,k) => `${it.d.card} (${theme(it)}), ${ASPECTS[aspects[k]].note}`;
   if(question) out.push(`On your question, “${question}”:`);
   if(n===1){
-    out.push(`The sky shows you ${phrase(items[0],0)}.`);
+    out.push(`${/Card of the Day/.test(items[0].pos)?'Your card for today is':'The sky shows you'} ${phrase(items[0],0)}.`);
     out.push(items[0].d.core_meaning);
   } else {
     const idx = n<=5 ? items.map((_,k)=>k) : [0, Math.floor(n/2), n-1];
@@ -491,21 +550,34 @@ Reply with only a JSON object, no other text:
   }
 }
 
-$('draw').addEventListener('click',()=>{
-  const sv=$('spreadSel').value, pos=SPREADS[sv], n=pos.length;
+function drawSpread(sv){
+  const pos=SPREADS[sv], n=pos.length;
   const question=$('question').value.trim().slice(0,300);
-  const hand=deck.slice(0,n);
+  /* 1. RANDOMIZE: one full secure shuffle if the deck hasn't been shuffled since the last reading */
+  const autoShuffled = needsShuffle;
+  if (needsShuffle) { shuffleWholeDeck(); shuffles.push('auto'); }
+  /* 2. DEAL: the top n cards, without replacement */
+  const hand=dealFromTop(deck, n);
+  needsShuffle = true;   // the next reading starts from a new shuffle
+  /* 3. INTERPRET: happens below, only after the cards are fixed */
+  status();
   $('spread').innerHTML=hand.map((c,k)=>{
     const d=CARDS[c.i];
     return `<div class="slot${pos[k].startsWith('⛎')?' heal':''}"><div class="pos">${pos[k]}</div>${faceHTML(c)}
       <div class="meaning"><b>${d.card}</b>${d.theme?`<br><span class="th">${d.theme}</span>`:''}<br><i>${d.core_meaning}</i><br>${d.keywords}<br><span class="aspect"></span></div></div>`;
   }).join('');
   [...document.querySelectorAll('.face')].forEach((f,k)=>f.style.animationDelay=`${k*120}ms`);
-  $('log').innerHTML=`Drew <b>${n}</b> from the top. Shuffle again or start a new deck.`;
-  const sel=$('spreadSel'), spreadName=sel.options[sel.selectedIndex].textContent.replace(/^\d+\s*·\s*/,'');
+  $('log').innerHTML=`${autoShuffled?'Shuffled all 78 cards, then drew':'Drew'} <b>${n}</b> from the top of the shuffled deck.`;
+  const opt=[...$('spreadSel').options].find(o=>o.value===sv);
+  const today=new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});
+  const spreadName = sv==='day' ? `Card of the Day for ${today}` : opt.textContent.replace(/^\d+\s*·\s*/,'');
   interpret(hand.map((c,k)=>({pos:pos[k], d:CARDS[c.i]})), spreadName, question);
-});
-$('reset').addEventListener('click',()=>{ fresh(); status(); $('log').textContent='New deck in natural order. Pick a shuffle.'; $('spread').innerHTML='<p class="empty">Your cards will appear here, laid out in the spread you choose.</p>'; if(readCtl) readCtl.abort(); $('reading').hidden=true; });
+}
+$('draw').addEventListener('click',()=>drawSpread($('spreadSel').value));
+$('dayBtn').addEventListener('click',()=>{ $('spreadSel').value='day'; drawSpread('day'); });
+$('rngSource').textContent = RNG_SOURCE;
+status();
+$('reset').addEventListener('click',()=>{ fresh(); status(); $('log').textContent='New deck. It will be shuffled before your next reading.'; $('spread').innerHTML='<p class="empty">Your cards will appear here, laid out in the spread you choose.</p>'; if(readCtl) readCtl.abort(); $('reading').hidden=true; });
 </script>
 
 </body></html>

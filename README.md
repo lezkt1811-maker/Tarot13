@@ -11,6 +11,8 @@ A 78-card tarot of the actual constellations. The familiar tarot skeleton (22 Ma
 
 📖 **The full design spec is the [Deck Bible](docs/deck-bible.md).** Spreads are in the [Spreads guide](docs/spreads.md).
 
+🎲 **True random shuffler:** every shuffle is an unbiased, cryptographically secure Fisher–Yates shuffle of all 78 cards, with no weighting or hidden logic. See [How the shuffle works](docs/randomness.md) and run `node tests/shuffle.test.js` to verify.
+
 ![Tarot 13 card back](art/backs/card-back-v2.png)
 
 > **Shuffle & draw:** the live app is at **https://lezkt1811-maker.github.io/Tarot13/** (source: [`index.html`](index.html)).
@@ -105,6 +107,9 @@ art/
   wands/  cups/  swords/  pentacles/   pip cards Ace–10
   courts/      16 court cards
 data/          master card list (CSV, JSON, XLSX)
+src/           secure-shuffle.js (all card randomization) + app template
+tests/         shuffle audit test
+tools/         build.py: builds index.html from src/
 design/        style guide: palette, frame, typography
 mockups/       early HTML/SVG mockups (The Fool + card back)
 ```
