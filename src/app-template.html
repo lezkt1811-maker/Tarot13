@@ -137,27 +137,27 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
     <div class="methods" role="group" aria-label="Shuffle methods">
       <button class="m" id="m-riffle" data-m="riffle" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 C10 12, 14 12, 16 16 C18 12, 22 12, 26 22"/><path d="M5 26h9M18 26h9"/></svg>
-        <span class="n">Riffle</span><span class="d">Riffle animation</span>
+        <span class="n">Riffle</span><span class="d">Split in half, interleave the edges</span>
       </button>
       <button class="m" id="m-overhand" data-m="overhand" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="5" width="14" height="6" rx="1.5"/><rect x="9" y="21" width="14" height="6" rx="1.5"/><path d="M16 12v7M13 16l3 3 3-3"/></svg>
-        <span class="n">Overhand</span><span class="d">Overhand animation</span>
+        <span class="n">Overhand</span><span class="d">Drop small packets hand to hand</span>
       </button>
       <button class="m" id="m-wash" data-m="wash" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5a11 11 0 1 1-10.4 7.4"/><path d="M5 7v6h6"/><circle cx="16" cy="16" r="2.4"/></svg>
-        <span class="n">Wash</span><span class="d">Table-wash animation</span>
+        <span class="n">Wash</span><span class="d">Swirl face-down across the table</span>
       </button>
       <button class="m" id="m-cut" data-m="cut" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="10" width="7" height="12" rx="1.2"/><rect x="12.5" y="10" width="7" height="12" rx="1.2"/><rect x="22" y="10" width="7" height="12" rx="1.2"/></svg>
-        <span class="n">Three-Pile Cut</span><span class="d">Cut animation</span>
+        <span class="n">Three-Pile Cut</span><span class="d">Cut into three piles, restack</span>
       </button>
       <button class="m" id="m-pile" data-m="pile" style="--mc:var(--gold-hi)">
         <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="2.5"/><g><rect x="14" y="2" width="4" height="6" rx=".8"/><rect x="24" y="9" width="4" height="6" rx=".8"/><rect x="21" y="22" width="4" height="6" rx=".8"/><rect x="7" y="22" width="4" height="6" rx=".8"/><rect x="4" y="9" width="4" height="6" rx=".8"/></g></svg>
-        <span class="n">13-Pile Deal</span><span class="d">13-pile animation</span>
+        <span class="n">13-Pile Deal</span><span class="d">Deal into 13 piles, gather</span>
       </button>
     </div>
 
-    <div class="log" id="log" aria-live="polite">Pick a shuffle style, then draw. Every style is the same true random shuffle of all 78 cards.</div>
+    <div class="log" id="log" aria-live="polite">Pick a shuffle, or combine several, then draw.</div>
 
     <div class="ask">
       <label for="question">Your question</label>
@@ -190,7 +190,8 @@ label.sel{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:1
     </div>
     <details class="audit">
       <summary>How the shuffle works</summary>
-      <p>Every shuffle style runs the same algorithm: an unbiased <b>Fisher–Yates shuffle of all 78 cards</b>, using your browser's cryptographic random number generator. The five styles are animations only.</p>
+      <p>Each shuffle style moves the cards its own way: the riffle splits and interleaves, the overhand drops packets, the wash swirls everything, the cut makes three piles, and the 13-pile deal deals and gathers piles. Every random choice comes from your browser's cryptographic random number generator.</p>
+      <p>Every style also includes a full, unbiased <b>Fisher–Yates shuffle of all 78 cards</b>, so whichever style you choose, the deck ends up completely random.</p>
       <p>Each card has an equal chance of landing in every position. Your question, the spread, astrology, Ophiuchus and past readings never influence which cards appear, and there is no seed, weighting or re-rolling.</p>
       <p>Cards are dealt from the top of the shuffled deck, so a spread never repeats a card. If you draw without shuffling, the full deck is shuffled once automatically first, and every new reading needs a fresh shuffle. The reading is written only after the cards are dealt.</p>
       <p class="rng">Random source: <span id="rngSource"></span></p>
@@ -287,10 +288,11 @@ function fresh(){ deck = CARDS.map((c,i)=>({i})); shuffles=[]; needsShuffle=true
 fresh();
 if (CARDS.length !== 78) throw new Error('Deck must contain exactly 78 cards');
 
-/* Every shuffle style runs the SAME full secure shuffle of all 78 cards.
-   The style names only choose which animation plays. */
-function shuffleWholeDeck(){
-  deck = secureShuffle(deck);
+/* Shuffle all 78 cards. With a style, the cards are moved by that style's
+   own mechanics (shuffleInStyle); without one (an automatic shuffle before
+   a draw) they get a plain full Fisher–Yates mix. Both are fully random. */
+function shuffleWholeDeck(style){
+  deck = style ? shuffleInStyle(deck, style) : secureShuffle(deck);
   if (deck.length !== 78 || new Set(deck.map(c=>c.i)).size !== 78) throw new Error('Shuffle integrity check failed');
   needsShuffle = false;
 }
@@ -337,7 +339,7 @@ function status(){
 }
 async function doShuffle(m){
   lock(true);
-  shuffleWholeDeck();   // same secure Fisher–Yates for every style
+  shuffleWholeDeck(m);   // this style's own moves, all driven by the secure generator
   shuffles.push(m);
   await play(m);
   const recent=shuffles.slice(-6).map(x=>NAMES[x]).join(' → ');

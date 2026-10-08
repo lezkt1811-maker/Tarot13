@@ -14,7 +14,11 @@
  *   2. secureShuffle(deck) -> a standard Fisher–Yates shuffle of the
  *      WHOLE deck. Every one of the 78! orderings is equally likely,
  *      so every card has an equal 1/78 chance of every position.
- *   3. dealFromTop(deck, n) -> the first n cards of the shuffled deck.
+ *   3. shuffleInStyle(deck, style) -> one of the five shuffle styles
+ *      (riffle, overhand, wash, three-pile cut, 13-pile deal). Each
+ *      performs its own moves with secure randomness, on top of a full
+ *      Fisher–Yates mix, so every style is still completely random.
+ *   4. dealFromTop(deck, n) -> the first n cards of the shuffled deck.
  *      Positions are distinct, so a spread never repeats a card
  *      (dealing without replacement).
  *
@@ -53,6 +57,83 @@ function secureShuffle(deck) {
   return a;
 }
 
+/* ------------------------------------------------------------------
+ * THE FIVE SHUFFLE STYLES — each one moves the cards in its own way,
+ * and every random choice it makes comes from secureRandomInt.
+ *
+ * Every style also includes a full Fisher–Yates mix (secureShuffle).
+ * That is what guarantees the result is completely random: each card
+ * keeps an equal 1/78 chance of every position no matter which style
+ * you pick. The style's own moves are then performed on top, so each
+ * style really handles the deck differently.
+ * ------------------------------------------------------------------ */
+
+/* Riffle: cut near the middle, then let cards fall from the two halves,
+   interleaving them (Gilbert–Shannon–Reeds model). */
+function riffleMoves(deck) {
+  let cutAt = 0;
+  for (let i = 0; i < deck.length; i++) cutAt += secureRandomInt(2);    // binomial cut near the middle
+  let left = deck.slice(0, cutAt), right = deck.slice(cutAt);
+  const out = [];
+  while (left.length || right.length) {
+    // a card drops from a half in proportion to how many cards it holds
+    if (secureRandomInt(left.length + right.length) < left.length) out.push(left.shift());
+    else out.push(right.shift());
+  }
+  return out;
+}
+
+/* Overhand: take small packets (1–8 cards) off the top and drop each
+   one on top of the growing pile in the other hand. */
+function overhandMoves(deck) {
+  const src = deck.slice();
+  let out = [];
+  while (src.length) {
+    const packet = src.splice(0, Math.min(src.length, 1 + secureRandomInt(8)));
+    out = packet.concat(out);
+  }
+  return out;
+}
+
+/* Wash: the cards are swirled face-down across the table and gathered —
+   a complete mix, which is exactly a Fisher–Yates shuffle. */
+function washMoves(deck) {
+  return secureShuffle(deck);
+}
+
+/* Three-pile cut: cut the deck at two random points into three piles,
+   then restack the piles in a random order. */
+function threePileCutMoves(deck) {
+  const n = deck.length;
+  const a = 1 + secureRandomInt(n - 2);              // first cut: 1..n-2
+  const b = a + 1 + secureRandomInt(n - a - 1);      // second cut: a+1..n-1
+  const piles = [deck.slice(0, a), deck.slice(a, b), deck.slice(b)];
+  return secureShuffle([0, 1, 2]).flatMap(p => piles[p]);
+}
+
+/* 13-pile deal: deal the deck one card at a time into 13 piles,
+   then gather the piles in a random order. */
+function thirteenPileMoves(deck) {
+  const piles = Array.from({ length: 13 }, () => []);
+  deck.forEach((card, i) => piles[i % 13].unshift(card));
+  return secureShuffle([...Array(13).keys()]).flatMap(p => piles[p]);
+}
+
+const STYLE_MOVES = {
+  riffle: d => riffleMoves(riffleMoves(riffleMoves(d))),   // three riffles, like a real riffle shuffle
+  overhand: overhandMoves,
+  wash: washMoves,
+  cut: threePileCutMoves,
+  pile: thirteenPileMoves
+};
+
+/* Shuffle in a chosen style: a full Fisher–Yates mix plus that style's own moves. */
+function shuffleInStyle(deck, style) {
+  const moves = STYLE_MOVES[style];
+  if (!moves) throw new Error('Unknown shuffle style: ' + style);
+  return moves(secureShuffle(deck));
+}
+
 /* Deal n cards from the top of an already-shuffled deck (no replacement). */
 function dealFromTop(deck, n) {
   if (n > deck.length) throw new RangeError('Not enough cards to deal');
@@ -60,5 +141,5 @@ function dealFromTop(deck, n) {
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { secureRandomInt, secureShuffle, dealFromTop, RNG_SOURCE };
+  module.exports = { secureRandomInt, secureShuffle, shuffleInStyle, STYLE_MOVES, dealFromTop, RNG_SOURCE };
 }

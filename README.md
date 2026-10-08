@@ -11,7 +11,7 @@ A 78-card tarot of the actual constellations. The familiar tarot skeleton (22 Ma
 
 📖 **The full design spec is the [Deck Bible](docs/deck-bible.md).** Spreads are in the [Spreads guide](docs/spreads.md).
 
-🎲 **True random shuffler:** every shuffle is an unbiased, cryptographically secure Fisher–Yates shuffle of all 78 cards, with no weighting or hidden logic. See [How the shuffle works](docs/randomness.md) and run `node tests/shuffle.test.js` to verify.
+🎲 **True random shuffler:** five shuffle styles (riffle, overhand, wash, three-pile cut, 13-pile deal), each moving the cards its own way with cryptographically secure randomness and a full Fisher–Yates mix, so every card has an equal chance of every position. No weighting or hidden logic. See [How the shuffle works](docs/randomness.md) and run `node tests/shuffle.test.js` to verify.
 
 ![Tarot 13 card back](art/backs/card-back-v2.png)
 
