@@ -28,7 +28,7 @@ id,arcana,number,card,element,correspondence,type,keywords,art_direction,palette
 27,Wands,5,Five of Wands,Fire,Leo Minor (The Lesser Lion),Constellation,"conflict, loss, challenge",,,Not started,,Unverified
 28,Wands,6,Six of Wands,Fire,Auriga (The Charioteer),Constellation,"harmony, exchange, recovery",,,Not started,,Unverified
 29,Wands,7,Seven of Wands,Fire,Corona Borealis (The Northern Crown),Constellation,"assessment, persistence",,,Not started,,Unverified
-30,Wands,8,Eight of Wands,Fire,Ara (The Altar),Constellation,"movement, mastery, change",,,Not started,Corrected from Sagitta per Brian Clark's text. Another source adds: 2nd decan Sagittarius / Mars (unverified).,Confirmed (Clark PDF)
+30,Wands,8,Eight of Wands,Fire,Ara (The Altar),Constellation,"movement, mastery, change",,,Not started,"Corrected from Sagitta per Brian Clark's text. 2nd decan Sagittarius, Mars (another source; consistent with the Five of Cups decan pattern).",Confirmed (Clark PDF)
 31,Wands,9,Nine of Wands,Fire,Canis Major (The Greater Dog),Constellation,"culmination, near-completion",,,Not started,,Unverified
 32,Wands,10,Ten of Wands,Fire,Elemental Fire,Element,"fullness, elemental force",,,Not started,,Unverified
 33,Wands,Princess,Princess of Wands,Fire,Summer Solstice,Season,"student, messenger, new energy",,,Not started,,Unverified
@@ -39,7 +39,7 @@ id,arcana,number,card,element,correspondence,type,keywords,art_direction,palette
 38,Cups,2,Two of Cups,Water,Crater (The Cup),Constellation,"duality, choice, partnership",,,Not started,,Unverified
 39,Cups,3,Three of Cups,Water,Delphinus (The Dolphin),Constellation,"growth, expression",,,Not started,,Unverified
 40,Cups,4,Four of Cups,Water,Eridanus (The Celestial River),Constellation,"stability, rest",,,Not started,,Unverified
-41,Cups,5,Five of Cups,Water,Ophiuchus (The Serpent Bearer / Asclepius),Constellation,"conflict, loss, challenge",,,Not started,,Confirmed (Clark PDF)
+41,Cups,5,Five of Cups,Water,Ophiuchus / Asclepius (The Serpent Bearer) ⛎,Constellation,"conflict, loss, challenge",,,Not started,"★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",Confirmed (Clark PDF)
 42,Cups,6,Six of Cups,Water,Piscis Austrinus (The Southern Fish),Constellation,"harmony, exchange, recovery",,,Not started,,Unverified
 43,Cups,7,Seven of Cups,Water,Canis Minor (The Lesser Dog),Constellation,"assessment, persistence",,,Not started,,Unverified
 44,Cups,8,Eight of Cups,Water,Orion (The Hunter),Constellation,"movement, mastery, change",,,Not started,,Unverified

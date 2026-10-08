@@ -30,6 +30,23 @@ The full card-by-card list is in [`data/cards.csv`](data/cards.csv), [`data/card
 
 ---
 
+## ⛎ Featured card: Five of Cups, Ophiuchus
+
+The heart of Tarot 13. Ophiuchus, the Serpent Bearer and often called the "13th sign," appears as the **Five of Cups**. It depicts Asclepius, the Greek god of healing.
+
+| | |
+|---|---|
+| Constellation | Ophiuchus / Asclepius |
+| Decan | 2nd decan of Scorpio |
+| Decan ruler | Neptune |
+| Harmonic | Quintile |
+
+**Meaning in this deck:** grief and loss as the doorway to healing. The wound is where the healer begins.
+
+**Design note:** give this card a special touch, such as an extra gold serpent winding through the frame or a ⛎ glyph in the corner, so it stands out as the deck's 13th-sign card.
+
+---
+
 ## Repository layout
 
 ```

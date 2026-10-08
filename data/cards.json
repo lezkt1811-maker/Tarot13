@@ -446,7 +446,7 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Corrected from Sagitta per Brian Clark's text. Another source adds: 2nd decan Sagittarius / Mars (unverified).",
+    "notes": "Corrected from Sagitta per Brian Clark's text. 2nd decan Sagittarius, Mars (another source; consistent with the Five of Cups decan pattern).",
     "source_check": "Confirmed (Clark PDF)"
   },
   {
@@ -605,13 +605,13 @@
     "number": "5",
     "card": "Five of Cups",
     "element": "Water",
-    "correspondence": "Ophiuchus (The Serpent Bearer / Asclepius)",
+    "correspondence": "Ophiuchus / Asclepius (The Serpent Bearer) ⛎",
     "type": "Constellation",
     "keywords": "conflict, loss, challenge",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
+    "notes": "★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",
     "source_check": "Confirmed (Clark PDF)"
   },
   {
