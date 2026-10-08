@@ -17,7 +17,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "A leap into the unknown with open hands."
   },
   {
     "id": 2,
@@ -37,7 +37,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Will and skill focused into deliberate creation."
   },
   {
     "id": 3,
@@ -57,7 +57,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Hidden knowledge that speaks through intuition and silence."
   },
   {
     "id": 4,
@@ -77,7 +77,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Creative abundance that grows when it is nurtured."
   },
   {
     "id": 5,
@@ -97,7 +97,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Structure and authority that give life a firm shape."
   },
   {
     "id": 6,
@@ -117,7 +117,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Tradition and shared values as a teacher."
   },
   {
     "id": 7,
@@ -137,7 +137,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "A meaningful choice that reveals what you truly value."
   },
   {
     "id": 8,
@@ -157,7 +157,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Emotional will steering toward a chosen direction."
   },
   {
     "id": 9,
@@ -177,7 +177,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Courage of the heart that wins through patience, not force."
   },
   {
     "id": 10,
@@ -197,7 +197,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Solitude and discernment that light the inner path."
   },
   {
     "id": 11,
@@ -217,7 +217,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "The turning of cycles, luck and timing beyond your control."
   },
   {
     "id": 12,
@@ -237,7 +237,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Truth, balance and the consequences of action."
   },
   {
     "id": 13,
@@ -257,7 +257,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Surrender that brings a new way of seeing."
   },
   {
     "id": 14,
@@ -277,7 +277,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "An ending that clears the ground for transformation."
   },
   {
     "id": 15,
@@ -297,7 +297,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Blending opposites into a workable whole."
   },
   {
     "id": 16,
@@ -317,7 +317,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Attachments and appetites that bind or empower."
   },
   {
     "id": 17,
@@ -337,7 +337,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Sudden rupture that breaks what was false."
   },
   {
     "id": 18,
@@ -357,7 +357,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Hope and vision renewed after the storm."
   },
   {
     "id": 19,
@@ -377,7 +377,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Dreams, uncertainty and what moves beneath the surface."
   },
   {
     "id": 20,
@@ -397,7 +397,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Clarity, vitality and joy in full light."
   },
   {
     "id": 21,
@@ -417,7 +417,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "An awakening call to rise and answer."
   },
   {
     "id": 22,
@@ -437,7 +437,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "",
-    "core_line": ""
+    "core_meaning": "Completion, wholeness and the end of a great cycle."
   },
   {
     "id": 23,
@@ -457,7 +457,7 @@
     "decan_ruler": "Mars",
     "harmonic": "Conjunction (1st)",
     "theme": "Ignition",
-    "core_line": "A spark becomes an intention."
+    "core_meaning": "A spark becomes an intention."
   },
   {
     "id": 24,
@@ -477,7 +477,7 @@
     "decan_ruler": "Sun",
     "harmonic": "Opposition (2nd)",
     "theme": "Facing the unknown",
-    "core_line": "The world is larger than the territory already conquered."
+    "core_meaning": "The world is larger than the territory already conquered."
   },
   {
     "id": 25,
@@ -497,7 +497,7 @@
     "decan_ruler": "Jupiter",
     "harmonic": "Trine (3rd)",
     "theme": "Pursuit",
-    "core_line": "Action becomes momentum."
+    "core_meaning": "Action becomes momentum."
   },
   {
     "id": 26,
@@ -517,7 +517,7 @@
     "decan_ruler": "Sun",
     "harmonic": "Square (4th)",
     "theme": "Foundation",
-    "core_line": "A temporary victory becomes a place to stand."
+    "core_meaning": "A temporary victory becomes a place to stand."
   },
   {
     "id": 27,
@@ -537,7 +537,7 @@
     "decan_ruler": "Jupiter",
     "harmonic": "Quintile (5th)",
     "theme": "Friction",
-    "core_line": "Different forces collide."
+    "core_meaning": "Different forces collide."
   },
   {
     "id": 28,
@@ -557,7 +557,7 @@
     "decan_ruler": "Mars",
     "harmonic": "Sextile (6th)",
     "theme": "Recognition",
-    "core_line": "The struggle produces visible results."
+    "core_meaning": "The struggle produces visible results."
   },
   {
     "id": 29,
@@ -577,7 +577,7 @@
     "decan_ruler": "Jupiter",
     "harmonic": "Septile (7th)",
     "theme": "Defending the vision",
-    "core_line": "Hold your position."
+    "core_meaning": "Hold your position."
   },
   {
     "id": 30,
@@ -597,7 +597,7 @@
     "decan_ruler": "Mars",
     "harmonic": "Octile (8th)",
     "theme": "Acceleration",
-    "core_line": "Everything starts moving."
+    "core_meaning": "Everything starts moving."
   },
   {
     "id": 31,
@@ -617,7 +617,7 @@
     "decan_ruler": "Sun",
     "harmonic": "Novile (9th)",
     "theme": "Endurance",
-    "core_line": "You have survived enough to know what matters."
+    "core_meaning": "You have survived enough to know what matters."
   },
   {
     "id": 32,
@@ -637,7 +637,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Culmination",
-    "core_line": "The fire has become too much to carry."
+    "core_meaning": "The fire has become too much to carry."
   },
   {
     "id": 33,
@@ -657,7 +657,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Discovery",
-    "core_line": "A new spark wants to explore the world."
+    "core_meaning": "A new spark wants to explore the world."
   },
   {
     "id": 34,
@@ -677,7 +677,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Pursuit",
-    "core_line": "Fire in motion."
+    "core_meaning": "Fire in motion."
   },
   {
     "id": 35,
@@ -697,7 +697,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Creative sovereignty",
-    "core_line": "She knows what she wants and does not need permission to create it."
+    "core_meaning": "She knows what she wants and does not need permission to create it."
   },
   {
     "id": 36,
@@ -717,7 +717,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Visionary command",
-    "core_line": "Fire becomes leadership."
+    "core_meaning": "Fire becomes leadership."
   },
   {
     "id": 37,
@@ -737,7 +737,7 @@
     "decan_ruler": "Moon",
     "harmonic": "Conjunction (1st)",
     "theme": "Emotional beginning",
-    "core_line": "The cup fills for the first time."
+    "core_meaning": "The cup fills for the first time."
   },
   {
     "id": 38,
@@ -757,7 +757,7 @@
     "decan_ruler": "Pluto",
     "harmonic": "Opposition (2nd)",
     "theme": "Mutual recognition",
-    "core_line": "Two beings see one another clearly."
+    "core_meaning": "Two beings see one another clearly."
   },
   {
     "id": 39,
@@ -777,7 +777,7 @@
     "decan_ruler": "Neptune",
     "harmonic": "Trine (3rd)",
     "theme": "Community",
-    "core_line": "Emotion becomes collective."
+    "core_meaning": "Emotion becomes collective."
   },
   {
     "id": 40,
@@ -797,7 +797,7 @@
     "decan_ruler": "Pluto",
     "harmonic": "Square (4th)",
     "theme": "Withdrawal",
-    "core_line": "Something is being felt beneath the surface."
+    "core_meaning": "Something is being felt beneath the surface."
   },
   {
     "id": 41,
@@ -811,13 +811,13 @@
     "art_direction": "A central healer holds the serpent; behind: a wounded vessel and a restored vessel, medicinal plants, a celestial staff, the Ophiuchus constellation, Scorpio descending and Sagittarius rising.",
     "palette": "",
     "status": "Not started",
-    "notes": "★ SIGNATURE CARD. Scorpio ends. Ophiuchus heals. Sagittarius rises. Upright: something damaged can be healed. Shadow: resurrecting what has completed its purpose.",
+    "notes": "★ SIGNATURE CARD. Scorpio ends. Ophiuchus heals. Sagittarius rises. Constructive expression: something damaged can be healed. Challenging expression: trying to resurrect what has completed its purpose.",
     "source_check": "Confirmed (Clark PDF)",
     "decan": "2nd decan Scorpio",
     "decan_ruler": "Neptune",
     "harmonic": "Quintile (5th)",
     "theme": "Healing what was lost — THE HEALER",
-    "core_line": "What was broken is not necessarily lost."
+    "core_meaning": "What was broken is not necessarily lost."
   },
   {
     "id": 42,
@@ -837,7 +837,7 @@
     "decan_ruler": "Moon",
     "harmonic": "Sextile (6th)",
     "theme": "Restoration",
-    "core_line": "The past returns carrying information."
+    "core_meaning": "The past returns carrying information."
   },
   {
     "id": 43,
@@ -857,7 +857,7 @@
     "decan_ruler": "Neptune",
     "harmonic": "Septile (7th)",
     "theme": "Possibility",
-    "core_line": "Many realities appear at once."
+    "core_meaning": "Many realities appear at once."
   },
   {
     "id": 44,
@@ -877,7 +877,7 @@
     "decan_ruler": "Moon",
     "harmonic": "Octile (8th)",
     "theme": "Departure",
-    "core_line": "Knowing when to leave."
+    "core_meaning": "Knowing when to leave."
   },
   {
     "id": 45,
@@ -897,7 +897,7 @@
     "decan_ruler": "Pluto",
     "harmonic": "Novile (9th)",
     "theme": "Fulfillment",
-    "core_line": "Desire becomes visible."
+    "core_meaning": "Desire becomes visible."
   },
   {
     "id": 46,
@@ -917,7 +917,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Emotional wholeness",
-    "core_line": "The individual becomes part of a greater emotional ecosystem."
+    "core_meaning": "The individual becomes part of a greater emotional ecosystem."
   },
   {
     "id": 47,
@@ -937,7 +937,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Emotional discovery",
-    "core_line": "A new feeling arrives."
+    "core_meaning": "A new feeling arrives."
   },
   {
     "id": 48,
@@ -957,7 +957,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Emotional quest",
-    "core_line": "The heart moves toward what it desires."
+    "core_meaning": "The heart moves toward what it desires."
   },
   {
     "id": 49,
@@ -977,7 +977,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Emotional sovereignty",
-    "core_line": "Deep feeling without drowning in it."
+    "core_meaning": "Deep feeling without drowning in it."
   },
   {
     "id": 50,
@@ -997,7 +997,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Emotional mastery",
-    "core_line": "Feeling deeply while remaining centered."
+    "core_meaning": "Feeling deeply while remaining centered."
   },
   {
     "id": 51,
@@ -1017,7 +1017,7 @@
     "decan_ruler": "Venus",
     "harmonic": "Conjunction (1st)",
     "theme": "Clarity",
-    "core_line": "The first clean cut through confusion."
+    "core_meaning": "The first clean cut through confusion."
   },
   {
     "id": 52,
@@ -1037,7 +1037,7 @@
     "decan_ruler": "Uranus",
     "harmonic": "Opposition (2nd)",
     "theme": "Difficult choice",
-    "core_line": "Two forces pull against one another."
+    "core_meaning": "Two forces pull against one another."
   },
   {
     "id": 53,
@@ -1057,7 +1057,7 @@
     "decan_ruler": "Mercury",
     "harmonic": "Trine (3rd)",
     "theme": "Painful truth",
-    "core_line": "The truth hurts because it changes the story."
+    "core_meaning": "The truth hurts because it changes the story."
   },
   {
     "id": 54,
@@ -1077,7 +1077,7 @@
     "decan_ruler": "Uranus",
     "harmonic": "Square (4th)",
     "theme": "Rest",
-    "core_line": "The mind needs silence."
+    "core_meaning": "The mind needs silence."
   },
   {
     "id": 55,
@@ -1097,7 +1097,7 @@
     "decan_ruler": "Mercury",
     "harmonic": "Quintile (5th)",
     "theme": "Conflict",
-    "core_line": "Winning may not mean victory."
+    "core_meaning": "Winning may not mean victory."
   },
   {
     "id": 56,
@@ -1117,7 +1117,7 @@
     "decan_ruler": "Venus",
     "harmonic": "Sextile (6th)",
     "theme": "Transition",
-    "core_line": "Leaving turbulence behind."
+    "core_meaning": "Leaving turbulence behind."
   },
   {
     "id": 57,
@@ -1137,7 +1137,7 @@
     "decan_ruler": "Mercury",
     "harmonic": "Septile (7th)",
     "theme": "Strategy",
-    "core_line": "Not every move needs to be announced."
+    "core_meaning": "Not every move needs to be announced."
   },
   {
     "id": 58,
@@ -1157,7 +1157,7 @@
     "decan_ruler": "Venus",
     "harmonic": "Octile (8th)",
     "theme": "Restriction",
-    "core_line": "The cage may be partly constructed by perception."
+    "core_meaning": "The cage may be partly constructed by perception."
   },
   {
     "id": 59,
@@ -1177,7 +1177,7 @@
     "decan_ruler": "Uranus",
     "harmonic": "Novile (9th)",
     "theme": "Anxiety",
-    "core_line": "Thought becomes its own night sky."
+    "core_meaning": "Thought becomes its own night sky."
   },
   {
     "id": 60,
@@ -1197,7 +1197,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Mental ending",
-    "core_line": "The old thought-pattern has reached its limit."
+    "core_meaning": "The old thought-pattern has reached its limit."
   },
   {
     "id": 61,
@@ -1217,7 +1217,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Observation",
-    "core_line": "Question everything."
+    "core_meaning": "Question everything."
   },
   {
     "id": 62,
@@ -1237,7 +1237,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Decisive thought",
-    "core_line": "The mind becomes an arrow."
+    "core_meaning": "The mind becomes an arrow."
   },
   {
     "id": 63,
@@ -1257,7 +1257,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Discernment",
-    "core_line": "She sees through the fog."
+    "core_meaning": "She sees through the fog."
   },
   {
     "id": 64,
@@ -1277,7 +1277,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Intellectual authority",
-    "core_line": "Thought becomes judgment."
+    "core_meaning": "Thought becomes judgment."
   },
   {
     "id": 65,
@@ -1297,7 +1297,7 @@
     "decan_ruler": "Saturn",
     "harmonic": "Conjunction (1st)",
     "theme": "Tangible opportunity",
-    "core_line": "An idea becomes something real."
+    "core_meaning": "An idea becomes something real."
   },
   {
     "id": 66,
@@ -1317,7 +1317,7 @@
     "decan_ruler": "Venus",
     "harmonic": "Opposition (2nd)",
     "theme": "Balance",
-    "core_line": "Keep everything moving without dropping yourself."
+    "core_meaning": "Keep everything moving without dropping yourself."
   },
   {
     "id": 67,
@@ -1337,7 +1337,7 @@
     "decan_ruler": "Mercury",
     "harmonic": "Trine (3rd)",
     "theme": "Cooperation",
-    "core_line": "Skill becomes valuable when shared."
+    "core_meaning": "Skill becomes valuable when shared."
   },
   {
     "id": 68,
@@ -1357,7 +1357,7 @@
     "decan_ruler": "Venus",
     "harmonic": "Square (4th)",
     "theme": "Security",
-    "core_line": "What do you hold onto, and why?"
+    "core_meaning": "What do you hold onto, and why?"
   },
   {
     "id": 69,
@@ -1377,7 +1377,7 @@
     "decan_ruler": "Mercury",
     "harmonic": "Quintile (5th)",
     "theme": "Hardship",
-    "core_line": "Material difficulty tests resilience."
+    "core_meaning": "Material difficulty tests resilience."
   },
   {
     "id": 70,
@@ -1397,7 +1397,7 @@
     "decan_ruler": "Saturn",
     "harmonic": "Sextile (6th)",
     "theme": "Exchange",
-    "core_line": "Resources move between people."
+    "core_meaning": "Resources move between people."
   },
   {
     "id": 71,
@@ -1417,7 +1417,7 @@
     "decan_ruler": "Mercury",
     "harmonic": "Septile (7th)",
     "theme": "Cultivation",
-    "core_line": "Not everything grows on your preferred schedule."
+    "core_meaning": "Not everything grows on your preferred schedule."
   },
   {
     "id": 72,
@@ -1437,7 +1437,7 @@
     "decan_ruler": "Saturn",
     "harmonic": "Octile (8th)",
     "theme": "Mastery",
-    "core_line": "Practice turns effort into craft."
+    "core_meaning": "Practice turns effort into craft."
   },
   {
     "id": 73,
@@ -1457,7 +1457,7 @@
     "decan_ruler": "Venus",
     "harmonic": "Novile (9th)",
     "theme": "Independence",
-    "core_line": "You built something capable of sustaining you."
+    "core_meaning": "You built something capable of sustaining you."
   },
   {
     "id": 74,
@@ -1477,7 +1477,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Legacy",
-    "core_line": "What survives you?"
+    "core_meaning": "What survives you?"
   },
   {
     "id": 75,
@@ -1497,7 +1497,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Practical beginning",
-    "core_line": "A student discovers something worth building."
+    "core_meaning": "A student discovers something worth building."
   },
   {
     "id": 76,
@@ -1517,7 +1517,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Persistence",
-    "core_line": "Slow is not the same as stagnant."
+    "core_meaning": "Slow is not the same as stagnant."
   },
   {
     "id": 77,
@@ -1537,7 +1537,7 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Grounded abundance",
-    "core_line": "She creates environments in which life can flourish."
+    "core_meaning": "She creates environments in which life can flourish."
   },
   {
     "id": 78,
@@ -1557,6 +1557,6 @@
     "decan_ruler": "",
     "harmonic": "",
     "theme": "Stewardship",
-    "core_line": "Resources become responsibility."
+    "core_meaning": "Resources become responsibility."
   }
 ]

@@ -1,6 +1,10 @@
 # Tarot 13 — Spreads
 
-All of these are built into the [shuffler](../shuffle.html).
+All of these are built into the [Tarot 13 app](../index.html).
+
+> **This deck uses upright-only readings. Reversals are not required. Every card contains both constructive and challenging expressions, and the spread determines which aspect comes forward.**
+>
+> Each position in a spread shapes which side of a card's meaning comes forward: advice and support positions draw out its constructive side, challenge and obstacle positions its challenging side, and outcome positions can turn into a warning. Add a question before drawing; the question shapes the reading too.
 
 ## Tarot 13 spreads
 

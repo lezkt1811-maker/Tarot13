@@ -9,6 +9,7 @@ A 78-card tarot of the actual constellations
 - 56 Minor Arcana
 - 4 suits: Wands, Cups, Swords, Pentacles
 - 14 cards per suit
+- Upright-only readings: one core meaning per card, no reversals
 - Ophiuchus is the 9th sign
 - Zodiac sequence:
 
@@ -336,11 +337,11 @@ Death → Healing → Rebirth.
 
 healing • grief • regeneration • medicine • recovery • resurrection • transformation
 
-**Upright**
+**Constructive expression**
 
 Something damaged can be healed.
 
-**Shadow**
+**Challenging expression**
 
 Trying to resurrect something that has already completed its purpose.
 
@@ -1010,6 +1011,30 @@ And the strongest Ophiuchus-specific line:
 Scorpio ends. Ophiuchus heals. Sagittarius rises.
 
 That last one could be absolutely killer on the Five of Cups guidebook page.
+
+---
+
+## XII. Upright-Only Readings
+
+> **This deck uses upright-only readings. Reversals are not required. Every card contains both constructive and challenging expressions, and the spread determines which aspect comes forward.**
+
+- Every card has **one core meaning** (see `core_meaning` in the card data). There are no reversed meanings.
+- Cards are never read upside down, and the shuffles never turn cards over.
+- The reading decides which aspect of a card's meaning comes forward, from three things: **the question asked**, **the card's position in the spread**, and **the surrounding cards**.
+
+| Aspect | What it means in a reading |
+|---|---|
+| **Constructive** | The card's energy is working in your favor |
+| **Challenging** | The card's energy asks for effort or brings difficulty |
+| **Blocked** | The energy is present but held back, not yet flowing |
+| **Excessive** | Too much of this energy: a strength overused |
+| **Internal** | The energy is unfolding inside you rather than in events |
+| **Warning** | A caution about where things are heading |
+
+Rules of thumb used by the reader:
+- **Position:** advice and support positions bring a card's constructive side forward; challenge and obstacle positions bring its challenging side (a bright card there reads as *excessive*); "what is blocking you" reads as *blocked*; hidden and healing positions read as *internal*; outcome positions turn into a *warning* when the spread leans heavy.
+- **Surrounding cards:** a card flanked by difficult cards takes on their weight; one suit flooding the spread makes that element *excessive*.
+- **The question:** a question about being stuck draws out *blocked* aspects; questions about feelings draw out *internal* ones; "should I" and risk questions bring *warnings* forward.
 
 ---
 

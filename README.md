@@ -5,6 +5,8 @@
 
 **78 cards. 13 signs. The constellations tell the story.**
 
+*This deck uses upright-only readings. Reversals are not required. Every card contains both constructive and challenging expressions, and the spread determines which aspect comes forward.*
+
 A 78-card tarot of the actual constellations. The familiar tarot skeleton (22 Majors, 56 Minors) stays intact; underneath runs a 13-sign celestial system with ⛎ Ophiuchus as the 9th sign. Drawn as glowing neon star maps on deep black with gold filigree.
 
 📖 **The full design spec is the [Deck Bible](docs/deck-bible.md).** Spreads are in the [Spreads guide](docs/spreads.md).
@@ -39,6 +41,30 @@ The full card-by-card list is in [`data/cards.csv`](data/cards.csv), [`data/card
 
 ---
 
+## Upright-only readings
+
+> **This deck uses upright-only readings. Reversals are not required. Every card contains both constructive and challenging expressions, and the spread determines which aspect comes forward.**
+
+- Every card has **one core meaning** (see `core_meaning` in the card data). There are no reversed meanings.
+- Cards are never read upside down, and the shuffles never turn cards over.
+- The reading decides which aspect of a card's meaning comes forward, from three things: **the question asked**, **the card's position in the spread**, and **the surrounding cards**.
+
+| Aspect | What it means in a reading |
+|---|---|
+| **Constructive** | The card's energy is working in your favor |
+| **Challenging** | The card's energy asks for effort or brings difficulty |
+| **Blocked** | The energy is present but held back, not yet flowing |
+| **Excessive** | Too much of this energy: a strength overused |
+| **Internal** | The energy is unfolding inside you rather than in events |
+| **Warning** | A caution about where things are heading |
+
+Rules of thumb used by the reader:
+- **Position:** advice and support positions bring a card's constructive side forward; challenge and obstacle positions bring its challenging side (a bright card there reads as *excessive*); "what is blocking you" reads as *blocked*; hidden and healing positions read as *internal*; outcome positions turn into a *warning* when the spread leans heavy.
+- **Surrounding cards:** a card flanked by difficult cards takes on their weight; one suit flooding the spread makes that element *excessive*.
+- **The question:** a question about being stuck draws out *blocked* aspects; questions about feelings draw out *internal* ones; "should I" and risk questions bring *warnings* forward.
+
+---
+
 ## The 13-sign spine
 
 ♈ Aries *birth of action* → ♉ Taurus *embodiment* → ♊ Gemini *mind* → ♋ Cancer *feeling* → ♌ Leo *self-expression* → ♍ Virgo *discernment* → ♎ Libra *relationship* → ♏ Scorpio *death / transformation* → **⛎ Ophiuchus** ***healing / regeneration*** → ♐ Sagittarius *meaning / expansion* → ♑ Capricorn *structure* → ♒ Aquarius *liberation* → ♓ Pisces *dissolution / transcendence*
@@ -62,7 +88,7 @@ The heart of Tarot 13. Ophiuchus, the Serpent Bearer and often called the "13th 
 
 **Theme:** healing what was lost. *"What was broken is not necessarily lost."*
 
-**Upright:** something damaged can be healed. **Shadow:** trying to resurrect something that has already completed its purpose.
+**Constructive expression:** something damaged can be healed. **Challenging expression:** trying to resurrect something that has already completed its purpose. The spread decides which comes forward.
 
 Ophiuchus does not replace any Major Arcana card and has no extra court card. Its power enters the deck through the Five of Cups.
 
@@ -123,7 +149,6 @@ The **Source check** column in the data marks each card:
 - **Confirmed (13):** stated in [Brian Clark's own text](https://www.astrosynthesis.com.au/wp-content/uploads/2017/11/The-Celestial-Tarot-Brian-Clark.pdf).
 - **Derived (31):** filled from the decan pattern above, which matches every confirmed card.
 - **Unverified (34):** Majors VI–XXI, Tens and court cards, from the original Google list. The Swords Queen (Aquarius) and King (Libra) were corrected to fit the pattern.
-- **Card back v2:** the ringed planets appear only in the top half, so the back isn't identical upside down.
 
 ---
 

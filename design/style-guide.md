@@ -41,7 +41,7 @@ Glowing neon star maps on deep near-black, framed in fine gold filigree. Part pl
 ## Card back
 - **Official: v2**, `art/backs/card-back-v2.png`. All gold on pure black: central compass star in a gold ring, crescents top and bottom opening outward, ringed and plain planets, moon phases, thin gold border with star corners.
 - The all-gold back intentionally contrasts with the neon fronts: a quiet, sacred back and electric faces.
-- **Reversal check:** the design is almost rotation-symmetric. Only the ringed planets (top half only) give away orientation. Ring the lower planets too to hide reversals fully.
+- **Orientation:** Tarot 13 uses upright-only readings, so the back does not need to hide which way a card is facing.
 - v1, `art/backs/card-back-v1.webp` (neon zodiac wheel), is kept as an alternate.
 
 ## Print specs (typical)
