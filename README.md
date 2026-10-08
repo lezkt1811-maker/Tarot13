@@ -4,6 +4,8 @@
 
 ![Tarot 13 card back](art/backs/card-back-v2.png)
 
+> **Shuffle & draw:** open [`shuffle.html`](shuffle.html) to shuffle the deck five ways and draw a spread.
+>
 > Mockup preview: open [`mockups/index.html`](mockups/index.html), or turn on GitHub Pages to view it online.
 
 ---
@@ -83,14 +85,24 @@ Use lowercase with dashes, zero-padded so files sort in deck order:
 - [ ] Guidebook text
 - [ ] Print-ready files (300 DPI + bleed)
 
-## Open questions
-The card list started from a Google AI summary, which turned out to be wrong in places. The **Source check** column in the data marks each card:
+## How the deck is mapped
+Every pip (Ace–9) sits on one **decan**, a 10° slice of the zodiac. Each suit runs through its element's three signs in order: cardinal (Ace–3), fixed (4–6), mutable (7–9). Each decan carries a traditional extra-zodiacal constellation. Tens are the element's trinity of all three signs.
 
-- **Confirmed (13):** Majors 0–V, Ace of Cups (Ursa Minor), Two of Swords (Lupus), Eight of Wands (Ara), Ace of Swords (Crux), Five of Cups (Ophiuchus), Eight of Pentacles (Centaurus), Nine of Cups (Andromeda). Source: [Brian Clark, *The Celestial Tarot*](https://www.astrosynthesis.com.au/wp-content/uploads/2017/11/The-Celestial-Tarot-Brian-Clark.pdf).
-- **Conflicts (2):** Six of Swords and Nine of Swords were listed as Ursa Minor and Lupus, which are now confirmed elsewhere. Their real constellations are unknown.
-- **Unverified (63):** everything else, including Ace of Pentacles = Sagitta and the Swords Queen/King (Libra/Aquarius, possibly swapped).
-- **To do:** check the rest against the Celestial Tarot guidebook.
-- **Card back v2:** the ringed planets appear only in the top half, so the back isn't identical upside down. Make the lower planets ringed too if reversals must stay hidden.
+| Suit | Ace–3 | 4–6 | 7–9 |
+|---|---|---|---|
+| Wands | Aries | Leo | Sagittarius |
+| Cups | Cancer | Scorpio | Pisces |
+| Swords | Libra | Aquarius | Gemini |
+| Pentacles | Capricorn | Taurus | Virgo |
+
+Decan rulers follow the modern triplicity system. Example: Five of Cups = 2nd decan Scorpio, ruled by Neptune.
+
+## Source check
+The **Source check** column in the data marks each card:
+- **Confirmed (13):** stated in [Brian Clark's own text](https://www.astrosynthesis.com.au/wp-content/uploads/2017/11/The-Celestial-Tarot-Brian-Clark.pdf).
+- **Derived (31):** filled from the decan pattern above, which matches every confirmed card.
+- **Unverified (34):** Majors VI–XXI, Tens and court cards, from the original Google list. The Swords Queen (Aquarius) and King (Libra) were corrected to fit the pattern.
+- **Card back v2:** the ringed planets appear only in the top half, so the back isn't identical upside down.
 
 ---
 

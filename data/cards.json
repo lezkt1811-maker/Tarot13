@@ -12,7 +12,9 @@
     "palette": "Cyan, violet",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 2,
@@ -27,7 +29,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 3,
@@ -42,7 +46,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 4,
@@ -57,7 +63,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 5,
@@ -72,7 +80,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 6,
@@ -87,7 +97,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 7,
@@ -102,7 +114,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 8,
@@ -117,7 +131,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 9,
@@ -132,7 +148,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 10,
@@ -147,7 +165,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 11,
@@ -162,7 +182,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 12,
@@ -177,7 +199,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 13,
@@ -192,7 +216,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 14,
@@ -207,7 +233,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 15,
@@ -222,7 +250,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 16,
@@ -237,7 +267,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 17,
@@ -252,7 +284,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 18,
@@ -267,7 +301,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 19,
@@ -282,7 +318,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 20,
@@ -297,7 +335,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 21,
@@ -312,7 +352,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 22,
@@ -327,7 +369,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 23,
@@ -342,7 +386,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Aries",
+    "decan_ruler": "Mars"
   },
   {
     "id": 24,
@@ -357,7 +403,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Aries",
+    "decan_ruler": "Sun"
   },
   {
     "id": 25,
@@ -372,7 +420,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Aries",
+    "decan_ruler": "Jupiter"
   },
   {
     "id": 26,
@@ -387,7 +437,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Leo",
+    "decan_ruler": "Sun"
   },
   {
     "id": 27,
@@ -395,14 +447,16 @@
     "number": "5",
     "card": "Five of Wands",
     "element": "Fire",
-    "correspondence": "Leo Minor (The Lesser Lion)",
+    "correspondence": "Crater (The Cup)",
     "type": "Constellation",
     "keywords": "conflict, loss, challenge",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Leo",
+    "decan_ruler": "Jupiter"
   },
   {
     "id": 28,
@@ -410,14 +464,16 @@
     "number": "6",
     "card": "Six of Wands",
     "element": "Fire",
-    "correspondence": "Auriga (The Charioteer)",
+    "correspondence": "Corvus (The Raven)",
     "type": "Constellation",
     "keywords": "harmony, exchange, recovery",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Leo",
+    "decan_ruler": "Mars"
   },
   {
     "id": 29,
@@ -425,14 +481,16 @@
     "number": "7",
     "card": "Seven of Wands",
     "element": "Fire",
-    "correspondence": "Corona Borealis (The Northern Crown)",
+    "correspondence": "Lyra (The Lyre)",
     "type": "Constellation",
     "keywords": "assessment, persistence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Sagittarius",
+    "decan_ruler": "Jupiter"
   },
   {
     "id": 30,
@@ -446,8 +504,10 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Corrected from Sagitta per Brian Clark's text. 2nd decan Sagittarius, Mars (another source; consistent with the Five of Cups decan pattern).",
-    "source_check": "Confirmed (Clark PDF)"
+    "notes": "Corrected from Sagitta per Brian Clark's text.",
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "2nd decan Sagittarius",
+    "decan_ruler": "Mars"
   },
   {
     "id": 31,
@@ -455,14 +515,16 @@
     "number": "9",
     "card": "Nine of Wands",
     "element": "Fire",
-    "correspondence": "Canis Major (The Greater Dog)",
+    "correspondence": "Draco (The Dragon)",
     "type": "Constellation",
     "keywords": "culmination, near-completion",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Sagittarius",
+    "decan_ruler": "Sun"
   },
   {
     "id": 32,
@@ -476,8 +538,10 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
-    "source_check": "Unverified"
+    "notes": "Fire trinity: Aries + Leo + Sagittarius.",
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 33,
@@ -492,7 +556,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 34,
@@ -507,7 +573,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 35,
@@ -522,7 +590,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 36,
@@ -537,7 +607,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 37,
@@ -552,7 +624,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "Corrected from Pegasus per Brian Clark's text.",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "1st decan Cancer",
+    "decan_ruler": "Moon"
   },
   {
     "id": 38,
@@ -560,14 +634,16 @@
     "number": "2",
     "card": "Two of Cups",
     "element": "Water",
-    "correspondence": "Crater (The Cup)",
+    "correspondence": "Ursa Major (The Great Bear)",
     "type": "Constellation",
     "keywords": "duality, choice, partnership",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Cancer",
+    "decan_ruler": "Pluto"
   },
   {
     "id": 39,
@@ -575,14 +651,16 @@
     "number": "3",
     "card": "Three of Cups",
     "element": "Water",
-    "correspondence": "Delphinus (The Dolphin)",
+    "correspondence": "Argo Navis (The Ship)",
     "type": "Constellation",
     "keywords": "growth, expression",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Cancer",
+    "decan_ruler": "Neptune"
   },
   {
     "id": 40,
@@ -590,14 +668,16 @@
     "number": "4",
     "card": "Four of Cups",
     "element": "Water",
-    "correspondence": "Eridanus (The Celestial River)",
+    "correspondence": "Serpens (The Serpent)",
     "type": "Constellation",
     "keywords": "stability, rest",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Scorpio",
+    "decan_ruler": "Pluto"
   },
   {
     "id": 41,
@@ -612,7 +692,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "★ FEATURED: the 13th-sign card. 2nd decan Scorpio, decan ruler Neptune, quintile (source: Clark guidebook text, via another AI).",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "2nd decan Scorpio",
+    "decan_ruler": "Neptune"
   },
   {
     "id": 42,
@@ -620,14 +702,16 @@
     "number": "6",
     "card": "Six of Cups",
     "element": "Water",
-    "correspondence": "Piscis Austrinus (The Southern Fish)",
+    "correspondence": "Hercules (The Kneeler)",
     "type": "Constellation",
     "keywords": "harmony, exchange, recovery",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Scorpio",
+    "decan_ruler": "Moon"
   },
   {
     "id": 43,
@@ -635,14 +719,16 @@
     "number": "7",
     "card": "Seven of Cups",
     "element": "Water",
-    "correspondence": "Canis Minor (The Lesser Dog)",
+    "correspondence": "Al Risha (The Knot of Pisces)",
     "type": "Constellation",
     "keywords": "assessment, persistence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
-    "source_check": "Unverified"
+    "notes": "Fixed star tying the two fish (traditionally 'The Band'). Per another AI's reading of the guidebook.",
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Pisces",
+    "decan_ruler": "Neptune"
   },
   {
     "id": 44,
@@ -650,14 +736,16 @@
     "number": "8",
     "card": "Eight of Cups",
     "element": "Water",
-    "correspondence": "Orion (The Hunter)",
+    "correspondence": "Cepheus (The King)",
     "type": "Constellation",
     "keywords": "movement, mastery, change",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
-    "source_check": "Unverified"
+    "notes": "Per another AI's reading of the guidebook; fits the pattern.",
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Pisces",
+    "decan_ruler": "Moon"
   },
   {
     "id": 45,
@@ -672,7 +760,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "3rd decan Pisces",
+    "decan_ruler": "Pluto"
   },
   {
     "id": 46,
@@ -686,8 +776,10 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
-    "source_check": "Unverified"
+    "notes": "Water trinity: Cancer + Scorpio + Pisces.",
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 47,
@@ -702,7 +794,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 48,
@@ -717,7 +811,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 49,
@@ -732,7 +828,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 50,
@@ -747,7 +845,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 51,
@@ -762,7 +862,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "1st decan Libra",
+    "decan_ruler": "Venus"
   },
   {
     "id": 52,
@@ -777,7 +879,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "Corrected from Ursa Major per Brian Clark's text.",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "2nd decan Libra",
+    "decan_ruler": "Uranus"
   },
   {
     "id": 53,
@@ -785,14 +889,16 @@
     "number": "3",
     "card": "Three of Swords",
     "element": "Air",
-    "correspondence": "Boötes (The Herdsman)",
+    "correspondence": "Corona Borealis (The Northern Crown)",
     "type": "Constellation",
     "keywords": "growth, expression",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Libra",
+    "decan_ruler": "Mercury"
   },
   {
     "id": 54,
@@ -800,14 +906,16 @@
     "number": "4",
     "card": "Four of Swords",
     "element": "Air",
-    "correspondence": "Cygnus (The Swan)",
+    "correspondence": "Piscis Austrinus (The Southern Fish)",
     "type": "Constellation",
     "keywords": "stability, rest",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Aquarius",
+    "decan_ruler": "Uranus"
   },
   {
     "id": 55,
@@ -815,14 +923,16 @@
     "number": "5",
     "card": "Five of Swords",
     "element": "Air",
-    "correspondence": "Aquila (The Eagle)",
+    "correspondence": "Pegasus (The Winged Horse)",
     "type": "Constellation",
     "keywords": "conflict, loss, challenge",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Aquarius",
+    "decan_ruler": "Mercury"
   },
   {
     "id": 56,
@@ -830,14 +940,16 @@
     "number": "6",
     "card": "Six of Swords",
     "element": "Air",
-    "correspondence": "Ursa Minor (The Little Bear)",
+    "correspondence": "Cygnus (The Swan)",
     "type": "Constellation",
     "keywords": "harmony, exchange, recovery",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "CONFLICT: Ursa Minor is now confirmed on the Ace of Cups. Check guidebook.",
-    "source_check": "Conflict, check"
+    "notes": "",
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Aquarius",
+    "decan_ruler": "Venus"
   },
   {
     "id": 57,
@@ -845,14 +957,16 @@
     "number": "7",
     "card": "Seven of Swords",
     "element": "Air",
-    "correspondence": "Draco (The Dragon)",
+    "correspondence": "Lepus (The Hare)",
     "type": "Constellation",
     "keywords": "assessment, persistence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Gemini",
+    "decan_ruler": "Mercury"
   },
   {
     "id": 58,
@@ -860,14 +974,16 @@
     "number": "8",
     "card": "Eight of Swords",
     "element": "Air",
-    "correspondence": "Cepheus (The King)",
+    "correspondence": "Canis Major (The Great Dog)",
     "type": "Constellation",
     "keywords": "movement, mastery, change",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Gemini",
+    "decan_ruler": "Venus"
   },
   {
     "id": 59,
@@ -875,14 +991,16 @@
     "number": "9",
     "card": "Nine of Swords",
     "element": "Air",
-    "correspondence": "Lupus (The Wolf)",
+    "correspondence": "Canis Minor (The Lesser Dog)",
     "type": "Constellation",
     "keywords": "culmination, near-completion",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "CONFLICT: Lupus is now confirmed on the Two of Swords. Check guidebook.",
-    "source_check": "Conflict, check"
+    "notes": "",
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Gemini",
+    "decan_ruler": "Uranus"
   },
   {
     "id": 60,
@@ -896,8 +1014,10 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
-    "source_check": "Unverified"
+    "notes": "Air trinity: Libra + Aquarius + Gemini.",
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 61,
@@ -912,7 +1032,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 62,
@@ -927,7 +1049,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 63,
@@ -935,14 +1059,16 @@
     "number": "Queen",
     "card": "Queen of Swords",
     "element": "Air",
-    "correspondence": "Libra",
+    "correspondence": "Aquarius",
     "type": "Fixed sign",
     "keywords": "mastery within, nurture",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Check: Libra is cardinal, not fixed. Other suits suggest Queen = Aquarius.",
-    "source_check": "Unverified"
+    "notes": "Fixed air. Google listed Libra (swapped); pattern says Aquarius.",
+    "source_check": "Derived (decan pattern)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 64,
@@ -950,14 +1076,16 @@
     "number": "King",
     "card": "King of Swords",
     "element": "Air",
-    "correspondence": "Aquarius",
+    "correspondence": "Libra",
     "type": "Cardinal sign",
     "keywords": "command, mastery without",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Check: Aquarius is fixed, not cardinal. Other suits suggest King = Libra.",
-    "source_check": "Unverified"
+    "notes": "Cardinal air. Google listed Aquarius (swapped); pattern says Libra.",
+    "source_check": "Derived (decan pattern)",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 65,
@@ -971,8 +1099,10 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Unverified: another source says Sagitta (Arrow of Heracles / Prometheus). Google list said Taurus.",
-    "source_check": "Unverified"
+    "notes": "Sagitta per decan pattern, which also matches another source (Arrow of Heracles / Prometheus).",
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Capricorn",
+    "decan_ruler": "Saturn"
   },
   {
     "id": 66,
@@ -980,14 +1110,16 @@
     "number": "2",
     "card": "Two of Pentacles",
     "element": "Earth",
-    "correspondence": "Lyra (The Lyre)",
+    "correspondence": "Aquila (The Eagle)",
     "type": "Constellation",
     "keywords": "duality, choice, partnership",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Capricorn",
+    "decan_ruler": "Venus"
   },
   {
     "id": 67,
@@ -995,14 +1127,16 @@
     "number": "3",
     "card": "Three of Pentacles",
     "element": "Earth",
-    "correspondence": "Argo Navis (Ship of the Argonauts)",
+    "correspondence": "Delphinus (The Dolphin)",
     "type": "Constellation",
     "keywords": "growth, expression",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Capricorn",
+    "decan_ruler": "Mercury"
   },
   {
     "id": 68,
@@ -1010,14 +1144,16 @@
     "number": "4",
     "card": "Four of Pentacles",
     "element": "Earth",
-    "correspondence": "Corvus (The Raven)",
+    "correspondence": "Orion (The Hunter)",
     "type": "Constellation",
     "keywords": "stability, rest",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Taurus",
+    "decan_ruler": "Venus"
   },
   {
     "id": 69,
@@ -1025,14 +1161,16 @@
     "number": "5",
     "card": "Five of Pentacles",
     "element": "Earth",
-    "correspondence": "Triangulum (The Triangle)",
+    "correspondence": "Eridanus (The River)",
     "type": "Constellation",
     "keywords": "conflict, loss, challenge",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "2nd decan Taurus",
+    "decan_ruler": "Mercury"
   },
   {
     "id": 70,
@@ -1040,14 +1178,16 @@
     "number": "6",
     "card": "Six of Pentacles",
     "element": "Earth",
-    "correspondence": "Coma Berenices (Berenice's Hair)",
+    "correspondence": "Auriga (The Charioteer)",
     "type": "Constellation",
     "keywords": "harmony, exchange, recovery",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Taurus",
+    "decan_ruler": "Saturn"
   },
   {
     "id": 71,
@@ -1055,14 +1195,16 @@
     "number": "7",
     "card": "Seven of Pentacles",
     "element": "Earth",
-    "correspondence": "Hercules (The Kneeler)",
+    "correspondence": "Coma Berenices (Berenice's Hair)",
     "type": "Constellation",
     "keywords": "assessment, persistence",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Derived (decan pattern)",
+    "decan": "1st decan Virgo",
+    "decan_ruler": "Mercury"
   },
   {
     "id": 72,
@@ -1077,7 +1219,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Confirmed (Clark PDF)"
+    "source_check": "Confirmed (Clark PDF)",
+    "decan": "2nd decan Virgo",
+    "decan_ruler": "Saturn"
   },
   {
     "id": 73,
@@ -1085,14 +1229,16 @@
     "number": "9",
     "card": "Nine of Pentacles",
     "element": "Earth",
-    "correspondence": "Pegasus / Equuleus (The Little Horse)",
+    "correspondence": "Boötes (The Herdsman)",
     "type": "Constellation",
     "keywords": "culmination, near-completion",
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "Unverified: Pegasus/Equuleus. Pegasus no longer conflicts with the Ace of Cups.",
-    "source_check": "Unverified"
+    "notes": "",
+    "source_check": "Derived (decan pattern)",
+    "decan": "3rd decan Virgo",
+    "decan_ruler": "Venus"
   },
   {
     "id": 74,
@@ -1106,8 +1252,10 @@
     "art_direction": "",
     "palette": "",
     "status": "Not started",
-    "notes": "",
-    "source_check": "Unverified"
+    "notes": "Earth trinity: Capricorn + Taurus + Virgo.",
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 75,
@@ -1122,7 +1270,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 76,
@@ -1137,7 +1287,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 77,
@@ -1152,7 +1304,9 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   },
   {
     "id": 78,
@@ -1167,6 +1321,8 @@
     "palette": "",
     "status": "Not started",
     "notes": "",
-    "source_check": "Unverified"
+    "source_check": "Unverified",
+    "decan": "",
+    "decan_ruler": ""
   }
 ]
